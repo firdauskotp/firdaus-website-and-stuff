@@ -1,0 +1,118 @@
+<body>
+<div nz-row [nzGutter]="12">
+  <div nz-col nzLg="24" nzXs="24" nzSm="24">
+    <!-- <button nz-button nzType="primary" (click)="toggleCollapsed()">
+      <i nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
+    </button>
+    [nzInlineCollapsed]="isCollapsed" -->
+    <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'" >
+      <li nz-menu-item (click)="homeNav()" nzSelected>
+        <i nz-icon nzType="home" nzTheme="outline"></i>
+       {{'HOME'|translate}}
+      </li>
+      <li nz-menu-item >
+        <i nz-icon nzType="question-circle" nzTheme="outline"></i>
+        {{'ABOUT'|translate}}
+      </li>
+      <li nz-menu-item >
+        <i nz-icon nzType="project" nzTheme="outline"></i>
+        {{'PROJECTS'|translate}}
+      </li>
+      <li nz-menu-item >
+        <i nz-icon nzType="radar-chart" nzTheme="outline"></i>
+        {{'EXPERIENCE'|translate}}
+      </li>
+      <li nz-menu-item routerLink="/stories" routerLinkActive="active">
+        <i nz-icon nzType="book" nzTheme="outline" ></i>
+        {{'STORIES'|translate}}
+      </li>
+      <li nz-menu-item >
+        <i nz-icon nzType="usergroup-add" nzTheme="outline"></i>
+        {{'FRIENDS'|translate}} ^_^
+      </li>
+      <li nz-menu-item >
+        <i nz-icon nzType="phone" nzTheme="outline"></i>
+        {{'CONTACT'|translate}}
+      </li>
+      
+      
+      <li style="float:right; margin-right: 3%;" >
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{'DARK'|translate}}
+      </li>
+      <li style="float:right;">
+        <nz-switch [(ngModel)]="theme">
+          <span checked>Dark</span>
+          <span unchecked>Light</span>
+        </nz-switch>
+      </li>
+      <li style="float:right;" >
+        {{'LIGHT'|translate}}&nbsp;&nbsp;&nbsp;&nbsp;
+      </li>
+      
+      <li nz-submenu nzTitle="{{'LANGUAGE'|translate}}" >
+        
+        <!-- <ul> -->
+         
+          <!-- <select style="background-color: black; color: white; width: 100%; margin-right: 5%;" #langselect (change)="translate.use(langselect.value)" value="en" *ngIf="theme==true">
+            <option style="background-color: black; color: white; width: 100%; margin-right: 5%;" *ngFor="let lang of translate.getLangs()" [value]="lang" >{{ lang }}</option>
+          </select>
+
+          <select style="background-color: white; color: black; width: 100%; margin-right: 5%;" #langselect (change)="translate.use(langselect.value)" value="en" *ngIf="theme==false">
+            <option style="background-color: white; color: black; width: 100%; margin-right: 5%;" *ngFor="let lang of translate.getLangs()" [value]="lang" >{{ lang }}</option>
+          </select> -->
+        <!-- </ul> -->
+        <ul>
+          <li nz-menu-item (click)="getLangVal(1)" >{{'ENGLISH'|translate}}</li>
+          <li nz-menu-item (click)="getLangVal(2)">{{'MALAY'|translate}}</li>
+          <li nz-menu-item (click)="getLangVal(3)">{{'CHINESE'|translate}}</li>
+        </ul>
+        <!-- <nz-switch [(ngModel)]="switch" nzCheckedChildren="MY" nzUnCheckedChildren="EN"
+                    (ngModelChange)="getLangVal($event)"></nz-switch> -->
+      </li>
+    </ul>
+  </div>
+</div>
+<br><br>
+<div nz-row [nzGutter]="12" nzLg="24" nzXs="24" nzSm="24">
+  <div nz-col nzSpan="12"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12" >
+    <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
+
+      <h1 class="introHome" style="color: black;" *ngIf="theme==false">{{'WELCOME1'|translate}}</h1>
+      <h1 class="introHome" style="color: white;" *ngIf="theme==true">{{'WELCOME1'|translate}}</h1>
+      <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+        <img class="introPic" src="../assets/images/websitePicMaybe.jpg"/>
+      </div>
+      <br><br>
+      <h2 style="text-align: center; color: black;" *ngIf="theme==false">
+        {{'INTRO1'|translate}}
+        <br>
+        <br>
+        {{'INTRO2'|translate}}
+        <br>
+        <br>
+        {{'INTRO3'|translate}}
+      </h2>
+      <h2 style="text-align: center; color: white;" *ngIf="theme==true">
+        {{'INTRO1'|translate}}
+        <br>
+        <br>
+        {{'INTRO2'|translate}}
+        <br>
+        <br>
+        {{'INTRO3'|translate}}
+      </h2>
+    </ul>
+
+    </div>
+  </div>
+  <br><br>
+  <div nz-row [nzGutter]="12">
+    <div nz-col nzLg="24" nzXs="8" nzSm="12">
+      <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
+        <div id="footer" style="color: black; background-color: white;" *ngIf="theme==false">&#169; {{'FOOTER'|translate}}</div>
+        <div id="footer" style="color: white; background-color: black;" *ngIf="theme==true">&#169; {{'FOOTER'|translate}}</div>
+        </ul>
+    </div>
+  </div>
+  
+</body>
