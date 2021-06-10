@@ -1,13 +1,4 @@
-/* imports */
-@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-/* @import "~ng-zorro-antd/ng-zorro-antd.dark.css"; */
-/* main stuff */
-/* body{
-    background-image: url('../assets/images/background1.jpg');
-} */
-
 
 .introHome{
     text-align: center;
@@ -33,12 +24,6 @@
     /* Height of the footer*/ 
     height: 40px;
 }
-
-/* nz-header {
-    position: fixed;
-    width: 100%;
-    background-color: white;
-  } */
 
 h2 {
     font-family: 'Playfair Display', serif;

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NgZorroAntdModule } from '../app/ng-zorro-antd.module';
+import { NgZorroAntdModule } from '../shared/ng-zorro-antd.module';
 import { HomepageComponent } from './homepage.component';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
@@ -20,13 +20,8 @@ import { HttpLoaderFactory } from 'src/app/app.module';
     FormsModule,
     HttpClientModule,
     NgZorroAntdModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    })
+    TranslateModule,
+    HttpClient,
   ],
   // exports: [
   //   NgZorroAntdModule

@@ -1,6 +1,9 @@
 /* imports */
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap');
+
 /* @import "~ng-zorro-antd/ng-zorro-antd.dark.css"; */
 /* main stuff */
 /* body{
@@ -15,6 +18,7 @@ html,body
     padding: 0px;
     overflow-x: hidden; 
     background-image: url('../assets/images/background1.jpg');
+    /* cursor: url('../assets/images/FireEmblemSymbol.svg'), auto; */
 
 }
 .introHome{
@@ -32,11 +36,9 @@ html,body
     border-color: black;
 }
 
-
-
 #footer {
     position: fixed;
-    padding: 10px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -44,3 +46,16 @@ html,body
     height: 40px;
 }
 
+/* nz-header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+  } */
+
+.aboutH2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.contactH2{
+    font-family: 'Josefin Sans', sans-serif;
+}

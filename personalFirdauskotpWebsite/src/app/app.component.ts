@@ -11,6 +11,45 @@ export class AppComponent {
   theme = true
   isCollapsed = false;
 
+  test=1;
+  myVar ="1";
+
+  nav1(): void{
+    this.test = 1
+    localStorage.setItem("token", "1");
+  }
+
+  nav2(): void{
+    this.test = 2
+    localStorage.setItem("token", "2");
+
+  }
+
+  nav3(): void{
+    this.test = 3
+    localStorage.setItem("token", "3");
+  }
+
+  nav4(): void{
+    this.test = 4
+    localStorage.setItem("token", "4");
+  }
+
+  nav5(): void{
+    this.test = 5
+    localStorage.setItem("token", "5");
+  }
+
+  nav6(): void{
+    this.test = 6
+    localStorage.setItem("token", "6");
+  }
+
+  nav7(): void{
+    this.test = 7
+    localStorage.setItem("token", "7");
+  }
+
   toggleCollapsed(): void {
     this.isCollapsed = !this.isCollapsed;
   }
@@ -23,6 +62,8 @@ export class AppComponent {
     
     
   }
+
+  
 
   getLangVal(event) {
     console.log(event);
@@ -44,6 +85,6 @@ export class AppComponent {
   }
 
   ngOnInit(){
-    
+    this.router.navigate([''])
   }
 }

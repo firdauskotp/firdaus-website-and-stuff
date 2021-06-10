@@ -1,36 +1,41 @@
 <body>
 <div nz-row [nzGutter]="12">
-  <div nz-col nzLg="24" nzXs="24" nzSm="24">
+  <div nz-col nzLg="24" nzXs="24" nzSm="24" >
     <!-- <button nz-button nzType="primary" (click)="toggleCollapsed()">
       <i nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
     </button>
     [nzInlineCollapsed]="isCollapsed" -->
+    <!-- <nz-header> -->
     <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'" >
-      <li nz-menu-item (click)="homeNav()" nzSelected>
+      <li nz-menu-item routerLink="" nzSelected (click)="nav1()" *ngIf="test===1">
         <i nz-icon nzType="home" nzTheme="outline"></i>
        {{'HOME'|translate}}
       </li>
-      <li nz-menu-item >
+      <li nz-menu-item routerLink="" (click)="nav1()" *ngIf="test!==1">
+        <i nz-icon nzType="home" nzTheme="outline"></i>
+       {{'HOME'|translate}}
+      </li>
+      <li nz-menu-item routerLink="about" (click)="nav2()">
         <i nz-icon nzType="question-circle" nzTheme="outline"></i>
         {{'ABOUT'|translate}}
       </li>
-      <li nz-menu-item >
+      <li nz-menu-item routerLink="projects" (click)="nav3()">
         <i nz-icon nzType="project" nzTheme="outline"></i>
         {{'PROJECTS'|translate}}
       </li>
-      <li nz-menu-item >
+      <li nz-menu-item routerLink="experiences" (click)="nav4()">
         <i nz-icon nzType="radar-chart" nzTheme="outline"></i>
         {{'EXPERIENCE'|translate}}
       </li>
-      <li nz-menu-item routerLink="/stories" routerLinkActive="active">
+      <li nz-menu-item routerLink="stories" (click)="nav5()">
         <i nz-icon nzType="book" nzTheme="outline" ></i>
         {{'STORIES'|translate}}
       </li>
-      <li nz-menu-item >
+      <li nz-menu-item routerLink="friends" (click)="nav6()">
         <i nz-icon nzType="usergroup-add" nzTheme="outline"></i>
         {{'FRIENDS'|translate}} ^_^
       </li>
-      <li nz-menu-item >
+      <li nz-menu-item routerLink="contact" (click)="nav7()">
         <i nz-icon nzType="phone" nzTheme="outline"></i>
         {{'CONTACT'|translate}}
       </li>
@@ -70,15 +75,144 @@
                     (ngModelChange)="getLangVal($event)"></nz-switch> -->
       </li>
     </ul>
+  <!-- </nz-header> -->
   </div>
 </div>
 <br><br>
-<div nz-row [nzGutter]="12" nzLg="24" nzXs="24" nzSm="24">
+<div nz-row [nzGutter]="12" nzLg="24" nzXs="24" nzSm="24" *ngIf="test===2">
+  <div nz-col nzSpan="12"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12" >
+    <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
+      <h1 class="introHome" style="color: black;" *ngIf="theme==false">{{'ABOUT'|translate}}</h1>
+      <h1 class="introHome" style="color: white;" *ngIf="theme==true">{{'ABOUT'|translate}}</h1>
+  <app-about ></app-about>
+
+  <h2 class="aboutH2" style="text-align: center; color: black;" *ngIf="theme==false">
+    Heyy, the name's Muhammad Firdaus. I am a Computer Engineering Student and a part time IT Trainer. 
+    I also love sports like football. Be sure to call me if you want a match &gt;.&lt; . 
+    Also a major Fire Emblem fan. I also make some playthroughs on my youtube channel!
+    <br>
+    <br>
+    I also made some personal projects, but most of it are for fun. My main dream is to be a game programmer or
+    a teacher / lecturer.
+    <br>
+    <br>
+    This website is made using angular 11, and implements the ng-zorro framework
+  </h2>
+  <h2 class="aboutH2" style="text-align: center; color: white;" *ngIf="theme==true">
+    Heyy, the name's Muhammad Firdaus. I am a Computer Engineering Student and a part time IT Trainer. 
+    I also love sports like football. Be sure to call me if you want a match &gt;.&lt; . 
+    Also a major Fire Emblem fan. I also make some playthroughs on my youtube channel!
+    <br>
+    <br>
+    I also made some personal projects, but most of it are for fun. My main dream is to be a game programmer or
+    a teacher / lecturer.
+    <br>
+    <br>
+    This website is made using angular 11, and implements the ng-zorro framework
+  </h2>
+    </ul>
+
+    </div>
+  </div>
+
+  <app-project *ngIf="test===3"></app-project>
+  <app-exp *ngIf="test===4"></app-exp>
+  <app-stories *ngIf="test===5"></app-stories>
+  <app-friends *ngIf="test===6"></app-friends>
+  <!-- <app-contacts *ngIf="test===7"></app-contacts> -->
+
+
+  <!-- Contacts -->
+  <div nz-row [nzGutter]="12" nzLg="24" nzXs="24" nzSm="24" *ngIf="test===7">
+    <div nz-col nzSpan="12"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12" >
+      <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
+        <h1 class="introHome" style="color: black;" *ngIf="theme==false">{{'CONTACT'|translate}}</h1>
+        <h1 class="introHome" style="color: white;" *ngIf="theme==true">{{'CONTACT'|translate}}</h1>
+  
+    <h2 class="aboutH2" style="text-align: center; color: black;" *ngIf="theme==false">
+     Want to contact me for freelance job or collaboration, or just to extend our network / be friends? Here are a few ways
+      <br>
+      <br>
+      I also made some personal projects, but most of it are for fun. My main dream is to be a game programmer or
+      a teacher / lecturer.
+      <br>
+      <br>
+      Just in case those links does not work due to compability issues, I'll list them here again <br>
+      Click on any of the pictures, for Youtube, I will only link my main account. The tutorial channel will be featured there
+      <div style="text-align: center;">
+        <p><a href="wa.link/3jxm9a"><img src="../assets/images/WhatsApp.svg.png"/></a>01162694030</p>
+        <p><a href="https://t.me/firdauskotp"><img src="../assets/images/logo_share.png"/></a>firdauskotp</p>
+        <p><a href="https://discordapp.com/users/265441644893962250/"><img src="../assets/images/discord-mascot.png"/></a>firdauskotp#7558</p>
+        <!-- <p><img src="../assets/images/wattpad.png"/>firdauskotp</p> -->
+        <p><a href="https://www.youtube.com/user/firdauskotp/featured"><img src="../assets/images/Youtube.svg.png"/></a>firdauskotp(main) and Firdaus Eisner(Tutorials)</p>
+        <p><a href="https://www.linkedin.com/in/muhammad-firdaus-badauraudine-793a501b0/"><img src="../assets/images/unnamed.png"/></a>Muhammad Firdaus Badauraudine</p>
+
+      </div>
+
+    </h2>
+    <h2 class="aboutH2" style="text-align: center; color: white;" *ngIf="theme==true">
+      Heyy, the name's Muhammad Firdaus. I am a Computer Engineering Student and a part time IT Trainer. 
+      I also love sports like football. Be sure to call me if you want a match &gt;.&lt; . 
+      Also a major Fire Emblem fan. I also make some playthroughs on my youtube channel!
+      <br>
+      <br>
+      I also made some personal projects, but most of it are for fun. My main dream is to be a game programmer or
+      a teacher / lecturer.
+      <br>
+      <br>
+      This website is made using angular 11, and implements the ng-zorro framework
+    </h2>
+      </ul>
+  
+      </div>
+    </div>
+<!-- Homepage -->
+
+<!-- <router-outlet name="testProj"></router-outlet> -->
+<!-- <router-outlet></router-outlet> -->
+<div nz-row [nzGutter]="12" nzLg="24" nzXs="24" nzSm="24" *ngIf="test===1">
   <div nz-col nzSpan="12"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12" >
     <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
 
       <h1 class="introHome" style="color: black;" *ngIf="theme==false">{{'WELCOME1'|translate}}</h1>
       <h1 class="introHome" style="color: white;" *ngIf="theme==true">{{'WELCOME1'|translate}}</h1>
+      <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+        <img class="introPic" src="../assets/images/websitePicMaybe.jpg"/>
+      </div>
+      <br>
+      <h2 style="text-align: center; color: black;" *ngIf="theme==false">
+        {{'INTRO1'|translate}}
+        <br>
+        <br>
+        {{'INTRO2'|translate}}
+        <br>
+        <br>
+        {{'INTRO3'|translate}}
+      </h2>
+      <h2 style="text-align: center; color: white;" *ngIf="theme==true">
+        {{'INTRO1'|translate}}
+        <br>
+        <br>
+        {{'INTRO2'|translate}}
+        <br>
+        <br>
+        {{'INTRO3'|translate}}
+      </h2>
+    </ul>
+
+    </div>
+  </div>
+
+  <!-- About -->
+
+<!-- <router-outlet name="testProj"></router-outlet> -->
+<!-- <router-outlet></router-outlet> -->
+<!-- <div nz-row [nzGutter]="12" nzLg="24" nzXs="24" nzSm="24" *ngIf="test===2">
+  <div nz-col nzSpan="12"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12" >
+    <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
+
+      <h1 class="introHome" style="color: black;" *ngIf="theme==false">{{'ABOUT'|translate}}</h1>
+      <h1 class="introHome" style="color: white;" *ngIf="theme==true">{{'ABOUT'|translate}}</h1>
       <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
         <img class="introPic" src="../assets/images/websitePicMaybe.jpg"/>
       </div>
@@ -104,15 +238,15 @@
     </ul>
 
     </div>
-  </div>
-  <br><br>
+  </div> -->
+  <br><br> 
+
   <div nz-row [nzGutter]="12">
     <div nz-col nzLg="24" nzXs="8" nzSm="12">
       <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
-        <div id="footer" style="color: black; background-color: white;" *ngIf="theme==false">&#169; {{'FOOTER'|translate}}</div>
-        <div id="footer" style="color: white; background-color: black;" *ngIf="theme==true">&#169; {{'FOOTER'|translate}}</div>
+        <div id="footer" style="color: black; background-color: white;" *ngIf="theme===false">&#169; {{'FOOTER'|translate}}</div>
+        <div id="footer" style="color: white; background-color: black;" *ngIf="theme===true">&#169; {{'FOOTER'|translate}}</div>
         </ul>
     </div>
-  </div>
-  
+  </div> 
 </body>
