@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 /* @import "~ng-zorro-antd/ng-zorro-antd.dark.css"; */
 /* main stuff */
 /* body{
@@ -38,12 +38,13 @@ html,body
 
 #footer {
     position: fixed;
-    padding: 0px 10px 0px 10px;
+    padding: 10px 10px 0px 10px;
     bottom: 0;
     width: 100%;
     text-align: center;
     /* Height of the footer*/ 
     height: 40px;
+    /* font-size: large; */
 }
 
 /* nz-header {
@@ -59,3 +60,21 @@ html,body
 .contactH2{
     font-family: 'Josefin Sans', sans-serif;
 }
+
+.expH2{
+    font-family: 'Caveat', cursive;
+    text-align: center;
+}
+
+#expTxtDM{
+    color: white !important;
+}
+
+#expTxtLM{
+    color: black !important;
+}
+.wa-responsive {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+  }

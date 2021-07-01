@@ -22,6 +22,7 @@ import { AboutComponent } from './about/about.component';
 import { ExpComponent } from './exp/exp.component';
 import { FriendsComponent } from './friends/friends.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 registerLocaleData(en);
 
@@ -51,6 +52,7 @@ export function HttpLoaderFactory(http: HttpClient){
     BrowserAnimationsModule,
     NgZorroAntdModule,
     ProjectModule,
+    FontAwesomeModule,
     // ProjectComponent,
     AppRoutingModule,
     // StoryModule,

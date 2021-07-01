@@ -79,12 +79,211 @@
   </div>
 </div>
 <br><br>
+
+<!-- Experience -->
+
+<div nz-row [nzGutter]="12" nzLg="24" nzXs="24" nzSm="24" *ngIf="test===4">
+  <div nz-col nzSpan="12"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12" >
+    <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
+
+      <h1 class="expH2" style="color: black;" *ngIf="theme==false">Experience Timeline</h1>
+      <h1 class="expH2" style="color: white;" *ngIf="theme==true">Experience Timeline</h1>
+      
+      <h2 style="text-align: center; color: black;" *ngIf="theme==false">
+        <nz-timeline nzMode="custom">
+          <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="cyan"
+            ><font style="color:black; font-weight: bold;">Diploma of Engineering Technology in Computing
+            <br>
+            Universiti Kuala Lumpur Malaysian Institute of Information Technology
+            <br>
+            2015 - 2018
+            </font></nz-timeline-item
+          >
+          <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="green"
+            ><font style="color:black; font-weight: bold;">IT Trainer (Intern)
+            <br>
+            Kidocode Sdn. Bhd.
+            <br>
+            Jan 2018 - Jul 2018 
+            </font></nz-timeline-item
+          >
+          <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="blue"
+            ><font style="color:black; font-weight: bold;">Bachelor of Engineering Technology In Computer Systems with Honours
+            <br>
+            Universiti Kuala Lumpur Malaysian Institute of Information Technology
+            <br>
+            2018 - 2021
+            </font></nz-timeline-item
+          >
+
+          <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="orange"
+            ><font style="color:black; font-weight: bold;">IT Trainer (Full Time / Part Time)
+            <br>
+            Kidocode Sdn. Bhd.
+            <br>
+            Jul 2018 - Ongoing 
+            </font>
+            <br>
+            <font style="color:black;">Have experience in being a supervisor to 2 interns so far</font>
+            </nz-timeline-item
+          >
+
+          <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="red"
+            ><font style="color:black; font-weight: bold;">Front End Developer (Intern)
+            <br>
+            Rapidevelop Technology
+            <br>
+            Feb 2021 - Jul 2021
+            </font></nz-timeline-item
+          >
+
+
+          
+        </nz-timeline>
+      </h2>
+      <h2 style="text-align: center; color: white;" *ngIf="theme==true">
+        <nz-timeline nzMode="custom">
+          <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="cyan"
+            ><font style="color:white; font-weight: bold;">Diploma of Engineering Technology in Computing
+            <br>
+            Universiti Kuala Lumpur Malaysian Institute of Information Technology
+            <br>
+            2015 - 2018
+            </font></nz-timeline-item
+          >
+          <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="green"
+            ><font style="color:white; font-weight: bold;">IT Trainer (Intern)
+            <br>
+            Kidocode Sdn. Bhd.
+            <br>
+            Jan 2018 - Jul 2018 
+            </font></nz-timeline-item
+          >
+          <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="blue"
+            ><font style="color:white; font-weight: bold;">Bachelor of Engineering Technology In Computer Systems with Honours
+            <br>
+            Universiti Kuala Lumpur Malaysian Institute of Information Technology
+            <br>
+            2018 - 2021
+            </font></nz-timeline-item
+          >
+
+          <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="orange"
+            ><font style="color:white; font-weight: bold;">IT Trainer (Full Time / Part Time)
+            <br>
+            Kidocode Sdn. Bhd.
+            <br>
+            Jul 2018 - Ongoing 
+            </font>
+            <br>
+            <font style="color:white;">Have experience in being a supervisor to 2 interns so far</font>
+            </nz-timeline-item
+          >
+
+          <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="red"
+            ><font style="color:white; font-weight: bold;">Front End Developer (Intern)
+            <br>
+            Rapidevelop Technology
+            <br>
+            Feb 2021 - Jul 2021
+            </font></nz-timeline-item
+          >
+
+
+          
+        </nz-timeline>
+      </h2>
+    </ul>
+
+    </div>
+  </div>
+
+  <!-- Stories -->
+  <div nz-row [nzGutter]="12" nzLg="24" nzXs="24" nzSm="24" *ngIf="test===5">
+    <div nz-col nzSpan="12"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12" >
+      <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
+  
+        <h1 class="introHome" style="color: black;" *ngIf="theme==false">{{'STORIES'|translate}}</h1>
+        <h1 class="introHome" style="color: white;" *ngIf="theme==true">{{'STORIES'|translate}}</h1>
+        
+        <br>
+        <h2 style="text-align: center; color: black;" *ngIf="theme==false">
+          WORK IN PROGRESS :p
+        </h2>
+        <h2 style="text-align: center; color: white;" *ngIf="theme==true">
+         WORK IN PROGRESS :p
+        </h2>
+      </ul>
+  
+      </div>
+    </div>
+<!-- About -->
 <div nz-row [nzGutter]="12" nzLg="24" nzXs="24" nzSm="24" *ngIf="test===2">
   <div nz-col nzSpan="12"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12" >
     <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
       <h1 class="introHome" style="color: black;" *ngIf="theme==false">{{'ABOUT'|translate}}</h1>
       <h1 class="introHome" style="color: white;" *ngIf="theme==true">{{'ABOUT'|translate}}</h1>
   <app-about ></app-about>
+
+  <br>
+
+    <h1 class="introHome" style="color: black;" *ngIf="theme==false">Brief Introudction</h1>
+      <h1 class="introHome" style="color: white;" *ngIf="theme==true">Brief Introduction</h1>
+      
+    <div style="background-color:white; padding-left: 2%; font-weight:bold;" *ngIf="theme==true">
+      <nz-descriptions nzTitle="User Info" nzLayout="vertical" >
+        <nz-descriptions-item nzTitle="Name">Muhammad Firdaus</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Telephone">01162694030</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Live">Kuala Lumpur, Malaysia</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Current Occupation" [nzSpan]="2">
+          Computer Engineering student (Degree) <br> Programming Teacher <br> Frontend Developer(intern)
+        </nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Hobbies">Programming<br> Gaming<br> Writing Stories<br>Football</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Strength">
+          English<br>Malay<br>Teaching<br>Python <br>C++ and C especially for Arduino<br>Raspberry Pi<br>
+          Telegram Bots <br> Internet of Things <br> Basic Web Development <br> Basic Flutter and Android Studio
+        </nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Knowledgeable But Not Master">
+          Mandarin<br>Japanese<br>Java <br>Cloud Computing<br>Angular<br>
+          NG-Zorro <br> Git 
+        </nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Remarks">Want to hire me for freelance,teaching or assignments? Feel free to contact me. We can discuss
+          the price ^_^
+        </nz-descriptions-item>
+  
+      </nz-descriptions>
+    </div>
+   
+    <!-- <div *ngIf="theme==false"> -->
+      <div style="padding-left: 2%; font-weight:bold;" *ngIf="theme==false">
+        <nz-descriptions nzTitle="User Info" nzLayout="vertical" >
+          <nz-descriptions-item nzTitle="Name">Muhammad Firdaus</nz-descriptions-item>
+          <nz-descriptions-item nzTitle="Telephone">01162694030</nz-descriptions-item>
+          <nz-descriptions-item nzTitle="Live">Kuala Lumpur, Malaysia</nz-descriptions-item>
+          <nz-descriptions-item nzTitle="Current Occupation" [nzSpan]="2">
+            Computer Engineering student (Degree) <br> Programming Teacher <br> Frontend Developer(intern)
+          </nz-descriptions-item>
+          <nz-descriptions-item nzTitle="Hobbies">Programming<br> Gaming<br> Writing Stories<br>Football</nz-descriptions-item>
+          <nz-descriptions-item nzTitle="Strength">
+            English<br>Malay<br>Teaching<br>Python <br>C++ and C especially for Arduino<br>Raspberry Pi<br>
+            Telegram Bots <br> Internet of Things <br> Basic Web Development <br> Basic Flutter and Android Studio
+          </nz-descriptions-item>
+          <nz-descriptions-item nzTitle="Knowledgeable But Not Master">
+            Mandarin<br>Japanese<br>Java <br>Cloud Computing<br>Angular<br>
+            NG-Zorro <br> Git 
+          </nz-descriptions-item>
+          <nz-descriptions-item nzTitle="Remarks">Want to hire me for freelance,teaching or assignments? Feel free to contact me. We can discuss
+            the price ^_^
+          </nz-descriptions-item>
+    
+        </nz-descriptions>
+      </div>
+    
+    <!-- </div> -->
+  <br>
+
+  <h1 class="introHome" style="color: black;" *ngIf="theme==false">Full Introudction</h1>
+      <h1 class="introHome" style="color: white;" *ngIf="theme==true">Full Introduction</h1>
 
   <h2 class="aboutH2" style="text-align: center; color: black;" *ngIf="theme==false">
     Heyy, the name's Muhammad Firdaus. I am a Computer Engineering Student and a part time IT Trainer. 
@@ -93,10 +292,15 @@
     <br>
     <br>
     I also made some personal projects, but most of it are for fun. My main dream is to be a game programmer or
-    a teacher / lecturer.
+    a teacher / lecturer. At the same time I made some stories. I like to write some stories during my free time.
     <br>
     <br>
-    This website is made using angular 11, and implements the ng-zorro framework
+    As shown above, my skills mostly revolve around teaching and programming. There are some programming languages that I have 
+    not mastered yet, but I have basic knowledge on and can still help you on. If you ever feel the need for a freelancer for a project
+    or assignment, don't hesitate to contact me!
+    <br>
+    <br>
+    <strong> This website is made using Angular 11, and implements the ng-zorro framework and hosted using AWS</strong>
   </h2>
   <h2 class="aboutH2" style="text-align: center; color: white;" *ngIf="theme==true">
     Heyy, the name's Muhammad Firdaus. I am a Computer Engineering Student and a part time IT Trainer. 
@@ -105,20 +309,25 @@
     <br>
     <br>
     I also made some personal projects, but most of it are for fun. My main dream is to be a game programmer or
-    a teacher / lecturer.
+    a teacher / lecturer. At the same time I made some stories. I like to write some stories during my free time.
     <br>
     <br>
-    This website is made using angular 11, and implements the ng-zorro framework
+    As shown above, my skills mostly revolve around teaching and programming. There are some programming languages that I have 
+    not mastered yet, but I have basic knowledge on and can still help you on. If you ever feel the need for a freelancer for a project
+    or assignment, don't hesitate to contact me!
+    <br>
+    <br>
+    <strong> This website is made using Angular 11, and implements the ng-zorro framework and hosted using AWS</strong>
   </h2>
     </ul>
 
     </div>
   </div>
 
-  <app-project *ngIf="test===3"></app-project>
-  <app-exp *ngIf="test===4"></app-exp>
-  <app-stories *ngIf="test===5"></app-stories>
-  <app-friends *ngIf="test===6"></app-friends>
+  <!-- <app-project *ngIf="test===3"></app-project> -->
+  <!-- <app-exp *ngIf="test===4"></app-exp> -->
+  <!-- <app-stories *ngIf="test===5"></app-stories> -->
+  <!-- <app-friends *ngIf="test===6"></app-friends> -->
   <!-- <app-contacts *ngIf="test===7"></app-contacts> -->
 
 
@@ -130,38 +339,119 @@
         <h1 class="introHome" style="color: white;" *ngIf="theme==true">{{'CONTACT'|translate}}</h1>
   
     <h2 class="aboutH2" style="text-align: center; color: black;" *ngIf="theme==false">
-     Want to contact me for freelance job or collaboration, or just to extend our network / be friends? Here are a few ways
+     Want to contact me for freelance job or collaboration, or just to extend our network / be friends? 
+     <!-- I've included the icons on the footer at the bottom right.
+     
       <br>
       <br>
-      I also made some personal projects, but most of it are for fun. My main dream is to be a game programmer or
-      a teacher / lecturer.
+      <strong>HOWEVER</strong>
       <br>
       <br>
-      Just in case those links does not work due to compability issues, I'll list them here again <br>
+      Just in case those links does not work due to compability issues, I'll list them here again <br> -->
       Click on any of the pictures, for Youtube, I will only link my main account. The tutorial channel will be featured there
-      <div style="text-align: center;">
-        <p><a href="wa.link/3jxm9a"><img src="../assets/images/WhatsApp.svg.png"/></a>01162694030</p>
-        <p><a href="https://t.me/firdauskotp"><img src="../assets/images/logo_share.png"/></a>firdauskotp</p>
-        <p><a href="https://discordapp.com/users/265441644893962250/"><img src="../assets/images/discord-mascot.png"/></a>firdauskotp#7558</p>
+      <div style="text-align: center;overflow-x:auto;">
+        <table border="5" style="margin-left: auto;margin-right: auto;">
+          <thead>
+            <th>Platform<br>(  Clickable  )</th>
+            <th>Description</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://github.com/firdauskotp" target="_blank"><img src="../assets/images/github.png" class="wa-responsive"/></a></td>
+              <td>firdauskotp</td>
+            </tr>
+            <tr>
+              <td><a href="wa.link/3jxm9a" target="_blank"><img src="../assets/images/WhatsApp.svg.png" class="wa-responsive"/></a></td>
+              <td>01162694030</td>
+            </tr>
+            <tr>
+              <td><a href="mailto:firdauskotp@gmail.com" target="_blank"><img src="../assets/images/gmail.png" class="wa-responsive"/></a></td>
+              <td>firdauskotp@gmail.com</td>
+            </tr>
+            <tr>
+              <td><a href="https://t.me/firdauskotp" target="_blank"><img src="../assets/images/logo_share.png" class="wa-responsive"/></a></td>
+              <td>firdauskotp</td>
+            </tr>
+            <tr>
+              <td><a href="https://discordapp.com/users/265441644893962250/" target="_blank"><img src="../assets/images/discord-mascot.png" class="wa-responsive"/></a></td>
+              <td>firdauskotp#7558</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.youtube.com/user/firdauskotp/featured" target="_blank"><img src="../assets/images/Youtube.svg.png" class="wa-responsive"/></a></td>
+              <td>firdauskotp (Main) <br>and<br> Firdaus Eisner (Tutorials)</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.linkedin.com/in/muhammad-firdaus-badauraudine-793a501b0/" target="_blank"><img src="../assets/images/unnamed.png" class="wa-responsive"/></a></td>
+              <td>Muhammad Firdaus Badauraudine</td>
+            </tr>
+          </tbody>
+        </table >
+        <!-- <p><a href="wa.link/3jxm9a"><img src="../assets/images/WhatsApp.svg.png" class="wa-responsive"/></a>01162694030</p> -->
+        <!-- <p><a href="https://discordapp.com/users/265441644893962250/"><img src="../assets/images/discord-mascot.png" class="wa-responsive"/></a>firdauskotp#7558</p> -->
         <!-- <p><img src="../assets/images/wattpad.png"/>firdauskotp</p> -->
-        <p><a href="https://www.youtube.com/user/firdauskotp/featured"><img src="../assets/images/Youtube.svg.png"/></a>firdauskotp(main) and Firdaus Eisner(Tutorials)</p>
-        <p><a href="https://www.linkedin.com/in/muhammad-firdaus-badauraudine-793a501b0/"><img src="../assets/images/unnamed.png"/></a>Muhammad Firdaus Badauraudine</p>
+        <!-- <p><a href="https://www.youtube.com/user/firdauskotp/featured"><img src="../assets/images/Youtube.svg.png" class="wa-responsive"/></a>firdauskotp(main) and Firdaus Eisner(Tutorials)</p> -->
+        <!-- <p><a href="https://www.linkedin.com/in/muhammad-firdaus-badauraudine-793a501b0/"><img src="../assets/images/unnamed.png" class="wa-responsive"/></a>Muhammad Firdaus Badauraudine</p> -->
 
       </div>
 
     </h2>
     <h2 class="aboutH2" style="text-align: center; color: white;" *ngIf="theme==true">
-      Heyy, the name's Muhammad Firdaus. I am a Computer Engineering Student and a part time IT Trainer. 
-      I also love sports like football. Be sure to call me if you want a match &gt;.&lt; . 
-      Also a major Fire Emblem fan. I also make some playthroughs on my youtube channel!
-      <br>
-      <br>
-      I also made some personal projects, but most of it are for fun. My main dream is to be a game programmer or
-      a teacher / lecturer.
-      <br>
-      <br>
-      This website is made using angular 11, and implements the ng-zorro framework
-    </h2>
+      Want to contact me for freelance job or collaboration, or just to extend our network / be friends? 
+      <!-- I've included the icons on the footer at the bottom right.
+      
+       <br>
+       <br>
+       <strong>HOWEVER</strong>
+       <br>
+       <br>
+       Just in case those links does not work due to compability issues, I'll list them here again <br> -->
+       Click on any of the pictures, for Youtube, I will only link my main account. The tutorial channel will be featured there
+       <div style="text-align: center;overflow-x:auto;">
+         <table border="5" style="margin-left: auto;margin-right: auto; background-color: grey; border-color: black;">
+           <thead>
+             <th>Platform<br>(  Clickable  )</th>
+             <th>Description</th>
+           </thead>
+           <tbody>
+             <tr>
+               <td><a href="https://github.com/firdauskotp" target="_blank"><img src="../assets/images/github.png" class="wa-responsive"/></a></td>
+               <td>firdauskotp</td>
+             </tr>
+             <tr>
+               <td><a href="wa.link/3jxm9a" target="_blank"><img src="../assets/images/WhatsApp.svg.png" class="wa-responsive"/></a></td>
+               <td>01162694030</td>
+             </tr>
+             <tr>
+               <td><a href="mailto:firdauskotp@gmail.com" target="_blank"><img src="../assets/images/gmail.png" class="wa-responsive"/></a></td>
+               <td>firdauskotp@gmail.com</td>
+             </tr>
+             <tr>
+               <td><a href="https://t.me/firdauskotp" target="_blank"><img src="../assets/images/logo_share.png" class="wa-responsive"/></a></td>
+               <td>firdauskotp</td>
+             </tr>
+             <tr>
+               <td><a href="https://discordapp.com/users/265441644893962250/" target="_blank"><img src="../assets/images/discord-mascot.png" class="wa-responsive"/></a></td>
+               <td>firdauskotp#7558</td>
+             </tr>
+             <tr>
+               <td><a href="https://www.youtube.com/user/firdauskotp/featured" target="_blank"><img src="../assets/images/Youtube.svg.png" class="wa-responsive"/></a></td>
+               <td>firdauskotp (Main) <br>and<br> Firdaus Eisner (Tutorials)</td>
+             </tr>
+             <tr>
+               <td><a href="https://www.linkedin.com/in/muhammad-firdaus-badauraudine-793a501b0/" target="_blank"><img src="../assets/images/unnamed.png" class="wa-responsive"/></a></td>
+               <td>Muhammad Firdaus Badauraudine</td>
+             </tr>
+           </tbody>
+         </table >
+         <!-- <p><a href="wa.link/3jxm9a"><img src="../assets/images/WhatsApp.svg.png" class="wa-responsive"/></a>01162694030</p> -->
+         <!-- <p><a href="https://discordapp.com/users/265441644893962250/"><img src="../assets/images/discord-mascot.png" class="wa-responsive"/></a>firdauskotp#7558</p> -->
+         <!-- <p><img src="../assets/images/wattpad.png"/>firdauskotp</p> -->
+         <!-- <p><a href="https://www.youtube.com/user/firdauskotp/featured"><img src="../assets/images/Youtube.svg.png" class="wa-responsive"/></a>firdauskotp(main) and Firdaus Eisner(Tutorials)</p> -->
+         <!-- <p><a href="https://www.linkedin.com/in/muhammad-firdaus-badauraudine-793a501b0/"><img src="../assets/images/unnamed.png" class="wa-responsive"/></a>Muhammad Firdaus Badauraudine</p> -->
+ 
+       </div>
+ 
+     </h2>
       </ul>
   
       </div>
@@ -243,10 +533,23 @@
 
   <div nz-row [nzGutter]="12">
     <div nz-col nzLg="24" nzXs="8" nzSm="12">
-      <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
-        <div id="footer" style="color: black; background-color: white;" *ngIf="theme===false">&#169; {{'FOOTER'|translate}}</div>
-        <div id="footer" style="color: white; background-color: black;" *ngIf="theme===true">&#169; {{'FOOTER'|translate}}</div>
-        </ul>
+      <!-- <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'"> -->
+        <div id="footer" style="color: black; background-color: white;" *ngIf="theme===false">&#169; {{'FOOTER'|translate}} 
+          <!-- <i style="float: right; font-size: large; " class="fa fa-whatsapp"></i> 
+          <i style="float: right; font-size: large; " class="fa fa-github"></i> -->
+
+        </div>
+        <div id="footer" style="color: white; background-color: black;" *ngIf="theme===true">&#169; {{'FOOTER'|translate}} 
+          
+
+
+        </div>
+
+        <!-- <div style="float: right; font-size: large; ">
+          <i  class="fa fa-whatsapp"></i>
+          <i  class="fa fa-github"></i>
+        </div> -->
+        <!-- </ul> -->
     </div>
   </div> 
 </body>
