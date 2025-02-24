@@ -50,6 +50,11 @@ export class AppComponent {
     localStorage.setItem("token", "7");
   }
 
+  nav8(): void{
+    this.test = 8
+    localStorage.setItem("token", "8");
+  }
+
   toggleCollapsed(): void {
     this.isCollapsed = !this.isCollapsed;
   }
@@ -87,4 +92,7 @@ export class AppComponent {
   ngOnInit(){
     this.router.navigate([''])
   }
+
+  
+  
 }

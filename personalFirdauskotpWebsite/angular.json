@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "https://github.com/firdauskotp/firdaus-website-and-stuff",
             "outputPath": "dist/personalFirdauskotpWebsite",
             "index": "src/index.html",
             "main": "src/main.ts",

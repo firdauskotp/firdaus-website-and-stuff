@@ -23,6 +23,10 @@
         <i nz-icon nzType="project" nzTheme="outline"></i>
         {{'PROJECTS'|translate}}
       </li>
+      <li nz-menu-item routerLink="certificates" (click)="nav8()">
+        <i nz-icon nzType="container" nzTheme="outline" ></i>
+        {{'CERTIFICATES'|translate}}
+      </li>
       <li nz-menu-item routerLink="experiences" (click)="nav4()">
         <i nz-icon nzType="radar-chart" nzTheme="outline"></i>
         {{'EXPERIENCE'|translate}}
@@ -80,6 +84,305 @@
 </div>
 <br><br>
 
+<!-- Projects -->
+<div nz-row [nzGutter]="12" nzLg="24" nzXs="24" nzSm="24" *ngIf="test===3">
+  <div nz-col nzSpan="12"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12" >
+    <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
+
+      <h1 class="introProject" style="color: black;" *ngIf="theme==false">{{'PROJECTS'|translate}}</h1>
+      <h1 class="introProject" style="color: white;" *ngIf="theme==true">{{'PROJECTS'|translate}}</h1>
+      
+      <br>
+      <h2 style="text-align: center; color: black;" *ngIf="theme==false">
+        This is a list of some of the projects I created. You can find more of my projects in my Github and LinkedIn that is linked in the Contacts tab 
+      </h2>
+      
+      <h2 style="text-align: center; color: white;" *ngIf="theme==true">
+        This is a list of some of the projects I created. You can find more of my projects in my Github that is linked in the Contacts tab 
+      </h2>
+
+      <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==true" >
+        <nz-col nzSpan="24" nzMd="10" nzOrder="left">
+          <nz-card nzHoverable class="project-card">
+            <img src="../assets/images/projects/pnc.jpg" class="project-img" alt="Project Image" />
+          </nz-card>
+        </nz-col>
+        <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+          <nz-card nzHoverable class="project-card">
+            <!-- <nz-card-meta nzTitle="Pet & Child Tracker" nzDescription="FYP"></nz-card-meta> -->
+            <h3>Pet & Child Tracker</h3>
+            <h4 style="color:grey">Bachelor's FYP </h4>
+            <h5 style="color:blue">Raspberry Pi, Python, Telegram bot (Telepot library), MySQL</h5>
+            <ul>
+              <li>Tracking device for pets and kids</li>
+              <li>Uses Raspberry Pi and its own telegram bot to communicate with it</li>
+              <li>Can be used to get the tracker's location, set a safe zone for the tracker where if it leaves the
+                zone, the person's telegram bot will be spammed with the tracker's last location</li>
+                <li>The person can also ring a buzzer from the telegram bot and access emergency contacts saved
+                  through the telegram bot.</li>
+                  <li><a href="https://github.com/firdauskotp/PnCTracker" target="_blank">GitHub Code Here!</a></li>
+            </ul>
+          </nz-card>
+        </nz-col>
+
+        
+
+       
+        
+      </nz-row>
+
+      <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==true" style="margin-top:5%;padding-bottom:3%;">
+        <nz-col nzSpan="24" nzMd="10" nzOrder="left" >
+          <nz-card nzHoverable class="project-card">
+            <h3>WorkWakeMeUpPls Telegram bot</h3>
+            <h4 style="color:grey">Personal Project, you can search it on telegram by finding its username - @WorkWakeMeUpPlsbot</h4>
+            <h5 style="color:blue">Python, MongoDB, Telegram bot (Telepot library), Heroku</h5>
+            <ul>
+              <li>Telegram bot that act as alarm clock to wake people up</li>
+              <li>To stop the alarm, the user needs to answer the given mathematical question, making it hard to
+                snooze</li>
+                <li>Can also include with a creepy image to make sure the person don't go back to sleep (False by default)</li>
+                  <li><a href="https://github.com/firdauskotp/Wake-Me-Up-Pls-Bot-Multiuser" target="_blank">GitHub Code Here!</a></li>
+            </ul>
+          </nz-card>
+        </nz-col>
+        <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+          <nz-card nzHoverable class="project-card">
+            <img src="../assets/images/projects/WorkWakeMeUp.PNG" class="project-img" alt="Project Image" />
+          </nz-card>
+        </nz-col>
+      </nz-row>
+
+      <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==true" >
+        <nz-col nzSpan="24" nzMd="10" nzOrder="left">
+          <nz-card nzHoverable class="project-card">
+            <img src="../assets/images/projects/inpt.PNG" class="project-img" alt="Project Image" />
+          </nz-card>
+        </nz-col>
+        <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+          <nz-card nzHoverable class="project-card">
+            <h3>inpt (Python Package)</h3>
+            <h4 style="color:grey">Personal Python Package</h4>
+            <h5 style="color:blue">Python, PyPI</h5>
+            <ul>
+              <li>Python package to help simplify the use of inputs with data types</li>
+                  <li><a href="https://github.com/firdauskotp/PnCTracker" target="_blank">Package and Tutorial Here!</a></li>
+            </ul>
+          </nz-card>
+        </nz-col>
+        
+      </nz-row>
+
+      <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==true" style="margin-top:5%;padding-bottom:3%;">
+        <nz-col nzSpan="24" nzMd="10" nzOrder="left" >
+          <nz-card nzHoverable class="project-card">
+            <h3>Qadhaa Reminder Telegram bot</h3>
+            <h4 style="color:grey">Competition / Personal Project, you can search it on telegram by finding its username - @QadhaaBot</h4>
+            <h5 style="color:blue">Python, Telegram bot (Telepot library), MongoDB, Heroku</h5>
+            <ul>
+              <li>Telegram bot created to keep track of Islamic prayers missed so that it will be easier to be
+                reminded to replace them.</li>
+              <li>Can also choose to send a prayer (Doa/Dua) and Islamic quotes everyday at 8AM and 9PM using the Singapore Timezone</li>
+                  <li><a href="https://github.com/firdauskotp/Qada_Reminder_Bot" target="_blank">GitHub Code Here!</a></li>
+                  <li><a href="https://github.com/firdauskotp/Maggi-Kaw-Kaw-Project-Guides/blob/main/Qadhaa%20Bot.txt" target="_blank">User Guide Here!</a></li>
+
+            </ul>
+          </nz-card>
+        </nz-col>
+        <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+          <nz-card nzHoverable class="project-card">
+            <img src="../assets/images/projects/Qadhaa.PNG" class="project-img" alt="Project Image" />
+          </nz-card>
+        </nz-col>
+      </nz-row>
+
+      <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==true" >
+        <nz-col nzSpan="24" nzMd="10" nzOrder="left">
+          <nz-card nzHoverable class="project-card">
+            <img src="../assets/images/projects/WebDeptGame.PNG" class="project-img" alt="Project Image" />
+          </nz-card>
+        </nz-col>
+        <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+          <nz-card nzHoverable class="project-card">
+            <h3>Kidocode - Introduction to Web Department Managers</h3>
+            <h4 style="color:grey">Personal Project - To introduce new people to Kidocode's Web Department (2021-2024)</h4>
+            <h5 style="color:blue">RenPy, itch.io</h5>
+            <ul>
+              <li>Play through a visual novel to introduce yourself to Kidocode's Web Department's Managers (2021-2024)</li>
+              <li>Done using RenPy, and hosted on itch.io for free</li>
+              <li>Have a secret ending hehehe</li>
+                  <li><a href="https://firdauskotp.itch.io/kidocode-web-department-managers" target="_blank">Play the Game Here!</a></li>
+            </ul>
+          </nz-card>
+        </nz-col>
+        
+      </nz-row>
+
+      <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==true" style="margin-top:5%;padding-bottom:3%;">
+        <nz-col nzSpan="24" nzMd="10" nzOrder="left" >
+          <nz-card nzHoverable class="project-card">
+            <h3>Jugdral</h3>
+            <h4 style="color:grey">Personal Project - Fire Emblem 4 / 5 Based Wordle</h4>
+            <h5 style="color:blue">HTML, CSS, JS, GitHub Pages</h5>
+            <ul>
+              <li>Fire Emblem 4 / 5 based Wordle (inspiration from <a href="https://doopu.github.io/solkatti/" target="_blank">Doopu - Solkatti</a>) </li>
+              <li>Using HTML, CSS, JS, and hosted via GitHub pages</li>
+              <li>Done for fun, used ChatGPT for help on this</li>
+              <li>Included a feedback form</li>
+                  <li><a href="https://firdauskotp.github.io/Jugdral/" target="_blank">Play the Game Here!</a></li>
+            </ul>
+          </nz-card>
+        </nz-col>
+        <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+          <nz-card nzHoverable class="project-card">
+            <img src="../assets/images/projects/Jugdral.PNG" class="project-img" alt="Project Image" />
+          </nz-card>
+        </nz-col>
+      </nz-row>
+    
+      <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==false" >
+        <nz-col nzSpan="24" nzMd="10" nzOrder="left">
+          <nz-card nzHoverable class="project-card dark-card">
+            <img src="../assets/images/projects/pnc.jpg" class="project-img" alt="Project Image" />
+          </nz-card>
+        </nz-col>
+        <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+          <nz-card nzHoverable class="project-card dark-card">
+            <!-- <nz-card-meta nzTitle="Pet & Child Tracker" nzDescription="FYP"></nz-card-meta> -->
+            <h3>Pet & Child Tracker</h3>
+            <h4 style="color:purple">Bachelor's FYP </h4>
+            <h5 style="color:blue">Raspberry Pi, Python, Telegram bot (Telepot library), MySQL</h5>
+            <ul>
+              <li>Tracking device for pets and kids</li>
+              <li>Uses Raspberry Pi and its own telegram bot to communicate with it</li>
+              <li>Can be used to get the tracker's location, set a safe zone for the tracker where if it leaves the
+                zone, the person's telegram bot will be spammed with the tracker's last location</li>
+                <li>The person can also ring a buzzer from the telegram bot and access emergency contacts saved
+                  through the telegram bot.</li>
+                  <li><a href="https://github.com/firdauskotp/PnCTracker" target="_blank">GitHub Code Here!</a></li>
+            </ul>
+          </nz-card>
+        </nz-col>
+
+        
+
+       
+        
+      </nz-row>
+
+      <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==false" style="margin-top:5%;padding-bottom:3%;">
+        <nz-col nzSpan="24" nzMd="10" nzOrder="left" >
+          <nz-card nzHoverable class="project-card dark-card">
+            <h3>WorkWakeMeUpPls Telegram bot</h3>
+            <h4 style="color:purple">Personal Project, you can search it on telegram by finding its username - @WorkWakeMeUpPlsbot</h4>
+            <h5 style="color:blue">Python, MongoDB, Telegram bot (Telepot library), Heroku</h5>
+            <ul>
+              <li>Telegram bot that act as alarm clock to wake people up</li>
+              <li>To stop the alarm, the user needs to answer the given mathematical question, making it hard to
+                snooze</li>
+                <li>Can also include with a creepy image to make sure the person don't go back to sleep (False by default)</li>
+                  <li><a href="https://github.com/firdauskotp/Wake-Me-Up-Pls-Bot-Multiuser" target="_blank">GitHub Code Here!</a></li>
+            </ul>
+          </nz-card>
+        </nz-col>
+        <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+          <nz-card nzHoverable class="project-card dark-card">
+            <img src="../assets/images/projects/WorkWakeMeUp.PNG" class="project-img" alt="Project Image" />
+          </nz-card>
+        </nz-col>
+      </nz-row>
+
+      <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==false" >
+        <nz-col nzSpan="24" nzMd="10" nzOrder="left">
+          <nz-card nzHoverable class="project-card dark-card">
+            <img src="../assets/images/projects/inpt.PNG" class="project-img" alt="Project Image" />
+          </nz-card>
+        </nz-col>
+        <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+          <nz-card nzHoverable class="project-card dark-card">
+            <h3>inpt (Python Package)</h3>
+            <h4 style="color:purple">Personal Python Package</h4>
+            <h5 style="color:blue">Python, PyPI</h5>
+            <ul>
+              <li>Python package to help simplify the use of inputs with data types</li>
+                  <li><a href="https://github.com/firdauskotp/PnCTracker" target="_blank">Package and Tutorial Here!</a></li>
+            </ul>
+          </nz-card>
+        </nz-col>
+        
+      </nz-row>
+
+      <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==false" style="margin-top:5%;padding-bottom:3%;">
+        <nz-col nzSpan="24" nzMd="10" nzOrder="left" >
+          <nz-card nzHoverable class="project-card dark-card">
+            <h3>Qadhaa Reminder Telegram bot</h3>
+            <h4 style="color:purple">Competition / Personal Project, you can search it on telegram by finding its username - @QadhaaBot</h4>
+            <h5 style="color:blue">Python, Telegram bot (Telepot library), MongoDB, Heroku</h5>
+            <ul>
+              <li>Telegram bot created to keep track of Islamic prayers missed so that it will be easier to be
+                reminded to replace them.</li>
+              <li>Can also choose to send a prayer (Doa/Dua) and Islamic quotes everyday at 8AM and 9PM using the Singapore Timezone</li>
+                  <li><a href="https://github.com/firdauskotp/Qada_Reminder_Bot" target="_blank">GitHub Code Here!</a></li>
+                  <li><a href="https://github.com/firdauskotp/Maggi-Kaw-Kaw-Project-Guides/blob/main/Qadhaa%20Bot.txt" target="_blank">User Guide Here!</a></li>
+
+            </ul>
+          </nz-card>
+        </nz-col>
+        <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+          <nz-card nzHoverable class="project-card dark-card">
+            <img src="../assets/images/projects/Qadhaa.PNG" class="project-img" alt="Project Image" />
+          </nz-card>
+        </nz-col>
+      </nz-row>
+
+      <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==false" >
+        <nz-col nzSpan="24" nzMd="10" nzOrder="left">
+          <nz-card nzHoverable class="project-card dark-card">
+            <img src="../assets/images/projects/WebDeptGame.PNG" class="project-img" alt="Project Image" />
+          </nz-card>
+        </nz-col>
+        <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+          <nz-card nzHoverable class="project-card dark-card">
+            <h3>Kidocode - Introduction to Web Department Managers</h3>
+            <h4 style="color:purple">Personal Project - To introduce new people to Kidocode's Web Department (2021-2024)</h4>
+            <h5 style="color:blue">RenPy, itch.io</h5>
+            <ul>
+              <li>Play through a visual novel to introduce yourself to Kidocode's Web Department's Managers (2021-2024)</li>
+              <li>Done using RenPy, and hosted on itch.io for free</li>
+              <li>Have a secret ending hehehe</li>
+                  <li><a href="https://firdauskotp.itch.io/kidocode-web-department-managers" target="_blank">Play the Game Here!</a></li>
+            </ul>
+          </nz-card>
+        </nz-col>
+        
+      </nz-row>
+
+      <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==false" style="margin-top:5%;padding-bottom:3%;">
+        <nz-col nzSpan="24" nzMd="10" nzOrder="left" >
+          <nz-card nzHoverable class="project-card dark-card">
+            <h3>Jugdral</h3>
+            <h4 style="color:purple">Personal Project - Fire Emblem 4 / 5 Based Wordle</h4>
+            <h5 style="color:blue">HTML, CSS, JS, GitHub Pages</h5>
+            <ul>
+              <li>Fire Emblem 4 / 5 based Wordle (inspiration from <a href="https://doopu.github.io/solkatti/" target="_blank">Doopu - Solkatti</a>) </li>
+              <li>Using HTML, CSS, JS, and hosted via GitHub pages</li>
+              <li>Done for fun, used ChatGPT for help on this</li>
+              <li>Included a feedback form</li>
+                  <li><a href="https://firdauskotp.github.io/Jugdral/" target="_blank">Play the Game Here!</a></li>
+            </ul>
+          </nz-card>
+        </nz-col>
+        <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+          <nz-card nzHoverable class="project-card dark-card">
+            <img src="../assets/images/projects/Jugdral.PNG" class="project-img" alt="Project Image" />
+          </nz-card>
+        </nz-col>
+      </nz-row>
+    </ul>
+
+    </div>
+  </div>
+
 <!-- Experience -->
 
 <div nz-row [nzGutter]="12" nzLg="24" nzXs="24" nzSm="24" *ngIf="test===4">
@@ -91,40 +394,89 @@
       
       <h2 style="text-align: center; color: black;" *ngIf="theme==false">
         <nz-timeline nzMode="custom">
-          <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="cyan"
+          <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="dodgerblue"
             ><font style="color:black; font-weight: bold;">Diploma of Engineering Technology in Computing
             <br>
             Universiti Kuala Lumpur Malaysian Institute of Information Technology
             <br>
             2015 - 2018
+            <br>
+            <ul class="dashed rightElement">
+              <li> CGPA - 3.41 </li>
+              <li>Campus Level - Member of UniKL MIIT E-Sport Club (2017, 2018) </li>
+              <li>Campus Level - Member of UniKL MIIT Ganbatte Club (2016, 2017, 2018)</li>
+              <li>Campus Level - Event Committee of Haru Matsuri - Spring Festival (2017)</li>
+            </ul>
             </font></nz-timeline-item
           >
-          <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="green"
+          <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="darkgreen"
             ><font style="color:black; font-weight: bold;">IT Trainer (Intern)
             <br>
             Kidocode Sdn. Bhd.
             <br>
             Jan 2018 - Jul 2018 
+            <br>
+            <ul class="dashed leftElement">
+              <li>Gained knowledge on Python, MIT App Inventor, HTML, JavaScript and extra knowledge on Arduino </li>
+              <li>Sharpen soft skills. </li>
+              <li>Widen networking. </li>
+              <li>Gained passion in teaching. </li>
+
+            </ul>
             </font></nz-timeline-item
           >
-          <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="blue"
+          
+          <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="darkblue"
             ><font style="color:black; font-weight: bold;">Bachelor of Engineering Technology In Computer Systems with Honours
             <br>
             Universiti Kuala Lumpur Malaysian Institute of Information Technology
             <br>
             2018 - 2021
+            <br>
+            <ul class="dashed rightElement">
+              <li> CGPA - 3.56 </li>
+              <li>Campus Level - Member of UniKL MIIT Computer Engineering Club (2018) </li>
+              <li>Campus Level - Event Committee of Python Workshop by Kidocode (2019) </li>
+              <li>International Level - Event Committee of Network Security Transformation (2019) </li>
+              <li>Campus Level - Participant of Mini Fundraising for Technoculture Festival 2018 (2018) </li>
+              <li>Campus Level - Event Manager of Awareness about the New Norm Practice (2020) </li>
+              <li>National Level - Event Committee of Iftar@Kuala Lumpur 2019 (2019) </li>
+            </ul>
             </font></nz-timeline-item
           >
 
           <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="orange"
-            ><font style="color:black; font-weight: bold;">IT Trainer (Full Time / Part Time)
+            ><font style="color:black; font-weight: bold;">IT Trainer (Full Time/Part Time)
+              <br>
+              Web Department Manager (September 2021 - October 2024) <br>
+              Electronics & Robotics Department Manager (May 2022 - October 2024) <br>
+              3D Modelling Department Manager (Jan 2023 - October 2024)
             <br>
             Kidocode Sdn. Bhd.
             <br>
-            Jul 2018 - Ongoing 
-            </font>
+            Jul 2018 - Ongoing (Currently Part Time)
             <br>
-            <font style="color:black;">Have experience in being a supervisor to 2 interns so far</font>
+            <ul class="dashed leftElement">
+              <li>Have experience in being a supervisor to over 30 interns. </li>
+              <li>Also have experienced in being a supervisor to 9 interns at the same time. </li>
+              <li>Helped to coach students in the given syllabus</li>
+              <li>Create syllabus especially for web and electronic courses for kids to teenagers</li>
+              
+              <li>Also have experience teaching special students and early age students.</li>
+              <li>Handled language barrier students who can only speak Malay and Japanese</li>
+              <li>Coached students in advanced courses such as CSS, JS, Java, cybersecurity, PhaserJS, Kaboom JS, Lua, 3D printing, business, advanced electronics (direct circuits and logic gates), and robotics.</li>
+              <li>Coached students and interns for projects, including creating and hosting their portfolio using web development.</li>
+   
+              <li>Interviewed over 40 people who wanted to join Kidocode as an intern</li>
+              <li>Hosted and observed internal workshops. Collaborated with UniKL and IEEE to make a workshop online with UniKL about Internet of Things and NodeMCU and also to make an Arduino workshop at SMK Kiaramas.</li>
+              <li>Hosted and observed internal workshops under web, electronics, robotics, and 3D departments.</li>
+              <li>Collaborated with MSU as a judge for their FYP students’ projects under iRex, served as a panelist for their internship panel, and delivered a motivational talk for their dean’s list students preparing for internships, leading to Kidocode signing an MOU with MSU.</li>
+              <li>Collaborated with MSU students to conduct a workshop about ESP and IoT using simulation.</li>
+              <li>Conducted an electronics workshop with Monash University for their Women’s Engineering Club.</li>
+              <li>Become am external assessor for Computer Engineering students' Final Year Project in UniKL MIIT</li>
+          
+            </ul>
+            </font>
             </nz-timeline-item
           >
 
@@ -134,9 +486,146 @@
             Rapidevelop Technology
             <br>
             Feb 2021 - Jul 2021
-            </font></nz-timeline-item
+            </font>
+            <br>
+            <font style="color:black;">
+              <ul class="dashed rightElement">
+                <li>Helped in a team to develop government agecies' websites. </li>
+                <li>Learn Angular, NG-Zorro and the Agile framework. </li>
+                <li>Got introduced to GitLab management and Microsoft Teams ticketing system.</li>
+              </ul>
+              
+              
+              </font>
+            </nz-timeline-item
           >
 
+          <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="firebrick"
+            ><font style="color:black; font-weight: bold;">Software Support Engineer
+            <br>
+            Mandrill Tech Sdn. Bhd.
+            <br>
+            Aug 2021 - March 2021
+            </font>
+            <br>
+            <font style="color:black;">
+              <ul class="dashed leftElement">
+                <li>Helped in two teams to help two different agencies. </li>
+                <li>Enhanced more on my Java skills here as well as Angular. </li>
+                <li>Learn about keycloak as well. </li>
+                <li>Helped to solve bug fixes and got more familiar with GitLab tickets and roles. </li>
+                <li>Had to meet with clients online to discuss milestones and progress.</li>
+
+              </ul>
+              
+              
+              
+              
+              
+            </font>
+            </nz-timeline-item
+          >
+
+          <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="purple"
+          ><font style="color:black; font-weight: bold;">Master of Information Technology (Artificial Intelligence)
+          <br>
+          Universiti Kuala Lumpur Malaysian Institute of Information Technology
+          <br>
+          2023 - Expected July 2025
+          <br>
+          <ul class="dashed rightElement">
+            
+
+
+<li>Doing masters by research about dense crowd detection through deep learning approach.</li>
+<li>Recipient of Excellent Research Grant Scheme (UERGS).</li>
+<li>Published a Systematic Literature Review article on <a href="https://inforescom.org/article/3423" target="_blank">inforescom.org</a> .</li>
+          </ul>
+          </font></nz-timeline-item
+        >
+
+        <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="brown"
+            ><font style="color:black; font-weight: bold;">Assistant Lecturer (Under UERGS Grant)
+            <br>
+            University Kuala Lumpur - Malaysian Institute of Information Technology
+            <br>
+            September 2023 - December 2024 (Grant ended, awaiting extension)
+            </font>
+            <br>
+            <font style="color:black;">
+              <ul class="dashed leftElement">
+                <li>Teaching and guiding Bachelor students about Network Operating Systems (NOS) and projects including Arduino and ESP. </li>
+                <li>Under UERGS Grant and assisting lecturers with the lab segments of courses.</li>
+                <li>Involved with grading the students’ final projects for one of the courses as well as their exams. </li>
+                <li>Examiner for their practical exam. </li>
+
+              </ul>
+              
+              
+              
+              
+              
+            </font>
+            </nz-timeline-item
+          >
+
+        <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="gold"
+          ><font style="color:black; font-weight: bold;">Freelance Developer (September 2023 - June 2024) <br>
+            Software Engineer (June 2024 - September 2024)
+          <br>
+          Precision Diagnostics
+          <br>
+          <ul class="dashed rightElement">
+            
+
+
+<li>Assist to check for bugs, make some changes and deploy a system to NGINX for doctors to use.</li>
+<li>Involved with the first pharmacogenomics conference in Malaysia by handing the microphone station.</li>
+<li>Converted a Wordpress website to an e-commerce website using WooCommerce. Many people have bought from the website and during launch for a week, there has been a profit of RM9000 to the website.</li>
+<li>Help to create scripts to pull, push and deploy code to the NGINX server for a smoother process.</li>          
+</ul>
+          </font></nz-timeline-item
+        >
+
+        <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="salmon"
+        ><font style="color:black; font-weight: bold;">Freelance Senior Developer
+        <br>
+        Mididle Sdn. Bhd.
+        <br>
+        September 2021 - Current
+        </font>
+        <br>
+        <font style="color:black;">
+          <ul class="dashed leftElement">
+            <li>Handle clients project, mainly as an overseer, middleman, and backend developer.</li>
+            <li>Sometimes stand in to talk with clients and convey messages to the operations team.</li>
+
+          </ul>
+          
+          
+          
+          
+          
+        </font>
+        </nz-timeline-item
+      >
+
+      <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="black"
+      ><font style="color:black; font-weight: bold;">Teacher (Volunteer, collaboration with Kidocode) <br>
+        January 2025 - Current
+      <br>
+      Dignity School
+      <br>
+      <ul class="dashed rightElement">
+        
+
+
+<li>Collaboration with Kidocode for teaching Kidocode courses to underpriveleged students.</li>
+<li>Observe and guide them to using AI for answering questions and their projects.</li>
+<li>Encourage students them to help each other to boost their soft skills.</li>
+</ul>
+      </font></nz-timeline-item
+    >
 
           
         </nz-timeline>
@@ -149,6 +638,14 @@
             Universiti Kuala Lumpur Malaysian Institute of Information Technology
             <br>
             2015 - 2018
+            <br>
+            <ul class="dashed rightElement">
+              <li> CGPA - 3.41 </li>
+              <li>Campus Level - Member of UniKL MIIT E-Sport Club (2017, 2018) </li>
+              <li>Campus Level - Member of UniKL MIIT Ganbatte Club (2016, 2017, 2018)</li>
+              <li>Campus Level - Event Committee of Haru Matsuri - Spring Festival (2017)</li>
+            </ul>
+            
             </font></nz-timeline-item
           >
           <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="green"
@@ -157,6 +654,14 @@
             Kidocode Sdn. Bhd.
             <br>
             Jan 2018 - Jul 2018 
+            <br>
+            <ul class="dashed leftElement">
+              <li>Gained knowledge on Python, MIT App Inventor, HTML, JavaScript and extra knowledge on Arduino </li>
+              <li>Sharpen soft skills. </li>
+              <li>Widen networking. </li>
+              <li>Gained passion in teaching. </li>
+
+            </ul>
             </font></nz-timeline-item
           >
           <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="blue"
@@ -165,18 +670,57 @@
             Universiti Kuala Lumpur Malaysian Institute of Information Technology
             <br>
             2018 - 2021
+            <br>
+            <ul class="dashed rightElement">
+              <li> CGPA - 3.56 </li>
+              <li>Campus Level - Member of UniKL MIIT Computer Engineering Club (2018) </li>
+              <li>Campus Level - Event Committee of Python Workshop by Kidocode (2019) </li>
+              <li>International Level - Event Committee of Network Security Transformation (2019) </li>
+              <li>Campus Level - Participant of Mini Fundraising for Technoculture Festival 2018 (2018) </li>
+              <li>Campus Level - Event Manager of Awareness about the New Norm Practice (2020) </li>
+              <li>National Level - Event Committee of Iftar@Kuala Lumpur 2019 (2019) </li>
+            </ul>
+           
             </font></nz-timeline-item
           >
 
           <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="orange"
-            ><font style="color:white; font-weight: bold;">IT Trainer (Full Time / Part Time)
+            ><font style="color:white; font-weight: bold;">IT Trainer (Full Time/Part Time)
+              <br>
+              Web Department Manager (September 2021 - October 2024) <br>
+              Electronics & Robotics Department Manager (May 2022 - October 2024) <br>
+              3D Modelling Department Manager (Jan 2023 - October 2024)
             <br>
             Kidocode Sdn. Bhd.
             <br>
-            Jul 2018 - Ongoing 
+            Jul 2018 - Ongoing (Currently Part Time)
             </font>
             <br>
-            <font style="color:white;">Have experience in being a supervisor to 2 interns so far</font>
+            <font style="color:white;">
+              <ul class="dashed leftElement">
+                <li>Have experience in being a supervisor to over 30 interns. </li>
+              <li>Also have experienced in being a supervisor to 9 interns at the same time. </li>
+              <li>Helped to coach students in the given syllabus</li>
+              <li>Create syllabus especially for web and electronic courses for kids to teenagers</li>
+              
+              <li>Also have experience teaching special students and early age students.</li>
+              <li>Handled language barrier students who can only speak Malay and Japanese</li>
+              <li>Coached students in advanced courses such as CSS, JS, Java, cybersecurity, PhaserJS, Kaboom JS, Lua, 3D printing, business, advanced electronics (direct circuits and logic gates), and robotics.</li>
+              <li>Coached students and interns for projects, including creating and hosting their portfolio using web development.</li>
+   
+              <li>Interviewed over 40 people who wanted to join Kidocode as an intern</li>
+              <li>Hosted and observed internal workshops. Collaborated with UniKL and IEEE to make a workshop online with UniKL about Internet of Things and NodeMCU and also to make an Arduino workshop at SMK Kiaramas.</li>
+              <li>Hosted and observed internal workshops under web, electronics, robotics, and 3D departments.</li>
+              <li>Collaborated with MSU as a judge for their FYP students’ projects under iRex, served as a panelist for their internship panel, and delivered a motivational talk for their dean’s list students preparing for internships, leading to Kidocode signing an MOU with MSU.</li>
+              <li>Collaborated with MSU students to conduct a workshop about ESP and IoT using simulation.</li>
+              <li>Conducted an electronics workshop with Monash University for their Women’s Engineering Club.</li>
+              <li>Become am external assessor for Computer Engineering students' Final Year Project in UniKL MIIT</li>
+              </ul>
+              
+              
+               
+              
+            </font>
             </nz-timeline-item
           >
 
@@ -186,8 +730,137 @@
             Rapidevelop Technology
             <br>
             Feb 2021 - Jul 2021
-            </font></nz-timeline-item
+            
+            <br>
+            <ul class="dashed rightElement">
+              <li>Helped in a team to develop government agecies' websites. </li>
+              <li>Learn Angular, NG-Zorro and the Agile framework. </li>
+              <li>Got introduced to GitLab management and Microsoft Teams ticketing system.</li>
+            </ul>
+          </font>
+            </nz-timeline-item
           >
+
+          <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="yellow"
+            ><font style="color:white; font-weight: bold;">Software Support Engineer
+            <br>
+            Mandrill Tech Sdn. Bhd.
+            <br>
+            Aug 2021 - March 2021
+            
+            <br>
+            <ul class="dashed leftElement">
+              <li>Helped in two teams to help two different agencies. </li>
+              <li>Enhanced more on my Java skills here as well as Angular. </li>
+              <li>Learn about keycloak as well. </li>
+              <li>Helped to solve bug fixes and got more familiar with GitLab tickets and roles. </li>
+              <li>Had to meet with clients online to discuss milestones and progress.</li>
+
+            </ul>
+          </font>
+            </nz-timeline-item
+          >
+
+          <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="cyan"
+          ><font style="color:white; font-weight: bold;">Master of Information Technology (Artificial Intelligence)
+          <br>
+          Universiti Kuala Lumpur Malaysian Institute of Information Technology
+          <br>
+          2023 - Expected July 2025
+          <br>
+          <ul class="dashed rightElement">
+            
+
+
+<li>Doing masters by research about dense crowd detection through deep learning approach.</li>
+<li>Recipient of Excellent Research Grant Scheme (UERGS).</li>
+<li>Published a Systematic Literature Review article on <a href="https://inforescom.org/article/3423" target="_blank">inforescom.org</a> .</li>
+          </ul>
+          </font></nz-timeline-item
+        >
+
+        <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="brown"
+            ><font style="color:white; font-weight: bold;">Assistant Lecturer (Under UERGS Grant)
+            <br>
+            University Kuala Lumpur - Malaysian Institute of Information Technology
+            <br>
+            September 2023 - December 2024 (Grant ended, awaiting extension)
+            </font>
+            <br>
+            <font style="color:white;">
+              <ul class="dashed leftElement">
+                <li>Teaching and guiding Bachelor students about Network Operating Systems (NOS) and projects including Arduino and ESP. </li>
+                <li>Under UERGS Grant and assisting lecturers with the lab segments of courses.</li>
+                <li>Involved with grading the students’ final projects for one of the courses as well as their exams. </li>
+                <li>Examiner for their practical exam. </li>
+
+              </ul>
+              
+              
+              
+              
+              
+            </font>
+            </nz-timeline-item
+          >
+
+        <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="gold"
+          ><font style="color:white; font-weight: bold;">Freelance Developer (September 2023 - June 2024) <br>
+            Software Engineer (June 2024 - September 2024)
+          <br>
+          Precision Diagnostics
+          <br>
+          <ul class="dashed rightElement">
+            
+
+
+<li>Assist to check for bugs, make some changes and deploy a system to NGINX for doctors to use.</li>
+<li>Involved with the first pharmacogenomics conference in Malaysia by handing the microphone station.</li>
+<li>Converted a Wordpress website to an e-commerce website using WooCommerce. Many people have bought from the website and during launch for a week, there has been a profit of RM9000 to the website.</li>
+<li>Help to create scripts to pull, push and deploy code to the NGINX server for a smoother process.</li>          
+</ul>
+          </font></nz-timeline-item
+        >
+
+        <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="salmon"
+        ><font style="color:white; font-weight: bold;">Freelance Senior Developer
+        <br>
+        Mididle Sdn. Bhd.
+        <br>
+        September 2021 - Current
+        </font>
+        <br>
+        <font style="color:white;">
+          <ul class="dashed leftElement">
+            <li>Handle clients project, mainly as an overseer, middleman, and backend developer.</li>
+            <li>Sometimes stand in to talk with clients and convey messages to the operations team.</li>
+
+          </ul>
+          
+          
+          
+          
+          
+        </font>
+        </nz-timeline-item
+      >
+
+      <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="grey"
+      ><font style="color:white; font-weight: bold;">Teacher (Volunteer, collaboration with Kidocode) <br>
+        January 2025 - Current
+      <br>
+      Dignity School
+      <br>
+      <ul class="dashed rightElement">
+        
+
+
+<li>Collaboration with Kidocode for teaching Kidocode courses to underpriveleged students.</li>
+<li>Observe and guide them to using AI for answering questions and their projects.</li>
+<li>Encourage students them to help each other to boost their soft skills.</li>
+</ul>
+      </font></nz-timeline-item
+    >
 
 
           
@@ -202,17 +875,61 @@
   <div nz-row [nzGutter]="12" nzLg="24" nzXs="24" nzSm="24" *ngIf="test===5">
     <div nz-col nzSpan="12"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12" >
       <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
+
+        <h1 class="introStory" style="color: black;" *ngIf="theme==false">{{ 'PUBLICATIONS_TITLE' | translate }}</h1>
+        <h1 class="introStory" style="color: white;" *ngIf="theme==true">{{ 'PUBLICATIONS_TITLE' | translate }}</h1>
+
+        <h4 style="text-align: center; color: black;" *ngIf="theme==false">
+          <a href="https://inforescom.org/article/3423"> Detection and Tracking of People in a Dense Crowd through Deep Learning Approach-A Systematic Literature Review</a>
+        </h4>
+        <p style="text-align: center; color: black;" *ngIf="theme==false">
+          
+          {{ 'PUBLICATIONS_DESC' | translate }}
+        </p>
+
+        <h4 style="text-align: center; color: white;" *ngIf="theme==true">
+          <a href="https://inforescom.org/article/3423"> Detection and Tracking of People in a Dense Crowd through Deep Learning Approach-A Systematic Literature Review</a>
+        </h4>
+        <p style="text-align: center; color: white;" *ngIf="theme==true">
+          {{ 'PUBLICATIONS_DESC' | translate }}
+        </p>
   
-        <h1 class="introHome" style="color: black;" *ngIf="theme==false">{{'STORIES'|translate}}</h1>
-        <h1 class="introHome" style="color: white;" *ngIf="theme==true">{{'STORIES'|translate}}</h1>
+        <h1 class="introStory" style="color: black;" *ngIf="theme==false">{{ 'STORIES_TITLE' | translate }}</h1>
+        <h1 class="introStory" style="color: white;" *ngIf="theme==true">{{ 'STORIES_TITLE' | translate }}</h1>
         
         <br>
         <h2 style="text-align: center; color: black;" *ngIf="theme==false">
-          WORK IN PROGRESS :p
+          {{ 'STORIES_COMPLETED' | translate }}
         </h2>
+        <h4 style="text-align: center; color: black;" *ngIf="theme==false">
+          <a href="https://www.wattpad.com/story/338766033-angel-vs-demon"> Angel vs Demon ({{ 'STORIES_ONESHOT' | translate }})</a>
+        </h4>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12" *ngIf="theme==false">
+          <img class="responsive_certs certs" src="../assets/images/stories/avd.jpg"/>
+        </div>
+        <p style="text-align: center; color: black;" *ngIf="theme==false">
+         {{ 'STORIES_ONESHOT_DESC' | translate }}
+        </p>
+
+        <!-- <h2 style="text-align: center; color: black;" *ngIf="theme==false">
+          Ongoing
+        </h2> -->
+
         <h2 style="text-align: center; color: white;" *ngIf="theme==true">
-         WORK IN PROGRESS :p
+        {{ 'STORIES_COMPLETED' | translate }}
         </h2>
+        <h4 style="text-align: center; color: white;" *ngIf="theme==true">
+          <a href="https://www.wattpad.com/story/338766033-angel-vs-demon"> Angel vs Demon ({{ 'STORIES_ONESHOT' | translate }})</a>
+        </h4>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12" *ngIf="theme==true">
+          <img class="responsive_certs certs" src="../assets/images/stories/avd.jpg"/>
+        </div>
+        <p style="text-align: center; color: white;" *ngIf="theme==true">
+         {{ 'STORIES_ONESHOT_DESC' | translate }}
+        </p>
+        <!-- <h2 style="text-align: center; color: white;" *ngIf="theme==true">
+          Ongoing
+          </h2> -->
       </ul>
   
       </div>
@@ -227,97 +944,75 @@
 
   <br>
 
-    <h1 class="introHome" style="color: black;" *ngIf="theme==false">Brief Introudction</h1>
-      <h1 class="introHome" style="color: white;" *ngIf="theme==true">Brief Introduction</h1>
-      
-    <div style="background-color:white; padding-left: 2%; font-weight:bold;" *ngIf="theme==true">
-      <nz-descriptions nzTitle="User Info" nzLayout="vertical" >
-        <nz-descriptions-item nzTitle="Name">Muhammad Firdaus</nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Telephone">01162694030</nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Live">Kuala Lumpur, Malaysia</nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Current Occupation" [nzSpan]="2">
-          Computer Engineering student (Degree) <br> Programming Teacher <br> Frontend Developer(intern)
-        </nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Hobbies">Programming<br> Gaming<br> Writing Stories<br>Football</nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Strength">
-          English<br>Malay<br>Teaching<br>Python <br>C++ and C especially for Arduino<br>Raspberry Pi<br>
-          Telegram Bots <br> Internet of Things <br> Basic Web Development <br> Basic Flutter and Android Studio
-        </nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Knowledgeable But Not Master">
-          Mandarin<br>Japanese<br>Java <br>Cloud Computing<br>Angular<br>
-          NG-Zorro <br> Git 
-        </nz-descriptions-item>
-        <nz-descriptions-item nzTitle="Remarks">Want to hire me for freelance,teaching or assignments? Feel free to contact me. We can discuss
-          the price ^_^
-        </nz-descriptions-item>
+  <h1 class="introHome" style="color: black;" *ngIf="theme==false">{{ 'INTRO_TITLE' | translate }}</h1>
+  <h1 class="introHome" style="color: white;" *ngIf="theme==true">{{ 'INTRO_TITLE' | translate }}</h1>
   
-      </nz-descriptions>
-    </div>
+      
+  <div style="background-color: blanchedalmond; padding-left: 2%; font-weight: bold;" class="about-container" *ngIf="theme==true">
+    <nz-descriptions [nzTitle]="'USER_INFO' | translate" nzLayout="vertical">
+      <nz-descriptions-item [nzTitle]="'NAME' | translate">Muhammad Firdaus</nz-descriptions-item>
+      <nz-descriptions-item [nzTitle]="'TELEPHONE' | translate">+601162694030</nz-descriptions-item>
+      <nz-descriptions-item [nzTitle]="'LIVE' | translate">{{ 'LOCATION' | translate }}</nz-descriptions-item>
+      <nz-descriptions-item [nzTitle]="'CURRENT_OCCUPATION' | translate">
+        <span [innerHTML]="'CURRENT_JOB' | translate"></span>
+      </nz-descriptions-item>
+      <nz-descriptions-item [nzTitle]="'ALIAS' | translate">
+        firdauskotp <br> Firdaus Eisner
+      </nz-descriptions-item>
+      <nz-descriptions-item [nzTitle]="'HOBBIES' | translate">
+        <span [innerHTML]="'HOBBIES_LIST' | translate"></span>
+      </nz-descriptions-item>
+      <nz-descriptions-item [nzTitle]="'STRENGTH' | translate">
+        <span [innerHTML]="'STRENGTH_LIST' | translate"></span>
+      </nz-descriptions-item>
+      <nz-descriptions-item [nzTitle]="'KNOWLEDGEABLE' | translate">
+        <span [innerHTML]="'KNOWLEDGEABLE_LIST' | translate"></span>
+      </nz-descriptions-item>
+      <nz-descriptions-item [nzTitle]="'REMARKS' | translate">
+        <span [innerHTML]="'REMARKS_TEXT' | translate"></span>
+      </nz-descriptions-item>
+    </nz-descriptions>
+  </div>
    
     <!-- <div *ngIf="theme==false"> -->
-      <div style="padding-left: 2%; font-weight:bold;" *ngIf="theme==false">
-        <nz-descriptions nzTitle="User Info" nzLayout="vertical" >
-          <nz-descriptions-item nzTitle="Name">Muhammad Firdaus</nz-descriptions-item>
-          <nz-descriptions-item nzTitle="Telephone">01162694030</nz-descriptions-item>
-          <nz-descriptions-item nzTitle="Live">Kuala Lumpur, Malaysia</nz-descriptions-item>
-          <nz-descriptions-item nzTitle="Current Occupation" [nzSpan]="2">
-            Computer Engineering student (Degree) <br> Programming Teacher <br> Frontend Developer(intern)
+      <div style="background-color:aliceblue;padding-left: 2%; font-weight:bold;" *ngIf="theme==false">
+        <nz-descriptions [nzTitle]="'USER_INFO' | translate" nzLayout="vertical">
+          <nz-descriptions-item [nzTitle]="'NAME' | translate">Muhammad Firdaus</nz-descriptions-item>
+          <nz-descriptions-item [nzTitle]="'TELEPHONE' | translate">+601162694030</nz-descriptions-item>
+          <nz-descriptions-item [nzTitle]="'LIVE' | translate">{{ 'LOCATION' | translate }}</nz-descriptions-item>
+          <nz-descriptions-item [nzTitle]="'CURRENT_OCCUPATION' | translate">
+            <span [innerHTML]="'CURRENT_JOB' | translate"></span>
           </nz-descriptions-item>
-          <nz-descriptions-item nzTitle="Hobbies">Programming<br> Gaming<br> Writing Stories<br>Football</nz-descriptions-item>
-          <nz-descriptions-item nzTitle="Strength">
-            English<br>Malay<br>Teaching<br>Python <br>C++ and C especially for Arduino<br>Raspberry Pi<br>
-            Telegram Bots <br> Internet of Things <br> Basic Web Development <br> Basic Flutter and Android Studio
+          <nz-descriptions-item [nzTitle]="'ALIAS' | translate">
+            firdauskotp <br> Firdaus Eisner
           </nz-descriptions-item>
-          <nz-descriptions-item nzTitle="Knowledgeable But Not Master">
-            Mandarin<br>Japanese<br>Java <br>Cloud Computing<br>Angular<br>
-            NG-Zorro <br> Git 
+          <nz-descriptions-item [nzTitle]="'HOBBIES' | translate">
+            <span [innerHTML]="'HOBBIES_LIST' | translate"></span>
           </nz-descriptions-item>
-          <nz-descriptions-item nzTitle="Remarks">Want to hire me for freelance,teaching or assignments? Feel free to contact me. We can discuss
-            the price ^_^
+          <nz-descriptions-item [nzTitle]="'STRENGTH' | translate">
+            <span [innerHTML]="'STRENGTH_LIST' | translate"></span>
           </nz-descriptions-item>
-    
+          <nz-descriptions-item [nzTitle]="'KNOWLEDGEABLE' | translate">
+            <span [innerHTML]="'KNOWLEDGEABLE_LIST' | translate"></span>
+          </nz-descriptions-item>
+          <nz-descriptions-item [nzTitle]="'REMARKS' | translate">
+            <span [innerHTML]="'REMARKS_TEXT' | translate"></span>
+          </nz-descriptions-item>
         </nz-descriptions>
       </div>
     
     <!-- </div> -->
   <br>
 
-  <h1 class="introHome" style="color: black;" *ngIf="theme==false">Full Introudction</h1>
-      <h1 class="introHome" style="color: white;" *ngIf="theme==true">Full Introduction</h1>
+  <h1 class="introHome" style="color: black;" *ngIf="theme==false">{{ 'FULL_INTRO_TITLE' | translate }}</h1>
+<h1 class="introHome" style="color: white;" *ngIf="theme==true">{{ 'FULL_INTRO_TITLE' | translate }}</h1>
 
-  <h2 class="aboutH2" style="text-align: center; color: black;" *ngIf="theme==false">
-    Heyy, the name's Muhammad Firdaus. I am a Computer Engineering Student and a part time IT Trainer. 
-    I also love sports like football. Be sure to call me if you want a match &gt;.&lt; . 
-    Also a major Fire Emblem fan. I also make some playthroughs on my youtube channel!
-    <br>
-    <br>
-    I also made some personal projects, but most of it are for fun. My main dream is to be a game programmer or
-    a teacher / lecturer. At the same time I made some stories. I like to write some stories during my free time.
-    <br>
-    <br>
-    As shown above, my skills mostly revolve around teaching and programming. There are some programming languages that I have 
-    not mastered yet, but I have basic knowledge on and can still help you on. If you ever feel the need for a freelancer for a project
-    or assignment, don't hesitate to contact me!
-    <br>
-    <br>
-    <strong> This website is made using Angular 11, and implements the ng-zorro framework and hosted using AWS</strong>
-  </h2>
+<h2 class="aboutH2" style="text-align: center; color: black;" *ngIf="theme==false">
+  <span [innerHTML]="'FULL_INTRO_TEXT' | translate"></span>
+</h2>
   <h2 class="aboutH2" style="text-align: center; color: white;" *ngIf="theme==true">
-    Heyy, the name's Muhammad Firdaus. I am a Computer Engineering Student and a part time IT Trainer. 
-    I also love sports like football. Be sure to call me if you want a match &gt;.&lt; . 
-    Also a major Fire Emblem fan. I also make some playthroughs on my youtube channel!
-    <br>
-    <br>
-    I also made some personal projects, but most of it are for fun. My main dream is to be a game programmer or
-    a teacher / lecturer. At the same time I made some stories. I like to write some stories during my free time.
-    <br>
-    <br>
-    As shown above, my skills mostly revolve around teaching and programming. There are some programming languages that I have 
-    not mastered yet, but I have basic knowledge on and can still help you on. If you ever feel the need for a freelancer for a project
-    or assignment, don't hesitate to contact me!
-    <br>
-    <br>
-    <strong> This website is made using Angular 11, and implements the ng-zorro framework and hosted using AWS</strong>
+    
+    <span [innerHTML]="'FULL_INTRO_TEXT' | translate"></span>
   </h2>
     </ul>
 
@@ -337,10 +1032,7 @@
       <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
         <h1 class="introHome" style="color: black;" *ngIf="theme==false">{{'CONTACT'|translate}}</h1>
         <h1 class="introHome" style="color: white;" *ngIf="theme==true">{{'CONTACT'|translate}}</h1>
-  
-    <h2 class="aboutH2" style="text-align: center; color: black;" *ngIf="theme==false">
-     Want to contact me for freelance job or collaboration, or just to extend our network / be friends? 
-     <!-- I've included the icons on the footer at the bottom right.
+      <!-- I've included the icons on the footer at the bottom right.
      
       <br>
       <br>
@@ -348,12 +1040,16 @@
       <br>
       <br>
       Just in case those links does not work due to compability issues, I'll list them here again <br> -->
-      Click on any of the pictures, for Youtube, I will only link my main account. The tutorial channel will be featured there
+    <h2 class="aboutH2" style="text-align: center; color: black;" *ngIf="theme==false">
+      {{ 'CONTACT_HEADING' | translate }}
+      <br>
+      {{ 'CONTACT_DETAILS' | translate }} <br><br>
+      {{ 'CONTACT_DETAILS2' | translate }}
       <div style="text-align: center;overflow-x:auto;">
         <table border="5" style="margin-left: auto;margin-right: auto;">
           <thead>
-            <th>Platform<br>(  Clickable  )</th>
-            <th>Description</th>
+            <th [innerHTML]="'PLATFORM' | translate"></th>
+        <th [innerHTML]="'DESCRIPTION' | translate"></th>
           </thead>
           <tbody>
             <tr>
@@ -384,6 +1080,14 @@
               <td><a href="https://www.linkedin.com/in/muhammad-firdaus-badauraudine-793a501b0/" target="_blank"><img src="../assets/images/unnamed.png" class="wa-responsive"/></a></td>
               <td>Muhammad Firdaus Badauraudine</td>
             </tr>
+            <tr>
+              <td><a href="https://patreon.com/FirdausEisner?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank"><img src="../assets/images/fhd_Patreon_Symbol_6fff9723d3.png" class="wa-responsive"/></a></td>
+              <td>Firdaus Eisner / firdauskotp</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.researchgate.net/profile/Muhammad-Firdaus-Mohamed-Badauraudine?ev=hdr_xprf" target="_blank"><img src="../assets/images/ResearchGate.png" class="wa-responsive"/></a></td>
+              <td>Muhammad Firdaus Mohamed Badauraudine</td>
+            </tr>
           </tbody>
         </table >
         <!-- <p><a href="wa.link/3jxm9a"><img src="../assets/images/WhatsApp.svg.png" class="wa-responsive"/></a>01162694030</p> -->
@@ -396,21 +1100,15 @@
 
     </h2>
     <h2 class="aboutH2" style="text-align: center; color: white;" *ngIf="theme==true">
-      Want to contact me for freelance job or collaboration, or just to extend our network / be friends? 
-      <!-- I've included the icons on the footer at the bottom right.
-      
-       <br>
-       <br>
-       <strong>HOWEVER</strong>
-       <br>
-       <br>
-       Just in case those links does not work due to compability issues, I'll list them here again <br> -->
-       Click on any of the pictures, for Youtube, I will only link my main account. The tutorial channel will be featured there
+      {{ 'CONTACT_HEADING' | translate }}
+      <br>
+      {{ 'CONTACT_DETAILS' | translate }} <br><br>
+      {{ 'CONTACT_DETAILS2' | translate }}
        <div style="text-align: center;overflow-x:auto;">
          <table border="5" style="margin-left: auto;margin-right: auto; background-color: grey; border-color: black;">
            <thead>
-             <th>Platform<br>(  Clickable  )</th>
-             <th>Description</th>
+            <th [innerHTML]="'PLATFORM' | translate"></th>
+            <th [innerHTML]="'DESCRIPTION' | translate"></th>
            </thead>
            <tbody>
              <tr>
@@ -441,6 +1139,14 @@
                <td><a href="https://www.linkedin.com/in/muhammad-firdaus-badauraudine-793a501b0/" target="_blank"><img src="../assets/images/unnamed.png" class="wa-responsive"/></a></td>
                <td>Muhammad Firdaus Badauraudine</td>
              </tr>
+             <tr>
+              <td><a href="https://patreon.com/FirdausEisner?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank"><img src="../assets/images/fhd_Patreon_Symbol_6fff9723d3.png" class="wa-responsive"/></a></td>
+              <td>Firdaus Eisner / firdauskotp</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.researchgate.net/profile/Muhammad-Firdaus-Mohamed-Badauraudine?ev=hdr_xprf" target="_blank"><img src="../assets/images/ResearchGate.png" class="wa-responsive"/></a></td>
+              <td>Muhammad Firdaus Mohamed Badauraudine</td>
+            </tr>
            </tbody>
          </table >
          <!-- <p><a href="wa.link/3jxm9a"><img src="../assets/images/WhatsApp.svg.png" class="wa-responsive"/></a>01162694030</p> -->
@@ -466,8 +1172,10 @@
 
       <h1 class="introHome" style="color: black;" *ngIf="theme==false">{{'WELCOME1'|translate}}</h1>
       <h1 class="introHome" style="color: white;" *ngIf="theme==true">{{'WELCOME1'|translate}}</h1>
+       <!-- <div nz-row nzJustify="center" nzAlign="middle">
+         -->
       <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
-        <img class="introPic" src="../assets/images/websitePicMaybe.jpg"/>
+        <img class="introPic" src="../assets/images/brand image.jpg" alt="my brand image"/>
       </div>
       <br>
       <h2 style="text-align: center; color: black;" *ngIf="theme==false">
@@ -478,6 +1186,12 @@
         <br>
         <br>
         {{'INTRO3'|translate}}
+        <br>
+        <br>
+        {{'INTRO4'|translate}} : <a href="https://www.itl.cat/wallview/TibihT_fire-emblem-pc-wallpaper-share-thread-fireemblem-woman/" target="_blank">itl.cat</a>
+        <br>
+        <br>
+        {{'INTRO5'|translate}} : <a href="https://www.instagram.com/vocapon/" target="_blacnk">vocaponpon</a>
       </h2>
       <h2 style="text-align: center; color: white;" *ngIf="theme==true">
         {{'INTRO1'|translate}}
@@ -487,12 +1201,180 @@
         <br>
         <br>
         {{'INTRO3'|translate}}
+        <br>
+        <br>
+        {{'INTRO4'|translate}} : <a href="https://www.itl.cat/wallview/TibihT_fire-emblem-pc-wallpaper-share-thread-fireemblem-woman/" target="_blank">itl.cat</a>
+        <br>
+        <br>
+        {{'INTRO5'|translate}} : <a href="https://www.instagram.com/vocapon/" target="_blacnk">vocaponpon</a>
       </h2>
     </ul>
 
     </div>
   </div>
 
+  <div nz-row [nzGutter]="12" nzLg="24" nzXs="24" nzSm="24" *ngIf="test===6">
+    <div nz-col nzSpan="12"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12" >
+      <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
+  
+        <h1 class="introHome" style="color: black;" *ngIf="theme==false">{{'FRIENDS'|translate}}</h1>
+        <h1 class="introHome" style="color: white;" *ngIf="theme==true">{{'FRIENDS'|translate}}</h1>
+         <!-- <div nz-row nzJustify="center" nzAlign="middle">
+           -->
+
+        <h1 style="color: black; text-align: center;" *ngIf="theme==false">  {{ 'FRIENDS_TITLE' | translate }}</h1>
+
+        <h1 style="color: white;text-align: center;" *ngIf="theme==true">  {{ 'FRIENDS_TITLE' | translate }}</h1>
+
+        
+           <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==true"  style="margin-top:5%;padding-bottom:3%;">
+            <nz-col nzSpan="24" nzMd="10" nzOrder="left">
+              <nz-card nzHoverable class="project-card">
+                <img src="../assets/images/friends/ashabal.jpg" class="project-img" alt="Project Image" />
+              </nz-card>
+            </nz-col>
+            <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+              <nz-card nzHoverable class="project-card">
+                <h3>{{ 'ASHABAL_NAME' | translate }}</h3>
+      <ul>
+        <li>{{ 'ASHABAL_DESC1' | translate }}</li>
+        <li>{{ 'ASHABAL_DESC2' | translate }}</li>
+                      <li><a href="https://www.linkedin.com/in/ashabal-khairi-asril-697050218/" target="_blank">{{ 'ASHABAL_LINK' | translate }}</a></li>
+                </ul>
+              </nz-card>
+            </nz-col>
+            </nz-row>
+
+            <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==true"  style="margin-top:5%;padding-bottom:3%;">
+              <nz-col nzSpan="24" nzMd="10" nzOrder="left">
+                <nz-card nzHoverable class="project-card">
+                  <img src="../assets/images/friends/Afiq.jpg" class="project-img" alt="Project Image" />
+                </nz-card>
+              </nz-col>
+              <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+                <nz-card nzHoverable class="project-card">
+                  <h3>{{ 'AFIQ_NAME' | translate }}</h3>
+      <ul>
+        <li>{{ 'AFIQ_DESC1' | translate }}</li>
+        <li>{{ 'AFIQ_DESC2' | translate }}</li>
+                        <li><a href="https://www.linkedin.com/in/afiqazmi1013/" target="_blank">{{ 'ASHABAL_LINK' | translate }}</a></li>
+                  </ul>
+                </nz-card>
+              </nz-col>
+              </nz-row>
+
+              <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==false" style="margin-top:5%;padding-bottom:3%;">
+                <nz-col nzSpan="24" nzMd="10" nzOrder="left">
+                  <nz-card nzHoverable class="project-card dark-card">
+                    <img src="../assets/images/friends/ashabal.jpg" class="project-img" alt="Project Image" />
+                  </nz-card>
+                </nz-col>
+                <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+                  <nz-card nzHoverable class="project-card dark-card">
+                    <h3>{{ 'ASHABAL_NAME' | translate }}</h3>
+      <ul>
+        <li>{{ 'ASHABAL_DESC1' | translate }}</li>
+        <li>{{ 'ASHABAL_DESC2' | translate }}</li>
+                          <li><a href="https://www.linkedin.com/in/ashabal-khairi-asril-697050218/" target="_blank">{{ 'ASHABAL_LINK' | translate }}</a></li>
+                    </ul>
+                  </nz-card>
+                </nz-col>
+                </nz-row>
+    
+                <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==false" style="margin-top:5%;padding-bottom:3%;">
+                  <nz-col nzSpan="24" nzMd="10" nzOrder="left">
+                    <nz-card nzHoverable class="project-card dark-card">
+                      <img src="../assets/images/friends/Afiq.jpg" class="project-img" alt="Project Image" />
+                    </nz-card>
+                  </nz-col>
+                  <nz-col nzSpan="24" nzMd="10" nzOrder="right">
+                    <nz-card nzHoverable class="project-card dark-card">
+                      <h3>{{ 'AFIQ_NAME' | translate }}</h3>
+      <ul>
+        <li>{{ 'AFIQ_DESC1' | translate }}</li>
+        <li>{{ 'AFIQ_DESC2' | translate }}</li>
+                            <li><a href="https://www.linkedin.com/in/afiqazmi1013/" target="_blank">{{ 'ASHABAL_LINK' | translate }}</a></li>
+                      </ul>
+                    </nz-card>
+                  </nz-col>
+                  </nz-row>
+       
+      </ul>
+  
+      </div>
+    </div>
+
+  <div nz-row [nzGutter]="12" nzLg="24" nzXs="24" nzSm="24" *ngIf="test===8">
+    <div nz-col nzSpan="12"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12" >
+      <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
+  
+        <h1 class="introHome" style="color: black;" *ngIf="theme==false">{{'CERTIFICATES'|translate}}</h1>
+        <h1 class="introHome" style="color: white;" *ngIf="theme==true">{{'CERTIFICATES'|translate}}</h1>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/ibmCert.PNG"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/UC-bcb9d482-f566-4e49-a9fe-a554dbf8bc7d.jpg"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/Microsoft.PNG"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/DD_cert.PNG"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/Coursera 52GDPQN5FBYA.jpg"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/Coursera 5DKU6XTLSP2T.jpg"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/Coursera 6NBPLL9T33SN.jpg"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/Coursera 89KPE5PAA2YV.jpg"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/coursera cert sound the alarm.jpg"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/Coursera GJBNNA4S85GP.jpg"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/Coursera JQV9G6Q3YRCK.jpg"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/Coursera JYUBK4G72DT8.jpg"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/Coursera S59J7JGMN896.jpg"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/Coursera WCNA3DHQKN55.jpg"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/MSUIREX_may23 - Muhammad Firdaus bin Mohamed Badauraudine.jpg"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/Arduino Workshop.jpg"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/TRobot.PNG"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/arduinoCert.PNG"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/Supervisor Cert of Appreciation.jpg"/>
+        </div>
+        <div nz-col nzSpan="10"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12">
+          <img class="responsive_certs certs" src="../assets/images/photo_2025-01-14_20-08-44.jpg"/>
+        </div>
+        
+      </ul>
+  
+      </div>
+    </div>
   <!-- About -->
 
 <!-- <router-outlet name="testProj"></router-outlet> -->

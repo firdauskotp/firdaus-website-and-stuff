@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Parisienne&display=swap');
 /* @import "~ng-zorro-antd/ng-zorro-antd.dark.css"; */
 /* main stuff */
 /* body{
@@ -31,10 +33,53 @@ html,body
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    width: 100%;
+    width: 60%;
     height: auto;
     border-color: black;
 }
+
+.project-row {
+    /* display: flex;
+    flex-wrap: wrap; */
+    gap: 32px; 
+    /* margin-left: -8px; 
+  margin-right: -8px;  */
+  }
+  
+  .project-card {
+    height: 100%; 
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 0;
+    margin: 0 !important; 
+    cursor: default;
+
+  }
+
+  .project-card a {
+    cursor: pointer; /* Change cursor to pointer only for links */
+  }
+  
+  .project-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures image fills the card */
+  }
+
+  .dark-card {
+    background-color: grey !important;
+    color: white !important; /* Ensure text is readable */
+  }
+
+  .dark-card a{
+    color: red !important; /* Ensure text is readable */
+  }
+
+  .dark-card .ant-card-meta-title,
+  .dark-card .ant-card-meta-description {
+    color: white !important;
+  }
 
 #footer {
     position: fixed;
@@ -46,6 +91,24 @@ html,body
     height: 40px;
     /* font-size: large; */
 }
+
+.certs{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.certs_space{
+    margin-top: 10px;
+}
+
+.responsive_certs {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
 
 /* nz-header {
     position: fixed;
@@ -61,9 +124,19 @@ html,body
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.introStory{
+    font-family: 'Great Vibes', cursive;
+}
+
 .expH2{
     font-family: 'Caveat', cursive;
     text-align: center;
+}
+
+.introProject{
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Parisienne', cursive;
 }
 
 #expTxtDM{
@@ -77,4 +150,36 @@ html,body
     width: 100%;
     max-width: 100px;
     height: auto;
+  }
+
+  ul.leftElement {
+    /* margin: 0;
+     */
+     padding-left: 30px;
+     text-align: justify;
+     padding-top: 20px;
+  }
+
+
+  ul.rightElement {
+    /* margin: 0;
+     */
+     padding-right: 30px;
+     padding-top: 20px;
+     text-align: justify;
+  }
+
+  ul.dashed {
+    list-style-type: none;
+  }
+  ul.dashed > li {
+    text-indent: -5px;
+  }
+  ul.dashed > li:before {
+    content: "-";
+    text-indent: -5px;
+  }
+
+  .introStory{
+      text-align: center;
   }
