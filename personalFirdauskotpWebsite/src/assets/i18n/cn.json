@@ -5,7 +5,7 @@
     "EXPERIENCE":"经验",
     "STORIES":"文学",
     "FRIENDS":"朋友们",
-    "CONTACT":"接触",
+    "CONTACT":"联系方式",
     "DARK":"黑暗的",
     "LIGHT":"光",
     "LANGUAGE":"语",
@@ -63,6 +63,160 @@
   "STORIES_TITLE": "故事",
   "STORIES_COMPLETED": "已完成",
   "STORIES_ONESHOT": "短篇故事",
-  "STORIES_ONESHOT_DESC": "故事讲述了我在完成作业后感到疲惫，试图入睡。但我睡不着，便想着看电视让自己眼睛疲劳。然后，我发现了一部有趣的节目叫《天使 vs 恶魔》，于是决定看看。接下来发生的事情让我后悔打开了那个频道。"
+  "STORIES_ONESHOT_DESC": "故事讲述了我在完成作业后感到疲惫，试图入睡。但我睡不着，便想着看电视让自己眼睛疲劳。然后，我发现了一部有趣的节目叫《天使 vs 恶魔》，于是决定看看。接下来发生的事情让我后悔打开了那个频道。",
+
+  "PROJECT_TITLE": "这是我创建的一些项目列表。您可以在‘联系方式’选项卡中找到我的 GitHub 和 LinkedIn，以查看更多项目。",
+  "PNC": "宠物和儿童追踪器",
+  "PNC_TITLE": "本科毕业设计",
+  "PNC_TECH": "Raspberry Pi, Python, Telegram 机器人 (Telepot 软件包), MySQL",
+  "PNC_DESC": "<li>用于宠物和儿童的追踪设备</li><li>使用 Raspberry Pi 和专属的 Telegram 机器人进行通信</li><li>可用于获取追踪器的位置，并设置安全区域。如果设备离开该区域，用户的 Telegram 机器人将收到追踪器的最后位置通知</li><li>用户还可以通过 Telegram 机器人触发蜂鸣器，并访问保存在 Telegram 机器人中的紧急联系人</li><li><a href='https://github.com/firdauskotp/PnCTracker' target='_blank'>GitHub 代码在这里！</a></li>",
+
+  "WWMU": "WorkWakeMeUpPls Telegram 机器人",
+  "WWMU_TITLE": "个人项目，您可以在 Telegram 上搜索用户名 - @WorkWakeMeUpPlsbot",
+  "WWMU_TECH": "Python, MongoDB, Telegram 机器人 (Telepot 软件包), Heroku",
+  "WWMU_DESC": "<li>Telegram 机器人，用作闹钟叫醒用户</li><li>要关闭闹钟，用户需要回答提供的数学问题，从而防止赖床</li><li>可以选择显示恐怖图片，以确保用户不再入睡（默认关闭）</li><li><a href='https://github.com/firdauskotp/Wake-Me-Up-Pls-Bot-Multiuser' target='_blank'>GitHub 代码在这里！</a></li>",
+
+  "INPT": "Python 软件包",
+  "INPT_TITLE": "个人 Python 软件包",
+  "INPT_TECH": "Python, PyPI",
+  "INPT_DESC": "<li>一个 Python 软件包，简化不同数据类型的输入处理</li><li><a href='https://github.com/firdauskotp/PnCTracker' target='_blank'>软件包和教程在这里！</a></li>",
+
+  "QBOT": "Qadhaa 祷告提醒 Telegram 机器人",
+  "QBOT_TITLE": "比赛 / 个人项目，您可以在 Telegram 上搜索用户名 - @QadhaaBot",
+  "QBOT_TECH": "Python, Telegram 机器人 (Telepot 软件包), MongoDB, Heroku",
+  "QBOT_DESC": "<li>用于跟踪错过的伊斯兰祷告，并提醒用户补上</li><li>可选择每天早上 8 点和晚上 9 点（新加坡时区）发送祈祷（Dua）和伊斯兰语录</li><li><a href='https://github.com/firdauskotp/Qada_Reminder_Bot' target='_blank'>GitHub 代码在这里！</a></li><li><a href='https://github.com/firdauskotp/Maggi-Kaw-Kaw-Project-Guides/blob/main/Qadhaa%20Bot.txt' target='_blank'>用户指南在这里！</a></li>",
+  "DIPLOMA": "计算机工程技术文凭",
+  "DIPLOMA_Q_1": "<li> CGPA - 3.41 </li> <li> 校级 - UniKL MIIT 电子竞技俱乐部成员 (2017, 2018) </li> <li> 校级 - UniKL MIIT Ganbatte 俱乐部成员 (2016, 2017, 2018) </li> <li> 校级 - Haru Matsuri 春季祭活动委员会成员 (2017) </li>",
+
+  "D_INTERN": "IT 教练（实习）",
+  "D_DATE": "2018年1月 - 2018年7月",
+  "D_INTERN_W_1": "<li> 学习了 Python、MIT App Inventor、HTML、JavaScript，以及额外的 Arduino 知识。</li> <li> 提升了软技能。</li> <li> 扩展了人脉圈。</li> <li> 培养了对教学的兴趣。</li>",
+
+  "BACHELOR": "计算机系统工程技术荣誉学士学位",
+  "BACHELOR_Q_1": "<li> CGPA - 3.56 </li> <li> 校级 - UniKL MIIT 计算机工程俱乐部成员 (2018) </li> <li> 校级 - Python 研讨会委员会成员，由 Kidocode 组织 (2019) </li> <li> 国际级 - 网络安全转型活动委员会成员 (2019) </li> <li> 校级 - Technoculture 2018 迷你募捐活动参与者 (2018) </li> <li> 校级 - 新常态意识活动组织者 (2020) </li> <li> 国家级 - Iftar@吉隆坡 2019 斋月晚餐活动委员会成员 (2019) </li>",
+
+  "K_FT_1": "IT 教练（全职/兼职）",
+  "K_FT_2": "网页部门经理（2021年9月 - 2024年10月）",
+  "K_FT_3": "电子与机器人部门经理（2022年5月 - 2024年10月）",
+  "K_FT_4": "3D建模部门经理（2023年1月 - 2024年10月）",
+  "K_DATE": "2018年7月 - 现在（目前兼职）",
+  "K_DESC_1": "<li> 监督了超过30名实习生。</li> <li> 最高曾同时管理9名实习生。</li> <li> 指导学生学习课程内容。</li> <li> 主要开发儿童至青少年课程，涵盖网页开发与电子学。</li> <li> 具有教授特殊学生及幼龄学生的经验。</li> <li> 处理仅能用马来语和日语交流的学生。</li> <li> 指导学生高级课程，如 CSS、JS、Java、网络安全、PhaserJS、Kaboom JS、Lua、3D打印、商业、电子高级课程（直流电路与逻辑门）、机器人技术等。</li> <li> 协助学生和实习生构建并部署个人作品集网站。</li> <li> 负责招聘超过40名实习生。</li> <li> 组织和管理内部研讨会。</li> <li> 与 UniKL 和 IEEE 合作举办 IoT 和 NodeMCU 线上研讨会及 SMK Kiaramas 的 Arduino 研讨会。</li> <li> 作为 MSU 终期项目评审委员，并为他们的工业培训提供指导。</li> <li> 与 Monash 大学的女性工程俱乐部合作，举办电子学研讨会。</li> <li> 担任 UniKL MIIT 计算机工程终期项目的外部评审。</li>",
+
+  "B_INTERN": "前端开发实习生",
+  "B_DATE": "2021年2月 - 2021年7月",
+  "B_DESC_1": "<li> 协助团队开发政府机构网站。</li> <li> 学习了 Angular、NG-Zorro 和敏捷开发。</li> <li> 了解了 GitLab 代码管理和 Microsoft Teams 任务管理系统。</li>",
+
+  "MDRILL": "软件支持工程师",
+  "MDRILL_DATE": "2021年8月 - 2021年3月",
+  "MDRILL_DESC_1": "<li> 协助两个团队支持不同政府机构。</li> <li> 提升了 Java 和 Angular 技能。</li> <li> 学习了 Keycloak。</li> <li> 修复了多个错误，并加深了对 GitLab 任务管理系统的理解。</li> <li> 参与在线会议，与客户讨论项目进展。</li>",
+
+  "MASTER": "信息技术硕士（人工智能）",
+  "MASTER_DATE": "2023年 - 预计2025年7月",
+  "MASTER_Q_1": "<li> 研究基于深度学习的人群检测方法。</li> <li> 获得卓越研究生资助计划（UERGS）资助。</li> <li> 在 <a href='https://inforescom.org/article/3423' target='_blank'>inforescom.org</a> 发表系统性文献综述论文。</li>",
+
+  "A_LEC": "助理讲师（UERGS 资助项目）",
+  "A_LEC_DATE": "2023年9月 - 2024年12月（资助结束，等待下学期是否续聘）",
+  "A_LECT_DESC_1": "<li> 教授和指导本科生网络操作系统（NOS）及相关项目，包括 Arduino 和 ESP。</li> <li> 在 UERGS 资助下协助讲师处理实验课程。</li> <li> 参与本科生终期项目及考试评分。</li> <li> 监考学生实践考试。</li>",
+
+  "PD1": "自由开发者（2023年9月 - 2024年6月）",
+  "PD2": "软件工程师（2024年6月 - 2024年9月）",
+  "PD_DESC_1": "<li> 协助调试错误、优化系统并部署至 NGINX 供医生使用。</li> <li> 参与马来西亚首届药物基因组学会议，负责麦克风管理。</li> <li> 将 WordPress 网站改为 WooCommerce 电商平台，推出后一周内盈利9000令吉。</li>",
+
+  "MIDIDLE": "高级自由开发者",
+  "MIDIDLE_DATE": "2021年9月 - 现在",
+  "MIDIDLE_DESC_1": "<li> 负责客户项目，担任项目经理、协调员及后端开发者。</li>",
+
+  "DIGNITY": "教师（志愿者，与 Kidocode 合作）",
+  "DIGNITY_DATE": "2025年1月 - 现在",
+  "DIGNITY_DESC_1": "<li> 为贫困学生教授 Kidocode 课程。</li> <li> 指导学生使用 AI 辅助解题与项目开发。</li>",
+
+  "DIPLOMA_Q": {
+    "1": "CGPA - 3.41",
+    "2": "校园级别 - UniKL MIIT 电子竞技俱乐部成员（2017, 2018）",
+    "3": "校园级别 - UniKL MIIT Ganbatte 俱乐部成员（2016, 2017, 2018）",
+    "4": "校园级别 - 春祭活动委员会成员（2017）"
+  },
+
+  "D_INTERN_W": {
+    "1": "学习 Python、MIT App Inventor、HTML、JavaScript 以及额外的 Arduino 知识。",
+    "2": "提升软技能。",
+    "3": "扩大人脉。",
+    "4": "培养对教学的热情。"
+  },
+
+  "BACHELOR_Q": {
+    "1": "CGPA - 3.56",
+    "2": "校园级别 - UniKL MIIT 计算机工程俱乐部成员（2018）",
+    "3": "校园级别 - Kidocode Python 研讨会活动委员会成员（2019）",
+    "4": "国际级别 - 网络安全转型活动委员会成员（2019）",
+    "5": "校园级别 - 技术文化节迷你筹款活动参与者（2018）",
+    "6": "校园级别 - 新常态实践意识活动经理（2020）",
+    "7": "国家级别 - Iftar@Kuala Lumpur 2019 活动委员会成员（2019）"
+  },
+
+  "K_DESC": {
+    "1": "曾监督超过 30 名实习生。",
+    "2": "同时监督过 9 名实习生。",
+    "3": "指导学生学习指定的课程。",
+    "4": "专门为儿童和青少年开发网页和电子课程的教学大纲。",
+    "5": "有教授特殊学生和学前儿童的经验。",
+    "6": "能够指导只会说马来语和日语的学生。",
+    "7": "教授高级课程，如 CSS、JS、Java、网络安全、PhaserJS、Kaboom JS、Lua、3D 打印、商业、电子学（直流电路和逻辑门）及机器人技术。",
+    "8": "指导学生和实习生完成项目，包括创建和托管他们的个人网站。",
+    "9": "面试过 40 多名希望加入 Kidocode 的实习生。",
+    "10": "组织并监督内部研讨会。与 UniKL 和 IEEE 合作，举办物联网与 NodeMCU 线上研讨会，并在 SMK Kiaramas 举办 Arduino 研讨会。",
+    "11": "在网页、电子、机器人和 3D 部门组织和监督内部研讨会。",
+    "12": "与 MSU 合作，担任 iRex 毕业设计（FYP）项目的评委，作为实习面试小组的成员，并为他们的优秀学生提供实习动员讲座，促成 Kidocode 与 MSU 签署 MOU。",
+    "13": "与 MSU 学生合作，举办关于 ESP 和物联网（IoT）仿真课程的研讨会。",
+    "14": "与 Monash 大学的女性工程俱乐部合作举办电子研讨会。",
+    "15": "担任 UniKL MIIT 计算机工程专业毕业设计项目的外部评审员。"
+  },
+
+  "B_DESC": {
+    "1": "参与政府机构网站开发团队。",
+    "2": "学习 Angular、NG-Zorro 和敏捷开发（Agile）框架。",
+    "3": "熟悉 GitLab 管理和 Microsoft Teams 工单系统。"
+  },
+
+  "MDRILL_DESC": {
+    "1": "在两个团队中协助不同的政府机构。",
+    "2": "进一步提升 Java 和 Angular 技能。",
+    "3": "学习 Keycloak 身份验证系统。",
+    "4": "帮助修复错误并熟悉 GitLab 工单管理系统。",
+    "5": "在线与客户沟通，讨论项目进度和里程碑。"
+  },
+
+  "MASTER_Q": {
+    "1": "研究基于深度学习方法的人群密集检测。",
+    "2": "获得卓越研究资助计划（UERGS）。",
+    "3": "在  发表系统综述（SLR）文章。"
+  },
+
+  "A_LECT_DESC": {
+    "1": "教授并指导本科生学习网络操作系统（NOS）及 Arduino 和 ESP 相关项目。",
+    "2": "在 UERGS 资助下，协助讲师进行实验课程。",
+    "3": "参与学生的期末项目评估和考试评分。",
+    "4": "担任实践考试的考官。"
+  },
+
+  "PD_DESC": {
+    "1": "协助检查错误、进行修改，并部署系统至 NGINX，供医生使用。",
+    "2": "在马来西亚首届药物基因组学会议中负责麦克风管理。",
+    "3": "将 WordPress 网站转换为 WooCommerce 电子商务网站。上线一周内实现 RM9000 盈利。",
+    "4": "编写自动化脚本以优化 NGINX 服务器的代码拉取、推送和部署流程。"
+  },
+
+  "MIDIDLE_DESC": {
+    "1": "负责客户项目，主要担任监督员、中间人及后端开发者。",
+    "2": "有时需要直接与客户沟通，并向运营团队传达需求。"
+  },
+
+  "DIGNITY_DESC": {
+    "1": "与 Kidocode 合作，为贫困学生教授 Kidocode 课程。",
+    "2": "观察并指导他们利用 AI 进行问题解答和项目开发。",
+    "3": "鼓励学生互相帮助，提高他们的软技能。"
+  }
+
+
 
 }

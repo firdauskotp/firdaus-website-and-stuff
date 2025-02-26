@@ -94,11 +94,11 @@
       
       <br>
       <h2 style="text-align: center; color: black;" *ngIf="theme==false">
-        This is a list of some of the projects I created. You can find more of my projects in my Github and LinkedIn that is linked in the Contacts tab 
+        {{'PROJECT_TITLE'|translate}}
       </h2>
       
       <h2 style="text-align: center; color: white;" *ngIf="theme==true">
-        This is a list of some of the projects I created. You can find more of my projects in my Github that is linked in the Contacts tab 
+        {{'PROJECT_TITLE'|translate}}
       </h2>
 
       <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==true" >
@@ -110,18 +110,11 @@
         <nz-col nzSpan="24" nzMd="10" nzOrder="right">
           <nz-card nzHoverable class="project-card">
             <!-- <nz-card-meta nzTitle="Pet & Child Tracker" nzDescription="FYP"></nz-card-meta> -->
-            <h3>Pet & Child Tracker</h3>
-            <h4 style="color:grey">Bachelor's FYP </h4>
-            <h5 style="color:blue">Raspberry Pi, Python, Telegram bot (Telepot library), MySQL</h5>
-            <ul>
-              <li>Tracking device for pets and kids</li>
-              <li>Uses Raspberry Pi and its own telegram bot to communicate with it</li>
-              <li>Can be used to get the tracker's location, set a safe zone for the tracker where if it leaves the
-                zone, the person's telegram bot will be spammed with the tracker's last location</li>
-                <li>The person can also ring a buzzer from the telegram bot and access emergency contacts saved
-                  through the telegram bot.</li>
-                  <li><a href="https://github.com/firdauskotp/PnCTracker" target="_blank">GitHub Code Here!</a></li>
-            </ul>
+            <h3>{{'PNC'|translate}} (PnC Tracker)</h3>
+            <h4 style="color:grey">{{'PNC_TITLE'|translate}}</h4>
+            <h5 style="color:blue">{{'PNC_TECH'|translate}}</h5>
+            <ul [innerHTML]="'PNC_DESC' | translate">
+                 </ul>
           </nz-card>
         </nz-col>
 
@@ -134,16 +127,11 @@
       <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==true" style="margin-top:5%;padding-bottom:3%;">
         <nz-col nzSpan="24" nzMd="10" nzOrder="left" >
           <nz-card nzHoverable class="project-card">
-            <h3>WorkWakeMeUpPls Telegram bot</h3>
-            <h4 style="color:grey">Personal Project, you can search it on telegram by finding its username - @WorkWakeMeUpPlsbot</h4>
-            <h5 style="color:blue">Python, MongoDB, Telegram bot (Telepot library), Heroku</h5>
-            <ul>
-              <li>Telegram bot that act as alarm clock to wake people up</li>
-              <li>To stop the alarm, the user needs to answer the given mathematical question, making it hard to
-                snooze</li>
-                <li>Can also include with a creepy image to make sure the person don't go back to sleep (False by default)</li>
-                  <li><a href="https://github.com/firdauskotp/Wake-Me-Up-Pls-Bot-Multiuser" target="_blank">GitHub Code Here!</a></li>
-            </ul>
+            <h3>{{'WWMU'|translate}}</h3>
+            <h4 style="color:grey">{{'WWMU_TITLE'|translate}}</h4>
+            <h5 style="color:blue">{{'WWMU_TECH'|translate}}</h5>
+            <ul [innerHTML]="'WWMU_DESC' | translate">
+                          </ul>
           </nz-card>
         </nz-col>
         <nz-col nzSpan="24" nzMd="10" nzOrder="right">
@@ -161,13 +149,11 @@
         </nz-col>
         <nz-col nzSpan="24" nzMd="10" nzOrder="right">
           <nz-card nzHoverable class="project-card">
-            <h3>inpt (Python Package)</h3>
-            <h4 style="color:grey">Personal Python Package</h4>
-            <h5 style="color:blue">Python, PyPI</h5>
-            <ul>
-              <li>Python package to help simplify the use of inputs with data types</li>
-                  <li><a href="https://github.com/firdauskotp/PnCTracker" target="_blank">Package and Tutorial Here!</a></li>
-            </ul>
+            <h3>inpt ({{'INPT'|translate}})</h3>
+            <h4 style="color:grey">{{'INPT_TITLE'|translate}}</h4>
+            <h5 style="color:blue">{{'INPT_TECH'|translate}}</h5>
+            <ul [innerHTML]="'INPT_DESC' | translate">
+               </ul>
           </nz-card>
         </nz-col>
         
@@ -176,16 +162,11 @@
       <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==true" style="margin-top:5%;padding-bottom:3%;">
         <nz-col nzSpan="24" nzMd="10" nzOrder="left" >
           <nz-card nzHoverable class="project-card">
-            <h3>Qadhaa Reminder Telegram bot</h3>
-            <h4 style="color:grey">Competition / Personal Project, you can search it on telegram by finding its username - @QadhaaBot</h4>
-            <h5 style="color:blue">Python, Telegram bot (Telepot library), MongoDB, Heroku</h5>
-            <ul>
-              <li>Telegram bot created to keep track of Islamic prayers missed so that it will be easier to be
-                reminded to replace them.</li>
-              <li>Can also choose to send a prayer (Doa/Dua) and Islamic quotes everyday at 8AM and 9PM using the Singapore Timezone</li>
-                  <li><a href="https://github.com/firdauskotp/Qada_Reminder_Bot" target="_blank">GitHub Code Here!</a></li>
-                  <li><a href="https://github.com/firdauskotp/Maggi-Kaw-Kaw-Project-Guides/blob/main/Qadhaa%20Bot.txt" target="_blank">User Guide Here!</a></li>
-
+            <h3>{{'QBOT'|translate}}</h3>
+            <h4 style="color:grey">{{'QBOT_TITLE'|translate}}</h4>
+            <h5 style="color:blue">{{'QBOT_TECH'|translate}}</h5>
+            <ul [innerHTML]="'QBOT_DESC' | translate">
+             
             </ul>
           </nz-card>
         </nz-col>
@@ -204,15 +185,11 @@
         </nz-col>
         <nz-col nzSpan="24" nzMd="10" nzOrder="right">
           <nz-card nzHoverable class="project-card">
-            <h3>Kidocode - Introduction to Web Department Managers</h3>
-            <h4 style="color:grey">Personal Project - To introduce new people to Kidocode's Web Department (2021-2024)</h4>
-            <h5 style="color:blue">RenPy, itch.io</h5>
-            <ul>
-              <li>Play through a visual novel to introduce yourself to Kidocode's Web Department's Managers (2021-2024)</li>
-              <li>Done using RenPy, and hosted on itch.io for free</li>
-              <li>Have a secret ending hehehe</li>
-                  <li><a href="https://firdauskotp.itch.io/kidocode-web-department-managers" target="_blank">Play the Game Here!</a></li>
-            </ul>
+            <h3>Kidocode - {{'KGAME'|translate}}</h3>
+            <h4 style="color:grey">{{'KGAME_TITLE'|translate}}</h4>
+            <h5 style="color:blue">{{'KGAME_TECH'|translate}}</h5>
+            <ul [innerHTML]="'KGAME_DESC' | translate">
+                </ul>
           </nz-card>
         </nz-col>
         
@@ -222,15 +199,10 @@
         <nz-col nzSpan="24" nzMd="10" nzOrder="left" >
           <nz-card nzHoverable class="project-card">
             <h3>Jugdral</h3>
-            <h4 style="color:grey">Personal Project - Fire Emblem 4 / 5 Based Wordle</h4>
-            <h5 style="color:blue">HTML, CSS, JS, GitHub Pages</h5>
-            <ul>
-              <li>Fire Emblem 4 / 5 based Wordle (inspiration from <a href="https://doopu.github.io/solkatti/" target="_blank">Doopu - Solkatti</a>) </li>
-              <li>Using HTML, CSS, JS, and hosted via GitHub pages</li>
-              <li>Done for fun, used ChatGPT for help on this</li>
-              <li>Included a feedback form</li>
-                  <li><a href="https://firdauskotp.github.io/Jugdral/" target="_blank">Play the Game Here!</a></li>
-            </ul>
+            <h4 style="color:grey">{{'J_TITLE'|translate}}</h4>
+            <h5 style="color:blue">{{'J_TECH'|translate}}</h5>
+            <ul [innerHTML]="'J_DESC' | translate">
+               </ul>
           </nz-card>
         </nz-col>
         <nz-col nzSpan="24" nzMd="10" nzOrder="right">
@@ -249,17 +221,17 @@
         <nz-col nzSpan="24" nzMd="10" nzOrder="right">
           <nz-card nzHoverable class="project-card dark-card">
             <!-- <nz-card-meta nzTitle="Pet & Child Tracker" nzDescription="FYP"></nz-card-meta> -->
-            <h3>Pet & Child Tracker</h3>
-            <h4 style="color:purple">Bachelor's FYP </h4>
-            <h5 style="color:blue">Raspberry Pi, Python, Telegram bot (Telepot library), MySQL</h5>
-            <ul>
-              <li>Tracking device for pets and kids</li>
+            <h3>{{'PNC'|translate}} (PnC Tracker)</h3>
+            <h4 style="color:purple">{{'PNC_TITLE'|translate}} </h4>
+            <h5 style="color:blue">{{'PNC_TECH'|translate}}</h5>
+            <ul [innerHTML]="'PNC_DESC' | translate">
+              <!-- <li>Tracking device for pets and kids</li>
               <li>Uses Raspberry Pi and its own telegram bot to communicate with it</li>
               <li>Can be used to get the tracker's location, set a safe zone for the tracker where if it leaves the
                 zone, the person's telegram bot will be spammed with the tracker's last location</li>
                 <li>The person can also ring a buzzer from the telegram bot and access emergency contacts saved
                   through the telegram bot.</li>
-                  <li><a href="https://github.com/firdauskotp/PnCTracker" target="_blank">GitHub Code Here!</a></li>
+                  <li><a href="https://github.com/firdauskotp/PnCTracker" target="_blank">GitHub Code Here!</a></li> -->
             </ul>
           </nz-card>
         </nz-col>
@@ -273,16 +245,11 @@
       <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==false" style="margin-top:5%;padding-bottom:3%;">
         <nz-col nzSpan="24" nzMd="10" nzOrder="left" >
           <nz-card nzHoverable class="project-card dark-card">
-            <h3>WorkWakeMeUpPls Telegram bot</h3>
-            <h4 style="color:purple">Personal Project, you can search it on telegram by finding its username - @WorkWakeMeUpPlsbot</h4>
-            <h5 style="color:blue">Python, MongoDB, Telegram bot (Telepot library), Heroku</h5>
-            <ul>
-              <li>Telegram bot that act as alarm clock to wake people up</li>
-              <li>To stop the alarm, the user needs to answer the given mathematical question, making it hard to
-                snooze</li>
-                <li>Can also include with a creepy image to make sure the person don't go back to sleep (False by default)</li>
-                  <li><a href="https://github.com/firdauskotp/Wake-Me-Up-Pls-Bot-Multiuser" target="_blank">GitHub Code Here!</a></li>
-            </ul>
+            <h3>{{'WWMU'|translate}}</h3>
+            <h4 style="color:purple">{{'WWMU_TITLE'|translate}}</h4>
+            <h5 style="color:blue">{{'WWMU_TECH'|translate}}</h5>
+            <ul [innerHTML]="'WWMU_DESC' | translate">
+                          </ul>
           </nz-card>
         </nz-col>
         <nz-col nzSpan="24" nzMd="10" nzOrder="right">
@@ -300,13 +267,11 @@
         </nz-col>
         <nz-col nzSpan="24" nzMd="10" nzOrder="right">
           <nz-card nzHoverable class="project-card dark-card">
-            <h3>inpt (Python Package)</h3>
-            <h4 style="color:purple">Personal Python Package</h4>
-            <h5 style="color:blue">Python, PyPI</h5>
-            <ul>
-              <li>Python package to help simplify the use of inputs with data types</li>
-                  <li><a href="https://github.com/firdauskotp/PnCTracker" target="_blank">Package and Tutorial Here!</a></li>
-            </ul>
+            <h3>inpt ({{'INPT'|translate}})</h3>
+            <h4 style="color:purple">{{'INPT_TITLE'|translate}}</h4>
+            <h5 style="color:blue">{{'INPT_TECH'|translate}}</h5>
+            <ul [innerHTML]="'INPT_DESC' | translate">
+               </ul>
           </nz-card>
         </nz-col>
         
@@ -315,16 +280,11 @@
       <nz-row nzJustify="center" nzGutter="{ xs: 16, sm: 24, md: 32, lg: 40 }"  *ngIf="theme==false" style="margin-top:5%;padding-bottom:3%;">
         <nz-col nzSpan="24" nzMd="10" nzOrder="left" >
           <nz-card nzHoverable class="project-card dark-card">
-            <h3>Qadhaa Reminder Telegram bot</h3>
-            <h4 style="color:purple">Competition / Personal Project, you can search it on telegram by finding its username - @QadhaaBot</h4>
-            <h5 style="color:blue">Python, Telegram bot (Telepot library), MongoDB, Heroku</h5>
-            <ul>
-              <li>Telegram bot created to keep track of Islamic prayers missed so that it will be easier to be
-                reminded to replace them.</li>
-              <li>Can also choose to send a prayer (Doa/Dua) and Islamic quotes everyday at 8AM and 9PM using the Singapore Timezone</li>
-                  <li><a href="https://github.com/firdauskotp/Qada_Reminder_Bot" target="_blank">GitHub Code Here!</a></li>
-                  <li><a href="https://github.com/firdauskotp/Maggi-Kaw-Kaw-Project-Guides/blob/main/Qadhaa%20Bot.txt" target="_blank">User Guide Here!</a></li>
-
+            <h3>{{'QBOT'|translate}}</h3>
+            <h4 style="color:purple">{{'QBOT_TITLE'|translate}}</h4>
+            <h5 style="color:blue">{{'QBOT_TECH'|translate}}</h5>
+            <ul [innerHTML]="'QBOT_DESC' | translate">
+             
             </ul>
           </nz-card>
         </nz-col>
@@ -343,15 +303,11 @@
         </nz-col>
         <nz-col nzSpan="24" nzMd="10" nzOrder="right">
           <nz-card nzHoverable class="project-card dark-card">
-            <h3>Kidocode - Introduction to Web Department Managers</h3>
-            <h4 style="color:purple">Personal Project - To introduce new people to Kidocode's Web Department (2021-2024)</h4>
-            <h5 style="color:blue">RenPy, itch.io</h5>
-            <ul>
-              <li>Play through a visual novel to introduce yourself to Kidocode's Web Department's Managers (2021-2024)</li>
-              <li>Done using RenPy, and hosted on itch.io for free</li>
-              <li>Have a secret ending hehehe</li>
-                  <li><a href="https://firdauskotp.itch.io/kidocode-web-department-managers" target="_blank">Play the Game Here!</a></li>
-            </ul>
+            <h3>Kidocode - {{'KGAME'|translate}}</h3>
+            <h4 style="color:purple">{{'KGAME_TITLE'|translate}}</h4>
+            <h5 style="color:blue">{{'KGAME_TECH'|translate}}</h5>
+            <ul [innerHTML]="'KGAME_DESC' | translate">
+                </ul>
           </nz-card>
         </nz-col>
         
@@ -361,15 +317,10 @@
         <nz-col nzSpan="24" nzMd="10" nzOrder="left" >
           <nz-card nzHoverable class="project-card dark-card">
             <h3>Jugdral</h3>
-            <h4 style="color:purple">Personal Project - Fire Emblem 4 / 5 Based Wordle</h4>
-            <h5 style="color:blue">HTML, CSS, JS, GitHub Pages</h5>
-            <ul>
-              <li>Fire Emblem 4 / 5 based Wordle (inspiration from <a href="https://doopu.github.io/solkatti/" target="_blank">Doopu - Solkatti</a>) </li>
-              <li>Using HTML, CSS, JS, and hosted via GitHub pages</li>
-              <li>Done for fun, used ChatGPT for help on this</li>
-              <li>Included a feedback form</li>
-                  <li><a href="https://firdauskotp.github.io/Jugdral/" target="_blank">Play the Game Here!</a></li>
-            </ul>
+            <h4 style="color:purple">{{'J_TITLE'|translate}}</h4>
+            <h5 style="color:blue">{{'J_TECH'|translate}}</h5>
+            <ul [innerHTML]="'J_DESC' | translate">
+               </ul>
           </nz-card>
         </nz-col>
         <nz-col nzSpan="24" nzMd="10" nzOrder="right">
@@ -389,111 +340,116 @@
   <div nz-col nzSpan="12"  nzOffset="6" nzLg="12" nzXs="12" nzSm="12" >
     <ul nz-menu nzMode="horizontal" [nzTheme]="theme ? 'dark' : 'light'">
 
-      <h1 class="expH2" style="color: black;" *ngIf="theme==false">Experience Timeline</h1>
-      <h1 class="expH2" style="color: white;" *ngIf="theme==true">Experience Timeline</h1>
+      <h1 class="expH2" style="color: black;" *ngIf="theme==false">{{'EXP_T'|translate}}</h1>
+      <h1 class="expH2" style="color: white;" *ngIf="theme==true">{{'EXP_T'|translate}}</h1>
       
       <h2 style="text-align: center; color: black;" *ngIf="theme==false">
         <nz-timeline nzMode="custom">
           <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="dodgerblue"
-            ><font style="color:black; font-weight: bold;">Diploma of Engineering Technology in Computing
+            ><font style="color:black; font-weight: bold;">{{'DIPLOMA'|translate}}
             <br>
             Universiti Kuala Lumpur Malaysian Institute of Information Technology
             <br>
             2015 - 2018
-            <br>
-            <ul class="dashed rightElement">
-              <li> CGPA - 3.41 </li>
-              <li>Campus Level - Member of UniKL MIIT E-Sport Club (2017, 2018) </li>
-              <li>Campus Level - Member of UniKL MIIT Ganbatte Club (2016, 2017, 2018)</li>
-              <li>Campus Level - Event Committee of Haru Matsuri - Spring Festival (2017)</li>
+          </font>
+          <br>
+          <font style="color:black;">
+            <ul class="dashed rightElement" >
+              <li> {{'DIPLOMA_Q.1'|translate}} </li>
+              <li> {{'DIPLOMA_Q.2'|translate}} </li>
+              <li> {{'DIPLOMA_Q.3'|translate}}</li>
+              <li> {{'DIPLOMA_Q.4'|translate}}</li>
             </ul>
             </font></nz-timeline-item
           >
           <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="darkgreen"
-            ><font style="color:black; font-weight: bold;">IT Trainer (Intern)
+            ><font style="color:black; font-weight: bold;">{{'D_INTERN'|translate}}
             <br>
             Kidocode Sdn. Bhd.
             <br>
-            Jan 2018 - Jul 2018 
-            <br>
-            <ul class="dashed leftElement">
-              <li>Gained knowledge on Python, MIT App Inventor, HTML, JavaScript and extra knowledge on Arduino </li>
-              <li>Sharpen soft skills. </li>
-              <li>Widen networking. </li>
-              <li>Gained passion in teaching. </li>
+            {{'D_DATE'|translate}} 
+          </font>
+          <br>
+          <font style="color:black;">
+            <ul class="dashed leftElement" >
+              <li>{{'D_INTERN_W.1'|translate}}</li>
+              <li> {{'D_INTERN_W.2'|translate}} </li>
+              <li> {{'D_INTERN_W.3'|translate}}</li>
+              <li> {{'D_INTERN_W.4'|translate}}</li>
 
             </ul>
             </font></nz-timeline-item
           >
           
           <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="darkblue"
-            ><font style="color:black; font-weight: bold;">Bachelor of Engineering Technology In Computer Systems with Honours
+            ><font style="color:black; font-weight: bold;">{{'BACHELOR'|translate}}
             <br>
             Universiti Kuala Lumpur Malaysian Institute of Information Technology
             <br>
             2018 - 2021
-            <br>
-            <ul class="dashed rightElement">
-              <li> CGPA - 3.56 </li>
-              <li>Campus Level - Member of UniKL MIIT Computer Engineering Club (2018) </li>
-              <li>Campus Level - Event Committee of Python Workshop by Kidocode (2019) </li>
-              <li>International Level - Event Committee of Network Security Transformation (2019) </li>
-              <li>Campus Level - Participant of Mini Fundraising for Technoculture Festival 2018 (2018) </li>
-              <li>Campus Level - Event Manager of Awareness about the New Norm Practice (2020) </li>
-              <li>National Level - Event Committee of Iftar@Kuala Lumpur 2019 (2019) </li>
+          </font>
+          <br>
+          <font style="color:black;">
+            <ul class="dashed rightElement" >
+             <li>{{'BACHELOR_Q.1'|translate}}</li>
+             <li>{{'BACHELOR_Q.2'|translate}}</li>
+             <li>{{'BACHELOR_Q.3'|translate}}</li>
+             <li>{{'BACHELOR_Q.4'|translate}}</li>
+             <li>{{'BACHELOR_Q.5'|translate}}</li>
+             <li>{{'BACHELOR_Q.6'|translate}}</li>
+             <li>{{'BACHELOR_Q.7'|translate}}</li>
             </ul>
             </font></nz-timeline-item
           >
 
           <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="orange"
-            ><font style="color:black; font-weight: bold;">IT Trainer (Full Time/Part Time)
+            ><font style="color:black; font-weight: bold;">{{'K_FT_1'|translate}}
               <br>
-              Web Department Manager (September 2021 - October 2024) <br>
-              Electronics & Robotics Department Manager (May 2022 - October 2024) <br>
-              3D Modelling Department Manager (Jan 2023 - October 2024)
+              {{'K_FT_2'|translate}} <br>
+              {{'K_FT_3'|translate}} <br>
+              {{'K_FT_4'|translate}}
             <br>
             Kidocode Sdn. Bhd.
             <br>
-            Jul 2018 - Ongoing (Currently Part Time)
-            <br>
-            <ul class="dashed leftElement">
-              <li>Have experience in being a supervisor to over 30 interns. </li>
-              <li>Also have experienced in being a supervisor to 9 interns at the same time. </li>
-              <li>Helped to coach students in the given syllabus</li>
-              <li>Create syllabus especially for web and electronic courses for kids to teenagers</li>
-              
-              <li>Also have experience teaching special students and early age students.</li>
-              <li>Handled language barrier students who can only speak Malay and Japanese</li>
-              <li>Coached students in advanced courses such as CSS, JS, Java, cybersecurity, PhaserJS, Kaboom JS, Lua, 3D printing, business, advanced electronics (direct circuits and logic gates), and robotics.</li>
-              <li>Coached students and interns for projects, including creating and hosting their portfolio using web development.</li>
-   
-              <li>Interviewed over 40 people who wanted to join Kidocode as an intern</li>
-              <li>Hosted and observed internal workshops. Collaborated with UniKL and IEEE to make a workshop online with UniKL about Internet of Things and NodeMCU and also to make an Arduino workshop at SMK Kiaramas.</li>
-              <li>Hosted and observed internal workshops under web, electronics, robotics, and 3D departments.</li>
-              <li>Collaborated with MSU as a judge for their FYP students’ projects under iRex, served as a panelist for their internship panel, and delivered a motivational talk for their dean’s list students preparing for internships, leading to Kidocode signing an MOU with MSU.</li>
-              <li>Collaborated with MSU students to conduct a workshop about ESP and IoT using simulation.</li>
-              <li>Conducted an electronics workshop with Monash University for their Women’s Engineering Club.</li>
-              <li>Become am external assessor for Computer Engineering students' Final Year Project in UniKL MIIT</li>
-          
+            {{'K_DATE'|translate}}
+          </font>
+          <br>
+          <font style="color:black;">
+            <ul class="dashed leftElement" >
+              <li>{{'K_DESC.1'|translate}}</li>
+              <li>{{'K_DESC.2'|translate}}</li>
+              <li>{{'K_DESC.3'|translate}}</li>
+              <li>{{'K_DESC.4'|translate}}</li>
+              <li>{{'K_DESC.5'|translate}}</li>
+              <li>{{'K_DESC.6'|translate}}</li>
+              <li>{{'K_DESC.7'|translate}}</li>
+              <li>{{'K_DESC.8'|translate}}</li>
+              <li>{{'K_DESC.9'|translate}}</li>
+              <li>{{'K_DESC.10'|translate}}</li>
+              <li>{{'K_DESC.11'|translate}}</li>
+              <li>{{'K_DESC.12'|translate}}</li>
+              <li>{{'K_DESC.13'|translate}}</li>
+              <li>{{'K_DESC.14'|translate}}</li>
+              <li>{{'K_DESC.15'|translate}}</li>
             </ul>
             </font>
             </nz-timeline-item
           >
 
           <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="red"
-            ><font style="color:black; font-weight: bold;">Front End Developer (Intern)
+            ><font style="color:black; font-weight: bold;">{{'B_INTERN'|translate}}
             <br>
             Rapidevelop Technology
             <br>
-            Feb 2021 - Jul 2021
+            {{'B_DATE'|translate}}
             </font>
             <br>
             <font style="color:black;">
-              <ul class="dashed rightElement">
-                <li>Helped in a team to develop government agecies' websites. </li>
-                <li>Learn Angular, NG-Zorro and the Agile framework. </li>
-                <li>Got introduced to GitLab management and Microsoft Teams ticketing system.</li>
-              </ul>
+              <ul class="dashed rightElement" >
+                <li>{{'B_DESC.1'|translate}}</li>
+                <li>{{'B_DESC.2'|translate}}</li>
+                <li>{{'B_DESC.3'|translate}}</li>
+                 </ul>
               
               
               </font>
@@ -501,21 +457,20 @@
           >
 
           <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="firebrick"
-            ><font style="color:black; font-weight: bold;">Software Support Engineer
-            <br>
-            Mandrill Tech Sdn. Bhd.
-            <br>
-            Aug 2021 - March 2021
+            ><font style="color:black; font-weight: bold;">{{'MDRILL'|translate}}
+              <br>
+              Mandrill Tech Sdn. Bhd.
+              <br>
+              {{'MDRILL_DATE'|translate}}
             </font>
             <br>
             <font style="color:black;">
-              <ul class="dashed leftElement">
-                <li>Helped in two teams to help two different agencies. </li>
-                <li>Enhanced more on my Java skills here as well as Angular. </li>
-                <li>Learn about keycloak as well. </li>
-                <li>Helped to solve bug fixes and got more familiar with GitLab tickets and roles. </li>
-                <li>Had to meet with clients online to discuss milestones and progress.</li>
-
+              <ul class="dashed leftElement" >
+                <li>{{'MDRILL_DESC.1'|translate}}</li>
+                <li>{{'MDRILL_DESC.2'|translate}}</li>
+                <li>{{'MDRILL_DESC.3'|translate}}</li>
+                <li>{{'MDRILL_DESC.4'|translate}}</li>
+                <li>{{'MDRILL_DESC.5'|translate}}</li>
               </ul>
               
               
@@ -527,42 +482,39 @@
           >
 
           <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="purple"
-          ><font style="color:black; font-weight: bold;">Master of Information Technology (Artificial Intelligence)
+          ><font style="color:black; font-weight: bold;">{{'MASTER'|translate}}
+            <br>
+            Universiti Kuala Lumpur Malaysian Institute of Information Technology
+            <br>
+            {{'MASTER_DATE'|translate}}
+          </font>
           <br>
-          Universiti Kuala Lumpur Malaysian Institute of Information Technology
-          <br>
-          2023 - Expected July 2025
-          <br>
-          <ul class="dashed rightElement">
-            
+          <font style="color:black;">
+          <ul class="dashed rightElement" >
+            <li>{{'MASTER_Q.1'|translate}}</li>
+            <li>{{'MASTER_Q.2'|translate}}</li>
+            <li>{{'MASTER_Q.3'|translate}} : <a href='https://inforescom.org/article/3423' target='_blank'>inforescom.org</a>.</li>
 
-
-<li>Doing masters by research about dense crowd detection through deep learning approach.</li>
-<li>Recipient of Excellent Research Grant Scheme (UERGS).</li>
-<li>Published a Systematic Literature Review article on <a href="https://inforescom.org/article/3423" target="_blank">inforescom.org</a> .</li>
           </ul>
           </font></nz-timeline-item
         >
 
         <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="brown"
-            ><font style="color:black; font-weight: bold;">Assistant Lecturer (Under UERGS Grant)
-            <br>
-            University Kuala Lumpur - Malaysian Institute of Information Technology
-            <br>
-            September 2023 - December 2024 (Grant ended, awaiting extension)
+            ><font style="color:black; font-weight: bold;">{{'A_LEC'|translate}}
+              <br>
+              University Kuala Lumpur - Malaysian Institute of Information Technology
+              <br>
+              {{'A_LEC_DATE'|translate}}
             </font>
             <br>
             <font style="color:black;">
-              <ul class="dashed leftElement">
-                <li>Teaching and guiding Bachelor students about Network Operating Systems (NOS) and projects including Arduino and ESP. </li>
-                <li>Under UERGS Grant and assisting lecturers with the lab segments of courses.</li>
-                <li>Involved with grading the students’ final projects for one of the courses as well as their exams. </li>
-                <li>Examiner for their practical exam. </li>
-
+              <ul class="dashed leftElement" >
+                <li>{{'A_LECT_DESC.1'|translate}}</li>
+                <li>{{'A_LECT_DESC.2'|translate}}</li>
+                <li>{{'A_LECT_DESC.3'|translate}}</li>
+                <li>{{'A_LECT_DESC.4'|translate}}</li>
               </ul>
-              
-              
-              
+                     
               
               
             </font>
@@ -570,36 +522,35 @@
           >
 
         <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="gold"
-          ><font style="color:black; font-weight: bold;">Freelance Developer (September 2023 - June 2024) <br>
-            Software Engineer (June 2024 - September 2024)
+          ><font style="color:black; font-weight: bold;">{{'PD1'|translate}} <br>
+            {{'PD2'|translate}}
           <br>
           Precision Diagnostics
-          <br>
-          <ul class="dashed rightElement">
-            
+        </font>
+        <br>
+        <font style="color:black;">
+          <ul class="dashed rightElement" >
+            <li>{{'PD_DESC.1'|translate}}</li>
+                <li>{{'PD_DESC.2'|translate}}</li>
+                <li>{{'PD_DESC.3'|translate}}</li>
+                <li>{{'PD_DESC.4'|translate}}</li>
 
-
-<li>Assist to check for bugs, make some changes and deploy a system to NGINX for doctors to use.</li>
-<li>Involved with the first pharmacogenomics conference in Malaysia by handing the microphone station.</li>
-<li>Converted a Wordpress website to an e-commerce website using WooCommerce. Many people have bought from the website and during launch for a week, there has been a profit of RM9000 to the website.</li>
-<li>Help to create scripts to pull, push and deploy code to the NGINX server for a smoother process.</li>          
 </ul>
           </font></nz-timeline-item
         >
 
         <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="salmon"
-        ><font style="color:black; font-weight: bold;">Freelance Senior Developer
-        <br>
-        Mididle Sdn. Bhd.
-        <br>
-        September 2021 - Current
+        ><font style="color:black; font-weight: bold;">{{'MIDIDLE'|translate}}
+          <br>
+          Mididle Sdn. Bhd.
+          <br>
+          {{'MIDIDLE_DATE'|translate}}
         </font>
         <br>
         <font style="color:black;">
-          <ul class="dashed leftElement">
-            <li>Handle clients project, mainly as an overseer, middleman, and backend developer.</li>
-            <li>Sometimes stand in to talk with clients and convey messages to the operations team.</li>
-
+          <ul class="dashed leftElement" >
+            <li>{{'MIDIDLE_DESC.1'|translate}}</li>
+            <li>{{'MIDIDLE_DESC.2'|translate}}</li>
           </ul>
           
           
@@ -611,19 +562,19 @@
       >
 
       <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="black"
-      ><font style="color:black; font-weight: bold;">Teacher (Volunteer, collaboration with Kidocode) <br>
-        January 2025 - Current
+      ><font style="color:black; font-weight: bold;">{{'DIGNITY'|translate}} <br>
+        Dignity School
       <br>
-      Dignity School
-      <br>
-      <ul class="dashed rightElement">
-        
-
-
-<li>Collaboration with Kidocode for teaching Kidocode courses to underpriveleged students.</li>
-<li>Observe and guide them to using AI for answering questions and their projects.</li>
-<li>Encourage students them to help each other to boost their soft skills.</li>
-</ul>
+      {{'DIGNITY_DATE'|translate}}
+    </font>
+    <br>
+    <font style="color:black;">
+      
+      <ul class="dashed rightElement" >
+        <li>{{'DIGNITY_DESC.1'|translate}}</li>
+        <li>{{'DIGNITY_DESC.2'|translate}}</li>
+        <li>{{'DIGNITY_DESC.3'|translate}}</li>
+      </ul>
       </font></nz-timeline-item
     >
 
@@ -633,89 +584,92 @@
       <h2 style="text-align: center; color: white;" *ngIf="theme==true">
         <nz-timeline nzMode="custom">
           <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="cyan"
-            ><font style="color:white; font-weight: bold;">Diploma of Engineering Technology in Computing
+            ><font style="color:white; font-weight: bold;">{{'DIPLOMA'|translate}}
             <br>
             Universiti Kuala Lumpur Malaysian Institute of Information Technology
             <br>
             2015 - 2018
             <br>
-            <ul class="dashed rightElement">
-              <li> CGPA - 3.41 </li>
-              <li>Campus Level - Member of UniKL MIIT E-Sport Club (2017, 2018) </li>
-              <li>Campus Level - Member of UniKL MIIT Ganbatte Club (2016, 2017, 2018)</li>
-              <li>Campus Level - Event Committee of Haru Matsuri - Spring Festival (2017)</li>
-            </ul>
+            </font>
+            <font style="color:white;">
+            <ul class="dashed rightElement" >
+              <li> {{'DIPLOMA_Q.1'|translate}} </li>
+              <li> {{'DIPLOMA_Q.2'|translate}} </li>
+              <li> {{'DIPLOMA_Q.3'|translate}}</li>
+              <li> {{'DIPLOMA_Q.4'|translate}}</li>
+                </ul>
             
             </font></nz-timeline-item
           >
           <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="green"
-            ><font style="color:white; font-weight: bold;">IT Trainer (Intern)
+            ><font style="color:white; font-weight: bold;">{{'D_INTERN'|translate}}
             <br>
             Kidocode Sdn. Bhd.
             <br>
-            Jan 2018 - Jul 2018 
+            {{'D_DATE'|translate}} 
             <br>
-            <ul class="dashed leftElement">
-              <li>Gained knowledge on Python, MIT App Inventor, HTML, JavaScript and extra knowledge on Arduino </li>
-              <li>Sharpen soft skills. </li>
-              <li>Widen networking. </li>
-              <li>Gained passion in teaching. </li>
-
+          </font>
+          <font style="color:white;">
+            <ul class="dashed leftElement" >
+              <li>{{'D_INTERN_W.1'|translate}}</li>
+              <li> {{'D_INTERN_W.2'|translate}} </li>
+              <li> {{'D_INTERN_W.3'|translate}}</li>
+              <li> {{'D_INTERN_W.4'|translate}}</li>
             </ul>
             </font></nz-timeline-item
           >
           <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="blue"
-            ><font style="color:white; font-weight: bold;">Bachelor of Engineering Technology In Computer Systems with Honours
+            ><font style="color:white; font-weight: bold;">{{'BACHELOR'|translate}}
             <br>
             Universiti Kuala Lumpur Malaysian Institute of Information Technology
             <br>
             2018 - 2021
             <br>
-            <ul class="dashed rightElement">
-              <li> CGPA - 3.56 </li>
-              <li>Campus Level - Member of UniKL MIIT Computer Engineering Club (2018) </li>
-              <li>Campus Level - Event Committee of Python Workshop by Kidocode (2019) </li>
-              <li>International Level - Event Committee of Network Security Transformation (2019) </li>
-              <li>Campus Level - Participant of Mini Fundraising for Technoculture Festival 2018 (2018) </li>
-              <li>Campus Level - Event Manager of Awareness about the New Norm Practice (2020) </li>
-              <li>National Level - Event Committee of Iftar@Kuala Lumpur 2019 (2019) </li>
-            </ul>
+            </font>
+            <font style="color:white;">
+            <ul class="dashed rightElement" >
+              <li>{{'BACHELOR_Q.1'|translate}}</li>
+              <li>{{'BACHELOR_Q.2'|translate}}</li>
+              <li>{{'BACHELOR_Q.3'|translate}}</li>
+              <li>{{'BACHELOR_Q.4'|translate}}</li>
+              <li>{{'BACHELOR_Q.5'|translate}}</li>
+              <li>{{'BACHELOR_Q.6'|translate}}</li>
+              <li>{{'BACHELOR_Q.7'|translate}}</li>
+                </ul>
            
             </font></nz-timeline-item
           >
 
           <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="orange"
-            ><font style="color:white; font-weight: bold;">IT Trainer (Full Time/Part Time)
+            ><font style="color:white; font-weight: bold;">{{'K_FT_1'|translate}}
               <br>
-              Web Department Manager (September 2021 - October 2024) <br>
-              Electronics & Robotics Department Manager (May 2022 - October 2024) <br>
-              3D Modelling Department Manager (Jan 2023 - October 2024)
+              {{'K_FT_2'|translate}} <br>
+              {{'K_FT_3'|translate}} <br>
+              {{'K_FT_4'|translate}}
             <br>
             Kidocode Sdn. Bhd.
             <br>
-            Jul 2018 - Ongoing (Currently Part Time)
+            {{'K_DATE'|translate}}
             </font>
             <br>
             <font style="color:white;">
-              <ul class="dashed leftElement">
-                <li>Have experience in being a supervisor to over 30 interns. </li>
-              <li>Also have experienced in being a supervisor to 9 interns at the same time. </li>
-              <li>Helped to coach students in the given syllabus</li>
-              <li>Create syllabus especially for web and electronic courses for kids to teenagers</li>
-              
-              <li>Also have experience teaching special students and early age students.</li>
-              <li>Handled language barrier students who can only speak Malay and Japanese</li>
-              <li>Coached students in advanced courses such as CSS, JS, Java, cybersecurity, PhaserJS, Kaboom JS, Lua, 3D printing, business, advanced electronics (direct circuits and logic gates), and robotics.</li>
-              <li>Coached students and interns for projects, including creating and hosting their portfolio using web development.</li>
-   
-              <li>Interviewed over 40 people who wanted to join Kidocode as an intern</li>
-              <li>Hosted and observed internal workshops. Collaborated with UniKL and IEEE to make a workshop online with UniKL about Internet of Things and NodeMCU and also to make an Arduino workshop at SMK Kiaramas.</li>
-              <li>Hosted and observed internal workshops under web, electronics, robotics, and 3D departments.</li>
-              <li>Collaborated with MSU as a judge for their FYP students’ projects under iRex, served as a panelist for their internship panel, and delivered a motivational talk for their dean’s list students preparing for internships, leading to Kidocode signing an MOU with MSU.</li>
-              <li>Collaborated with MSU students to conduct a workshop about ESP and IoT using simulation.</li>
-              <li>Conducted an electronics workshop with Monash University for their Women’s Engineering Club.</li>
-              <li>Become am external assessor for Computer Engineering students' Final Year Project in UniKL MIIT</li>
-              </ul>
+              <ul class="dashed leftElement" >
+                <li>{{'K_DESC.1'|translate}}</li>
+              <li>{{'K_DESC.2'|translate}}</li>
+              <li>{{'K_DESC.3'|translate}}</li>
+              <li>{{'K_DESC.4'|translate}}</li>
+              <li>{{'K_DESC.5'|translate}}</li>
+              <li>{{'K_DESC.6'|translate}}</li>
+              <li>{{'K_DESC.7'|translate}}</li>
+              <li>{{'K_DESC.8'|translate}}</li>
+              <li>{{'K_DESC.9'|translate}}</li>
+              <li>{{'K_DESC.10'|translate}}</li>
+              <li>{{'K_DESC.11'|translate}}</li>
+              <li>{{'K_DESC.12'|translate}}</li>
+              <li>{{'K_DESC.13'|translate}}</li>
+              <li>{{'K_DESC.14'|translate}}</li>
+              <li>{{'K_DESC.15'|translate}}</li>
+               </ul>
               
               
                
@@ -725,75 +679,78 @@
           >
 
           <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="red"
-            ><font style="color:white; font-weight: bold;">Front End Developer (Intern)
-            <br>
-            Rapidevelop Technology
-            <br>
-            Feb 2021 - Jul 2021
+            ><font style="color:white; font-weight: bold;">{{'B_INTERN'|translate}}
+              <br>
+              Rapidevelop Technology
+              <br>
+              {{'B_DATE'|translate}}
             
             <br>
-            <ul class="dashed rightElement">
-              <li>Helped in a team to develop government agecies' websites. </li>
-              <li>Learn Angular, NG-Zorro and the Agile framework. </li>
-              <li>Got introduced to GitLab management and Microsoft Teams ticketing system.</li>
-            </ul>
+            </font>
+            <font style="color:white;">
+            <ul class="dashed rightElement" >
+              <li>{{'B_DESC.1'|translate}}</li>
+              <li>{{'B_DESC.2'|translate}}</li>
+              <li>{{'B_DESC.3'|translate}}</li>
+                 </ul>
           </font>
             </nz-timeline-item
           >
 
           <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="yellow"
-            ><font style="color:white; font-weight: bold;">Software Support Engineer
+            ><font style="color:white; font-weight: bold;">{{'MDRILL'|translate}}
             <br>
             Mandrill Tech Sdn. Bhd.
             <br>
-            Aug 2021 - March 2021
+            {{'MDRILL_DATE'|translate}}
             
             <br>
-            <ul class="dashed leftElement">
-              <li>Helped in two teams to help two different agencies. </li>
-              <li>Enhanced more on my Java skills here as well as Angular. </li>
-              <li>Learn about keycloak as well. </li>
-              <li>Helped to solve bug fixes and got more familiar with GitLab tickets and roles. </li>
-              <li>Had to meet with clients online to discuss milestones and progress.</li>
-
+          </font>
+          <font style="color:white;">
+            <ul class="dashed leftElement" >
+              <li>{{'MDRILL_DESC.1'|translate}}</li>
+              <li>{{'MDRILL_DESC.2'|translate}}</li>
+              <li>{{'MDRILL_DESC.3'|translate}}</li>
+              <li>{{'MDRILL_DESC.4'|translate}}</li>
+              <li>{{'MDRILL_DESC.5'|translate}}</li>
             </ul>
           </font>
             </nz-timeline-item
           >
 
           <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="cyan"
-          ><font style="color:white; font-weight: bold;">Master of Information Technology (Artificial Intelligence)
+          ><font style="color:white; font-weight: bold;">{{'MASTER'|translate}}
           <br>
           Universiti Kuala Lumpur Malaysian Institute of Information Technology
           <br>
-          2023 - Expected July 2025
+          {{'MASTER_DATE'|translate}}
           <br>
-          <ul class="dashed rightElement">
+          </font>
+            <font style="color:white;">
+          <ul class="dashed rightElement" >
+            <li>{{'MASTER_Q.1'|translate}}</li>
+            <li>{{'MASTER_Q.2'|translate}}</li>
+            <li>{{'MASTER_Q.3'|translate}} : <a href='https://inforescom.org/article/3423' target='_blank'>inforescom.org</a>.</li>
+
             
-
-
-<li>Doing masters by research about dense crowd detection through deep learning approach.</li>
-<li>Recipient of Excellent Research Grant Scheme (UERGS).</li>
-<li>Published a Systematic Literature Review article on <a href="https://inforescom.org/article/3423" target="_blank">inforescom.org</a> .</li>
-          </ul>
+      </ul>
           </font></nz-timeline-item
         >
 
         <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="brown"
-            ><font style="color:white; font-weight: bold;">Assistant Lecturer (Under UERGS Grant)
+            ><font style="color:white; font-weight: bold;">{{'A_LEC'|translate}}
             <br>
             University Kuala Lumpur - Malaysian Institute of Information Technology
             <br>
-            September 2023 - December 2024 (Grant ended, awaiting extension)
+            {{'A_LEC_DATE'|translate}}
             </font>
             <br>
             <font style="color:white;">
-              <ul class="dashed leftElement">
-                <li>Teaching and guiding Bachelor students about Network Operating Systems (NOS) and projects including Arduino and ESP. </li>
-                <li>Under UERGS Grant and assisting lecturers with the lab segments of courses.</li>
-                <li>Involved with grading the students’ final projects for one of the courses as well as their exams. </li>
-                <li>Examiner for their practical exam. </li>
-
+              <ul class="dashed leftElement" >
+                <li>{{'A_LECT_DESC.1'|translate}}</li>
+                <li>{{'A_LECT_DESC.2'|translate}}</li>
+                <li>{{'A_LECT_DESC.3'|translate}}</li>
+                <li>{{'A_LECT_DESC.4'|translate}}</li>
               </ul>
               
               
@@ -805,36 +762,35 @@
           >
 
         <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="gold"
-          ><font style="color:white; font-weight: bold;">Freelance Developer (September 2023 - June 2024) <br>
-            Software Engineer (June 2024 - September 2024)
+          ><font style="color:white; font-weight: bold;">{{'PD1'|translate}} <br>
+            {{'PD2'|translate}}
           <br>
           Precision Diagnostics
           <br>
-          <ul class="dashed rightElement">
-            
+        </font>
+        <font style="color:white;">
+          <ul class="dashed rightElement" >
+            <li>{{'PD_DESC.1'|translate}}</li>
+            <li>{{'PD_DESC.2'|translate}}</li>
+            <li>{{'PD_DESC.3'|translate}}</li>
+            <li>{{'PD_DESC.4'|translate}}</li>
 
-
-<li>Assist to check for bugs, make some changes and deploy a system to NGINX for doctors to use.</li>
-<li>Involved with the first pharmacogenomics conference in Malaysia by handing the microphone station.</li>
-<li>Converted a Wordpress website to an e-commerce website using WooCommerce. Many people have bought from the website and during launch for a week, there has been a profit of RM9000 to the website.</li>
-<li>Help to create scripts to pull, push and deploy code to the NGINX server for a smoother process.</li>          
 </ul>
           </font></nz-timeline-item
         >
 
         <nz-timeline-item id="expTxtDM" nzPosition="right" nzColor="salmon"
-        ><font style="color:white; font-weight: bold;">Freelance Senior Developer
+        ><font style="color:white; font-weight: bold;">{{'MIDIDLE'|translate}}
         <br>
         Mididle Sdn. Bhd.
         <br>
-        September 2021 - Current
+        {{'MIDIDLE_DATE'|translate}}
         </font>
         <br>
         <font style="color:white;">
-          <ul class="dashed leftElement">
-            <li>Handle clients project, mainly as an overseer, middleman, and backend developer.</li>
-            <li>Sometimes stand in to talk with clients and convey messages to the operations team.</li>
-
+          <ul class="dashed leftElement"> 
+            <li>{{'MIDIDLE_DESC.1'|translate}}</li>
+            <li>{{'MIDIDLE_DESC.2'|translate}}</li>
           </ul>
           
           
@@ -846,18 +802,17 @@
       >
 
       <nz-timeline-item id="expTxtDM" nzPosition="left" nzColor="grey"
-      ><font style="color:white; font-weight: bold;">Teacher (Volunteer, collaboration with Kidocode) <br>
-        January 2025 - Current
+      ><font style="color:white; font-weight: bold;">{{'DIGNITY'|translate}} <br>
+        Dignity School
       <br>
-      Dignity School
+      {{'DIGNITY_DATE'|translate}}
       <br>
-      <ul class="dashed rightElement">
-        
-
-
-<li>Collaboration with Kidocode for teaching Kidocode courses to underpriveleged students.</li>
-<li>Observe and guide them to using AI for answering questions and their projects.</li>
-<li>Encourage students them to help each other to boost their soft skills.</li>
+      </font>
+            <font style="color:white;">
+      <ul class="dashed rightElement" >
+        <li>{{'DIGNITY_DESC.1'|translate}}</li>
+        <li>{{'DIGNITY_DESC.2'|translate}}</li>
+        <li>{{'DIGNITY_DESC.3'|translate}}</li>
 </ul>
       </font></nz-timeline-item
     >

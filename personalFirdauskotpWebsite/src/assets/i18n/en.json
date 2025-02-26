@@ -69,10 +69,162 @@
   "PNC":"Pet & Child Tracker",
   "PNC_TITLE":"Bachelor's FYP",
   "PNC_TECH":"Raspberry Pi, Python, Telegram bot (Telepot library), MySQL",
-  "PNC_DESC":"<li>Tracking device for pets and kids</li><li>Uses Raspberry Pi and its own telegram bot to communicate with it</li><li>Can be used to get the tracker's location, set a safe zone for the tracker where if it leaves the zone, the person's telegram bot will be spammed with the tracker's last location</li><li>The person can also ring a buzzer from the telegram bot and access emergency contacts saved through the telegram bot.</li><li><a href='https://github.com/firdauskotp/PnCTracker' target='_blank'>GitHub Code Here!</a></li>"
+  "PNC_DESC":"<li>Tracking device for pets and kids</li><li>Uses Raspberry Pi and its own telegram bot to communicate with it</li><li>Can be used to get the tracker's location, set a safe zone for the tracker where if it leaves the zone, the person's telegram bot will be spammed with the tracker's last location</li><li>The person can also ring a buzzer from the telegram bot and access emergency contacts saved through the telegram bot.</li><li><a href='https://github.com/firdauskotp/PnCTracker' target='_blank'>GitHub Code Here!</a></li>",
 
+  "WWMU":"WorkWakeMeUpPls Telegram bot",
+  "WWMU_TITLE": "Personal Project, you can search it on telegram by finding its username - @WorkWakeMeUpPlsbot",
+  "WWMU_TECH": "Python, MongoDB, Telegram bot (Telepot library), Heroku",
+  "WWMU_DESC": "<li>Telegram bot that act as alarm clock to wake people up</li>  <li>To stop the alarm, the user needs to answer the given mathematical question, making it hard to    snooze</li>    <li>Can also include with a creepy image to make sure the person don't go back to sleep (False by default)</li>      <li><a href='https://github.com/firdauskotp/Wake-Me-Up-Pls-Bot-Multiuser' target='_blank'>GitHub Code Here!</a></li>",
 
+  "INPT":"Python Package",
+  "INPT_TITLE":"Personal Python Package",
+  "INPT_TECH":"Python, PyPI",
+  "INPT_DESC":"<li>Python package to help simplify the use of inputs with data types</li>  <li><a href='https://github.com/firdauskotp/PnCTracker' target='_blank'>Package and Tutorial Here!</a></li>",
 
+  "QBOT":"Qadhaa Reminder Telegram bot",
+  "QBOT_TITLE":"Competition / Personal Project, you can search it on telegram by finding its username - @QadhaaBot",
+  "QBOT_TECH":"Python, Telegram bot (Telepot library), MongoDB, Heroku",
+  "QBOT_DESC":"<li>Telegram bot created to keep track of Islamic prayers missed so that it will be easier to be  reminded to replace them.</li><li>Can also choose to send a prayer (Doa/Dua) and Islamic quotes everyday at 8AM and 9PM using the Singapore Timezone</li>    <li><a href='https://github.com/firdauskotp/Qada_Reminder_Bot' target='_blank'>GitHub Code Here!</a></li>    <li><a href='https://github.com/firdauskotp/Maggi-Kaw-Kaw-Project-Guides/blob/main/Qadhaa%20Bot.txt' target='_blank'>User Guide Here!</a></li>",
 
+  "KGAME":"Introduction to Web Department Managers",
+  "KGAME_TITLE":"Personal Project - To introduce new people to Kidocode's Web Department (2021-2024)",
+  "KGAME_TECH":"RenPy, itch.io",
+  "KGAME_DESC":" <li>Play through a visual novel to introduce yourself to Kidocode's Web Department's Managers (2021-2024)</li>  <li>Done using RenPy, and hosted on itch.io for free</li>  <li>Have a secret ending hehehe</li>      <li><a href='https://firdauskotp.itch.io/kidocode-web-department-managers' target='_blank'>Play the Game Here!</a></li>",
 
+  "J_TITLE":"Personal Project - Fire Emblem 4 / 5 Based Wordle",
+  "J_TECH":"HTML, CSS, JS, GitHub Pages",
+  "J_DESC":"<li>Fire Emblem 4 / 5 based Wordle (inspiration from <a href='https://doopu.github.io/solkatti/' target='_blank'>Doopu - Solkatti</a>) </li>  <li>Using HTML, CSS, JS, and hosted via GitHub pages</li>  <li>Done for fun, used ChatGPT for help on this</li>  <li>Included a feedback form</li>      <li><a href='https://firdauskotp.github.io/Jugdral/' target='_blank'>Play the Game Here!</a></li>",
+
+  "EXP_T":"Experience Timeline",
+  "DIPLOMA":"Diploma of Engineering Technology in Computing",
+  "DIPLOMA_Q_1":"<li> CGPA - 3.41 </li>  <li>Campus Level - Member of UniKL MIIT E-Sport Club (2017, 2018) </li>  <li>Campus Level - Member of UniKL MIIT Ganbatte Club (2016, 2017, 2018)</li>  <li>Campus Level - Event Committee of Haru Matsuri - Spring Festival (2017)</li>",
+  
+  "D_INTERN":"IT Trainer (Intern)",
+  "D_DATE":"Jan 2018 - Jul 2018 ",
+  "D_INTERN_W_1":"<li>Gained knowledge on Python, MIT App Inventor, HTML, JavaScript and extra knowledge on Arduino </li>  <li>Sharpen soft skills. </li>  <li>Widen networking. </li>  <li>Gained passion in teaching. </li>",
+
+  "BACHELOR":"Bachelor of Engineering Technology In Computer Systems with Honours",
+  "BACHELOR_Q_1":"<li> CGPA - 3.56 </li>  <li>Campus Level - Member of UniKL MIIT Computer Engineering Club (2018) </li>  <li>Campus Level - Event Committee of Python Workshop by Kidocode (2019) </li>  <li>International Level - Event Committee of Network Security Transformation (2019) </li>  <li>Campus Level - Participant of Mini Fundraising for Technoculture Festival 2018 (2018) </li>  <li>Campus Level - Event Manager of Awareness about the New Norm Practice (2020) </li>  <li>National Level - Event Committee of Iftar@Kuala Lumpur 2019 (2019) </li>",
+
+  "K_FT_1":"IT Trainer (Full Time/Part Time)",
+  "K_FT_2":"Web Department Manager (September 2021 - October 2024)",
+  "K_FT_3":"Electronics & Robotics Department Manager (May 2022 - October 2024)",
+  "K_FT_4":"3D Modelling Department Manager (Jan 2023 - October 2024)",
+  "K_DATE":"Jul 2018 - Ongoing (Currently Part Time)",
+  "K_DESC_1":"<li>Have experience in being a supervisor to over 30 interns. </li>  <li>Also have experienced in being a supervisor to 9 interns at the same time. </li>  <li>Helped to coach students in the given syllabus</li>  <li>Create syllabus especially for web and electronic courses for kids to teenagers</li>    <li>Also have experience teaching special students and early age students.</li>  <li>Handled language barrier students who can only speak Malay and Japanese</li>  <li>Coached students in advanced courses such as CSS, JS, Java, cybersecurity, PhaserJS, Kaboom JS, Lua, 3D printing, business, advanced electronics (direct circuits and logic gates), and robotics.</li>  <li>Coached students and interns for projects, including creating and hosting their portfolio using web development.</li>  <li>Interviewed over 40 people who wanted to join Kidocode as an intern</li>  <li>Hosted and observed internal workshops. Collaborated with UniKL and IEEE to make a workshop online with UniKL about Internet of Things and NodeMCU and also to make an Arduino workshop at SMK Kiaramas.</li>  <li>Hosted and observed internal workshops under web, electronics, robotics, and 3D departments.</li>  <li>Collaborated with MSU as a judge for their FYP students’ projects under iRex, served as a panelist for their internship panel, and delivered a motivational talk for their dean’s list students preparing for internships, leading to Kidocode signing an MOU with MSU.</li>  <li>Collaborated with MSU students to conduct a workshop about ESP and IoT using simulation.</li>  <li>Conducted an electronics workshop with Monash University for their Women’s Engineering Club.</li>  <li>Become am external assessor for Computer Engineering students' Final Year Project in UniKL MIIT</li>",
+
+  "B_INTERN":"Front End Developer (Intern)",
+  "B_DATE":"Feb 2021 - Jul 2021",
+  "B_DESC_1":"<li>Helped in a team to develop government agecies' websites. </li>  <li>Learn Angular, NG-Zorro and the Agile framework. </li>  <li>Got introduced to GitLab management and Microsoft Teams ticketing system.</li>",
+
+  "MDRILL":"Software Support Engineer",
+  "MDRILL_DATE":"Aug 2021 - March 2021",
+  "MDRILL_DESC_1":"<li>Helped in two teams to help two different agencies. </li>  <li>Enhanced more on my Java skills here as well as Angular. </li>  <li>Learn about keycloak as well. </li>  <li>Helped to solve bug fixes and got more familiar with GitLab tickets and roles. </li><li>Had to meet with clients online to discuss milestones and progress.</li>",
+
+  "MASTER":"Master of Information Technology (Artificial Intelligence)", 
+  "MASTER_DATE":"2023 - Expected July 2025",
+  "MASTER_Q_1":"<li>Doing masters by research about dense crowd detection through deep learning approach.</li>  <li>Recipient of Excellent Research Grant Scheme (UERGS).</li>  <li>Published a Systematic Literature Review article on <a href='https://inforescom.org/article/3423' target='_blank'>inforescom.org</a> .</li>",
+
+  "A_LEC":"Assistant Lecturer (Under UERGS Grant)",
+  "A_LEC_DATE":"September 2023 - December 2024 (Grant ended, extended but awaiting new semester if called upon)",
+  "A_LECT_DESC_1":"<li>Teaching and guiding Bachelor students about Network Operating Systems (NOS) and projects including Arduino and ESP. </li>  <li>Under UERGS Grant and assisting lecturers with the lab segments of courses.</li>  <li>Involved with grading the students’ final projects for one of the courses as well as their exams. </li>  <li>Examiner for their practical exam. </li>",
+
+  "PD1":"Freelance Developer (September 2023 - June 2024)",
+  "PD2":"Software Engineer (June 2024 - September 2024)",
+  "PD_DESC_1":"<li>Assist to check for bugs, make some changes and deploy a system to NGINX for doctors to use.</li>  <li>Involved with the first pharmacogenomics conference in Malaysia by handing the microphone station.</li>  <li>Converted a Wordpress website to an e-commerce website using WooCommerce. Many people have bought from the website and during launch for a week, there has been a profit of RM9000 to the website.</li>  <li>Help to create scripts to pull, push and deploy code to the NGINX server for a smoother process.</li>",
+  
+  "MIDIDLE":"Freelance Senior Developer",
+  "MIDIDLE_DATE":"September 2021 - Current",
+  "MIDIDLE_DESC_1":"<li>Handle clients project, mainly as an overseer, middleman, and backend developer.</li>  <li>Sometimes stand in to talk with clients and convey messages to the operations team.</li>",
+
+  "DIGNITY":"Teacher (Volunteer, collaboration with Kidocode)",
+  "DIGNITY_DATE":"January 2025 - Current",
+  "DIGNITY_DESC_1":"<li>Collaboration with Kidocode for teaching Kidocode courses to underpriveleged students.</li>  <li>Observe and guide them to using AI for answering questions and their projects.</li><li>Encourage students them to help each other to boost their soft skills.</li>",
+
+  "DIPLOMA_Q": {
+    "1": "CGPA - 3.41",
+    "2": "Campus Level - Member of UniKL MIIT E-Sport Club (2017, 2018)",
+    "3": "Campus Level - Member of UniKL MIIT Ganbatte Club (2016, 2017, 2018)",
+    "4": "Campus Level - Event Committee of Haru Matsuri - Spring Festival (2017)"
+  },
+
+  "D_INTERN_W": {
+    "1": "Gained knowledge on Python, MIT App Inventor, HTML, JavaScript and extra knowledge on Arduino",
+    "2": "Sharpen soft skills.",
+    "3": "Widen networking.",
+    "4": "Gained passion in teaching."
+  },
+
+  "BACHELOR_Q": {
+    "1": "CGPA - 3.56",
+    "2": "Campus Level - Member of UniKL MIIT Computer Engineering Club (2018)",
+    "3": "Campus Level - Event Committee of Python Workshop by Kidocode (2019)",
+    "4": "International Level - Event Committee of Network Security Transformation (2019)",
+    "5": "Campus Level - Participant of Mini Fundraising for Technoculture Festival 2018 (2018)",
+    "6": "Campus Level - Event Manager of Awareness about the New Norm Practice (2020)",
+    "7": "National Level - Event Committee of Iftar@Kuala Lumpur 2019 (2019)"
+  },
+
+  "K_DESC": {
+    "1": "Have experience in being a supervisor to over 30 interns.",
+    "2": "Also have experienced in being a supervisor to 9 interns at the same time.",
+    "3": "Helped to coach students in the given syllabus",
+    "4": "Create syllabus especially for web and electronic courses for kids to teenagers",
+    "5": "Also have experience teaching special students and early age students.",
+    "6": "Handled language barrier students who can only speak Malay and Japanese",
+    "7": "Coached students in advanced courses such as CSS, JS, Java, cybersecurity, PhaserJS, Kaboom JS, Lua, 3D printing, business, advanced electronics (direct circuits and logic gates), and robotics.",
+    "8": "Coached students and interns for projects, including creating and hosting their portfolio using web development.",
+    "9": "Interviewed over 40 people who wanted to join Kidocode as an intern",
+    "10": "Hosted and observed internal workshops. Collaborated with UniKL and IEEE to make a workshop online with UniKL about Internet of Things and NodeMCU and also to make an Arduino workshop at SMK Kiaramas.",
+    "11": "Hosted and observed internal workshops under web, electronics, robotics, and 3D departments.",
+    "12": "Collaborated with MSU as a judge for their FYP students’ projects under iRex, served as a panelist for their internship panel, and delivered a motivational talk for their dean’s list students preparing for internships, leading to Kidocode signing an MOU with MSU.",
+    "13": "Collaborated with MSU students to conduct a workshop about ESP and IoT using simulation.",
+    "14": "Conducted an electronics workshop with Monash University for their Women’s Engineering Club.",
+    "15": "Become an external assessor for Computer Engineering students' Final Year Project in UniKL MIIT"
+  },
+
+  "B_DESC": {
+    "1": "Helped in a team to develop government agencies' websites.",
+    "2": "Learn Angular, NG-Zorro and the Agile framework.",
+    "3": "Got introduced to GitLab management and Microsoft Teams ticketing system."
+  },
+
+  "MDRILL_DESC": {
+    "1": "Helped in two teams to help two different agencies.",
+    "2": "Enhanced more on my Java skills here as well as Angular.",
+    "3": "Learn about keycloak as well.",
+    "4": "Helped to solve bug fixes and got more familiar with GitLab tickets and roles.",
+    "5": "Had to meet with clients online to discuss milestones and progress."
+  },
+
+  "MASTER_Q": {
+    "1": "Doing masters by research about dense crowd detection through deep learning approach.",
+    "2": "Recipient of Excellent Research Grant Scheme (UERGS).",
+    "3": "Published a Systematic Literature Review article on "
+  },
+
+  "A_LECT_DESC": {
+    "1": "Teaching and guiding Bachelor students about Network Operating Systems (NOS) and projects including Arduino and ESP.",
+    "2": "Under UERGS Grant and assisting lecturers with the lab segments of courses.",
+    "3": "Involved with grading the students’ final projects for one of the courses as well as their exams.",
+    "4": "Examiner for their practical exam."
+  },
+
+  "PD_DESC": {
+    "1": "Assist to check for bugs, make some changes and deploy a system to NGINX for doctors to use.",
+    "2": "Involved with the first pharmacogenomics conference in Malaysia by handling the microphone station.",
+    "3": "Converted a Wordpress website to an e-commerce website using WooCommerce. Many people have bought from the website and during launch for a week, there has been a profit of RM9000 to the website.",
+    "4": "Help to create scripts to pull, push and deploy code to the NGINX server for a smoother process."
+  },
+
+  "MIDIDLE_DESC": {
+    "1": "Handle clients project, mainly as an overseer, middleman, and backend developer.",
+    "2": "Sometimes stand in to talk with clients and convey messages to the operations team."
+  },
+
+  "DIGNITY_DESC": {
+    "1": "Collaboration with Kidocode for teaching Kidocode courses to underprivileged students.",
+    "2": "Observe and guide them to using AI for answering questions and their projects.",
+    "3": "Encourage students to help each other to boost their soft skills."
+  }
 }

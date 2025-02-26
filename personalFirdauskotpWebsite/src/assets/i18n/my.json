@@ -64,7 +64,171 @@
   "STORIES_TITLE": "Cerita",
   "STORIES_COMPLETED": "Selesai",
   "STORIES_ONESHOT": "Satu Bab",
-  "STORIES_ONESHOT_DESC": "Cerita ini mengenai saya, yang penat dengan tugasan dan cuba untuk tidur. Saya gagal melakukannya dan fikir ia idea yang baik untuk meletihkan mata dengan menonton TV. Kemudian, saya menemui rancangan menarik bernama Angel vs Demon dan mencubanya. Apa yang berlaku seterusnya membuatkan saya menyesal menyalakan saluran itu."
+  "STORIES_ONESHOT_DESC": "Cerita ini mengenai saya, yang penat dengan tugasan dan cuba untuk tidur. Saya gagal melakukannya dan fikir ia idea yang baik untuk meletihkan mata dengan menonton TV. Kemudian, saya menemui rancangan menarik bernama Angel vs Demon dan mencubanya. Apa yang berlaku seterusnya membuatkan saya menyesal menyalakan saluran itu.",
+
+  "PROJECT_TITLE": "Ini ialah senarai beberapa projek yang saya cipta. Anda boleh menemui lebih banyak projek saya di GitHub dan LinkedIn yang dipautkan dalam tab Hubungi.",
+  "PNC": "Penjejak Haiwan Peliharaan & Kanak-Kanak",
+  "PNC_TITLE": "Projek Tahun Akhir Sarjana Muda",
+  "PNC_TECH": "Raspberry Pi, Python, Bot Telegram (Pakej Telepot), MySQL",
+  "PNC_DESC": "<li>Peranti penjejakan untuk haiwan peliharaan dan kanak-kanak</li><li>Menggunakan Raspberry Pi dan bot Telegram tersendiri untuk berkomunikasi dengannya</li><li>Boleh digunakan untuk mendapatkan lokasi penjejak, menetapkan zon selamat untuk penjejak, di mana jika ia keluar dari zon tersebut, bot Telegram pemilik akan dihujani dengan lokasi terakhir penjejak</li><li>Pemilik juga boleh membunyikan buzzer daripada bot Telegram dan mengakses kenalan kecemasan yang disimpan melalui bot Telegram.</li><li><a href='https://github.com/firdauskotp/PnCTracker' target='_blank'>Kod GitHub di sini!</a></li>",
+
+  "WWMU": "Bot Telegram WorkWakeMeUpPls",
+  "WWMU_TITLE": "Projek Peribadi, anda boleh mencarinya di Telegram dengan nama pengguna - @WorkWakeMeUpPlsbot",
+  "WWMU_TECH": "Python, MongoDB, Bot Telegram (Pakej Telepot), Heroku",
+  "WWMU_DESC": "<li>Bot Telegram yang berfungsi sebagai jam penggera untuk membangunkan orang</li><li>Untuk menghentikan penggera, pengguna perlu menjawab soalan matematik yang diberikan, menjadikannya sukar untuk ditunda</li><li>Boleh juga disertakan dengan imej menyeramkan untuk memastikan orang itu tidak kembali tidur (Lalai: Tidak aktif)</li><li><a href='https://github.com/firdauskotp/Wake-Me-Up-Pls-Bot-Multiuser' target='_blank'>Kod GitHub di sini!</a></li>",
+
+  "INPT": "Pakej Python",
+  "INPT_TITLE": "Pakej Python Peribadi",
+  "INPT_TECH": "Python, PyPI",
+  "INPT_DESC": "<li>Pakej Python untuk membantu mempermudahkan penggunaan input dengan jenis data</li><li><a href='https://github.com/firdauskotp/PnCTracker' target='_blank'>Pakej dan Tutorial di sini!</a></li>",
+
+  "QBOT": "Bot Telegram Peringatan Qadhaa",
+  "QBOT_TITLE": "Pertandingan / Projek Peribadi, anda boleh mencarinya di Telegram dengan nama pengguna - @QadhaaBot",
+  "QBOT_TECH": "Python, Bot Telegram (Pakej Telepot), MongoDB, Heroku",
+  "QBOT_DESC": "<li>Bot Telegram yang dicipta untuk menjejak solat yang tertinggal supaya lebih mudah untuk menggantikannya.</li><li>Boleh juga memilih untuk menghantar doa dan petikan Islam setiap hari pada pukul 8 pagi dan 9 malam mengikut Zon Waktu Singapura.</li><li><a href='https://github.com/firdauskotp/Qada_Reminder_Bot' target='_blank'>Kod GitHub di sini!</a></li><li><a href='https://github.com/firdauskotp/Maggi-Kaw-Kaw-Project-Guides/blob/main/Qadhaa%20Bot.txt' target='_blank'>Panduan Pengguna di sini!</a></li>",
+
+  "KGAME": "Pengenalan kepada Pengurus Jabatan Web",
+  "KGAME_TITLE": "Projek Peribadi - Untuk memperkenalkan orang baharu kepada Pengurus Jabatan Web Kidocode (2021-2024)",
+  "KGAME_TECH": "RenPy, itch.io",
+  "KGAME_DESC": "<li>Main permainan novel visual untuk memperkenalkan diri kepada Pengurus Jabatan Web Kidocode (2021-2024)</li><li>Dibangunkan menggunakan RenPy dan dihoskan di itch.io secara percuma</li><li>Mempunyai pengakhiran rahsia hehehe</li><li><a href='https://firdauskotp.itch.io/kidocode-web-department-managers' target='_blank'>Main permainan di sini!</a></li>",
+
+  "J_TITLE": "Projek Peribadi - Wordle Berdasarkan Fire Emblem 4 / 5",
+  "J_TECH": "HTML, CSS, JS, GitHub Pages",
+  "J_DESC": "<li>Wordle berdasarkan Fire Emblem 4 / 5 (inspirasi daripada <a href='https://doopu.github.io/solkatti/' target='_blank'>Doopu - Solkatti</a>)</li><li>Menggunakan HTML, CSS, JS, dan dihoskan melalui GitHub Pages</li><li>Dibuat untuk suka-suka, menggunakan ChatGPT untuk bantuan</li><li>Termasuk borang maklum balas</li><li><a href='https://firdauskotp.github.io/Jugdral/' target='_blank'>Main permainan di sini!</a></li>",
+
+  "DIPLOMA": "Diploma Teknologi Kejuruteraan dalam Pengkomputeran",
+  "DIPLOMA_Q_1": "<li> CGPA - 3.41 </li> <li> Peringkat Kampus - Ahli Kelab UniKL MIIT E-Sport (2017, 2018) </li> <li> Peringkat Kampus - Ahli Kelab UniKL MIIT Ganbatte (2016, 2017, 2018)</li> <li> Peringkat Kampus - Jawatankuasa Acara Haru Matsuri - Pesta Musim Bunga (2017)</li>",
+
+  "D_INTERN": "Jurulatih IT (Latihan Industri)",
+  "D_DATE": "Jan 2018 - Jul 2018",
+  "D_INTERN_W_1": "<li> Mendapat pengetahuan mengenai Python, MIT App Inventor, HTML, JavaScript dan tambahan pengetahuan mengenai Arduino </li> <li> Memantapkan kemahiran insaniah. </li> <li> Meluaskan rangkaian kenalan. </li> <li> Memupuk minat dalam pengajaran. </li>",
+
+  "BACHELOR": "Ijazah Sarjana Muda Teknologi Kejuruteraan Sistem Komputer dengan Kepujian",
+  "BACHELOR_Q_1": "<li> CGPA - 3.56 </li> <li> Peringkat Kampus - Ahli Kelab Kejuruteraan Komputer UniKL MIIT (2018) </li> <li> Peringkat Kampus - Jawatankuasa Acara Bengkel Python oleh Kidocode (2019) </li> <li> Peringkat Antarabangsa - Jawatankuasa Acara Transformasi Keselamatan Rangkaian (2019) </li> <li> Peringkat Kampus - Peserta Kutipan Dana Mini untuk Festival Technoculture 2018 (2018) </li> <li> Peringkat Kampus - Pengurus Acara Kesedaran tentang Amalan Norma Baharu (2020) </li> <li> Peringkat Kebangsaan - Jawatankuasa Acara Iftar@Kuala Lumpur 2019 (2019) </li>",
+
+  "K_FT_1": "Jurulatih IT (Sepenuh Masa/Sambilan)",
+  "K_FT_2": "Pengurus Jabatan Web (September 2021 - Oktober 2024)",
+  "K_FT_3": "Pengurus Jabatan Elektronik & Robotik (Mei 2022 - Oktober 2024)",
+  "K_FT_4": "Pengurus Jabatan Pemodelan 3D (Jan 2023 - Oktober 2024)",
+  "K_DATE": "Jul 2018 - Kini (Ketika ini Sambilan)",
+  "K_DESC_1": "<li> Berpengalaman sebagai penyelia lebih 30 pelatih industri. </li> <li> Juga pernah menyelia 9 pelatih pada masa yang sama. </li> <li> Membantu membimbing pelajar dalam silibus yang diberikan. </li> <li> Membangunkan silibus terutama untuk kursus web dan elektronik untuk kanak-kanak hingga remaja. </li> <li> Berpengalaman mengajar pelajar khas dan pelajar usia awal. </li> <li> Mengendalikan pelajar yang mempunyai halangan bahasa dan hanya boleh berkomunikasi dalam Bahasa Melayu dan Jepun. </li> <li> Membimbing pelajar dalam kursus lanjutan seperti CSS, JS, Java, keselamatan siber, PhaserJS, Kaboom JS, Lua, percetakan 3D, perniagaan, elektronik lanjutan (litar terus dan gerbang logik), dan robotik. </li> <li> Membimbing pelajar dan pelatih industri dalam projek, termasuk membina dan mengehoskan portfolio mereka menggunakan pembangunan web. </li> <li> Menemuduga lebih 40 orang calon untuk menyertai Kidocode sebagai pelatih industri. </li> <li> Mengendalikan dan memantau bengkel dalaman. Bekerjasama dengan UniKL dan IEEE untuk mengadakan bengkel dalam talian bersama UniKL mengenai Internet of Things dan NodeMCU serta bengkel Arduino di SMK Kiaramas. </li> <li> Bekerjasama dengan MSU sebagai juri projek akhir pelajar FYP di bawah iRex, menjadi panel bagi panel latihan industri mereka, serta memberikan ceramah motivasi kepada pelajar senarai dekan yang bersiap untuk latihan industri, yang membawa kepada pemeteraian MOU antara Kidocode dan MSU. </li> <li> Bekerjasama dengan pelajar MSU untuk menjalankan bengkel mengenai ESP dan IoT menggunakan simulasi. </li> <li> Mengadakan bengkel elektronik dengan Universiti Monash untuk Kelab Kejuruteraan Wanita mereka. </li> <li> Menjadi penilai luar untuk projek akhir pelajar Kejuruteraan Komputer di UniKL MIIT. </li>",
+
+  "B_INTERN": "Pembangun Front End (Latihan Industri)",
+  "B_DATE": "Feb 2021 - Jul 2021",
+  "B_DESC_1": "<li> Membantu pasukan dalam membangunkan laman web agensi kerajaan. </li> <li> Mempelajari Angular, NG-Zorro dan rangka kerja Agile. </li> <li> Diperkenalkan kepada pengurusan GitLab dan sistem tiket Microsoft Teams. </li>",
+
+  "MDRILL": "Jurutera Sokongan Perisian",
+  "MDRILL_DATE": "Ogos 2021 - Mac 2021",
+  "MDRILL_DESC_1": "<li> Membantu dua pasukan dalam menyokong dua agensi berbeza. </li> <li> Meningkatkan kemahiran Java dan Angular. </li> <li> Mempelajari Keycloak. </li> <li> Membantu menyelesaikan pepijat dan lebih memahami tiket GitLab dan peranannya. </li><li> Menghadiri mesyuarat dalam talian bersama klien untuk membincangkan perkembangan projek. </li>",
+
+  "MASTER": "Sarjana Teknologi Maklumat (Kecerdasan Buatan)",
+  "MASTER_DATE": "2023 - Dijangka Julai 2025",
+  "MASTER_Q_1": "<li> Melakukan penyelidikan tentang pengesanan orang ramai yang padat melalui pendekatan pembelajaran mendalam. </li> <li> Penerima Geran Skim Penyelidikan Cemerlang (UERGS). </li> <li> Menerbitkan artikel Kajian Literatur Sistematik di <a href='https://inforescom.org/article/3423' target='_blank'>inforescom.org</a>. </li>",
+
+  "A_LEC": "Pensyarah Pembantu (Di Bawah Geran UERGS)",
+  "A_LEC_DATE": "September 2023 - Disember 2024 (Geran tamat, diperpanjang tetapi menunggu semester baru jika dipanggil)",
+  "A_LECT_DESC_1": "<li> Mengajar dan membimbing pelajar Sarjana Muda mengenai Sistem Operasi Rangkaian (NOS) dan projek termasuk Arduino dan ESP. </li> <li> Di bawah Geran UERGS dan membantu pensyarah dalam segmen makmal kursus. </li> <li> Terlibat dalam pemarkahan projek akhir pelajar bagi salah satu kursus serta peperiksaan mereka. </li> <li> Pemeriksa untuk peperiksaan praktikal mereka. </li>",
+
+  "PD1": "Pembangun Bebas (September 2023 - Jun 2024)",
+  "PD2": "Jurutera Perisian (Jun 2024 - September 2024)",
+  "PD_DESC_1": "<li> Membantu menyemak pepijat, membuat perubahan dan menyebarkan sistem ke NGINX untuk kegunaan doktor. </li> <li> Terlibat dalam persidangan farmakogenomik pertama di Malaysia dengan mengendalikan stesen mikrofon. </li> <li> Menukar laman web Wordpress ke laman web e-dagang menggunakan WooCommerce, mencapai keuntungan RM9000 dalam seminggu selepas pelancaran. </li>",
+
+  "MIDIDLE": "Pembangun Bebas Kanan",
+  "MIDIDLE_DATE": "September 2021 - Kini",
+  "MIDIDLE_DESC_1": "<li> Mengendalikan projek klien sebagai penyelia, perantara dan pembangun backend. </li>",
+
+  "DIGNITY": "Guru (Sukarelawan, kerjasama dengan Kidocode)",
+  "DIGNITY_DATE": "Januari 2025 - Kini",
+  "DIGNITY_DESC_1": "<li> Mengajar kursus Kidocode kepada pelajar kurang bernasib baik. </li> <li> Membimbing mereka menggunakan AI untuk menjawab soalan dan projek mereka. </li>",
+
+  "DIPLOMA_Q": {
+    "1": "CGPA - 3.41",
+    "2": "Peringkat Kampus - Ahli Kelab E-Sukan UniKL MIIT (2017, 2018)",
+    "3": "Peringkat Kampus - Ahli Kelab Ganbatte UniKL MIIT (2016, 2017, 2018)",
+    "4": "Peringkat Kampus - Ahli Jawatankuasa Acara Haru Matsuri - Spring Festival (2017)"
+  },
+
+  "D_INTERN_W": {
+    "1": "Memperoleh pengetahuan mengenai Python, MIT App Inventor, HTML, JavaScript dan tambahan pengetahuan tentang Arduino.",
+    "2": "Mempertajam kemahiran insaniah.",
+    "3": "Meluaskan rangkaian.",
+    "4": "Mendapat minat dalam pengajaran."
+  },
+
+  "BACHELOR_Q": {
+    "1": "CGPA - 3.56",
+    "2": "Peringkat Kampus - Ahli Kelab Kejuruteraan Komputer UniKL MIIT (2018)",
+    "3": "Peringkat Kampus - Ahli Jawatankuasa Acara Bengkel Python oleh Kidocode (2019)",
+    "4": "Peringkat Antarabangsa - Ahli Jawatankuasa Acara Transformasi Keselamatan Rangkaian (2019)",
+    "5": "Peringkat Kampus - Peserta Pengumpulan Dana Mini untuk Festival Teknokultur 2018 (2018)",
+    "6": "Peringkat Kampus - Pengurus Acara Kesedaran tentang Amalan Norma Baharu (2020)",
+    "7": "Peringkat Kebangsaan - Ahli Jawatankuasa Acara Iftar@Kuala Lumpur 2019 (2019)"
+  },
+
+  "K_DESC": {
+    "1": "Mempunyai pengalaman menjadi penyelia kepada lebih daripada 30 pelatih.",
+    "2": "Juga mempunyai pengalaman menjadi penyelia kepada 9 pelatih dalam satu masa.",
+    "3": "Membantu membimbing pelajar dalam silibus yang diberikan.",
+    "4": "Membina silibus terutama untuk kursus web dan elektronik untuk kanak-kanak hingga remaja.",
+    "5": "Juga mempunyai pengalaman mengajar pelajar khas dan pelajar prasekolah.",
+    "6": "Mengendalikan pelajar dengan halangan bahasa yang hanya boleh berkomunikasi dalam Bahasa Melayu dan Jepun.",
+    "7": "Membimbing pelajar dalam kursus lanjutan seperti CSS, JS, Java, keselamatan siber, PhaserJS, Kaboom JS, Lua, pencetakan 3D, perniagaan, elektronik lanjutan (litar terus dan logik gerbang), dan robotik.",
+    "8": "Membimbing pelajar dan pelatih dalam projek, termasuk mencipta dan mengehoskan portfolio mereka menggunakan pembangunan web.",
+    "9": "Menemuduga lebih daripada 40 orang yang ingin menyertai Kidocode sebagai pelatih.",
+    "10": "Menganjur dan memerhati bengkel dalaman. Bekerjasama dengan UniKL dan IEEE untuk menganjurkan bengkel dalam talian dengan UniKL mengenai Internet of Things dan NodeMCU serta bengkel Arduino di SMK Kiaramas.",
+    "11": "Menganjur dan memerhati bengkel dalaman di bawah jabatan web, elektronik, robotik, dan 3D.",
+    "12": "Bekerjasama dengan MSU sebagai juri untuk projek pelajar FYP mereka di bawah iRex, berkhidmat sebagai panel untuk panel latihan industri mereka, serta memberikan ceramah motivasi kepada pelajar senarai dekan mereka yang bersedia untuk latihan industri, membawa kepada Kidocode menandatangani MOU dengan MSU.",
+    "13": "Bekerjasama dengan pelajar MSU untuk menjalankan bengkel tentang ESP dan IoT menggunakan simulasi.",
+    "14": "Menganjurkan bengkel elektronik dengan Universiti Monash untuk Kelab Kejuruteraan Wanita mereka.",
+    "15": "Menjadi penilai luar untuk Projek Tahun Akhir pelajar Kejuruteraan Komputer di UniKL MIIT."
+  },
+
+  "B_DESC": {
+    "1": "Membantu dalam pasukan membangunkan laman web agensi kerajaan.",
+    "2": "Belajar Angular, NG-Zorro dan kerangka Agile.",
+    "3": "Diperkenalkan kepada pengurusan GitLab dan sistem tiket Microsoft Teams."
+  },
+
+  "MDRILL_DESC": {
+    "1": "Membantu dalam dua pasukan untuk membantu dua agensi berbeza.",
+    "2": "Mempertingkatkan lagi kemahiran Java serta Angular.",
+    "3": "Belajar mengenai Keycloak.",
+    "4": "Membantu menyelesaikan pembaikan pepijat dan lebih memahami tiket serta peranan GitLab.",
+    "5": "Perlu berjumpa dengan pelanggan secara dalam talian untuk membincangkan pencapaian dan kemajuan."
+  },
+
+  "MASTER_Q": {
+    "1": "Sedang menjalankan penyelidikan sarjana mengenai pengesanan orang ramai padat melalui pendekatan pembelajaran mendalam.",
+    "2": "Penerima Skim Geran Penyelidikan Cemerlang (UERGS).",
+    "3": "Menerbitkan artikel Kajian Literatur Sistematik di "
+  },
+
+  "A_LECT_DESC": {
+    "1": "Mengajar dan membimbing pelajar Sarjana Muda tentang Sistem Operasi Rangkaian (NOS) dan projek termasuk Arduino dan ESP.",
+    "2": "Di bawah Geran UERGS dan membantu pensyarah dengan segmen makmal kursus.",
+    "3": "Terlibat dalam penilaian projek akhir pelajar untuk salah satu kursus serta peperiksaan mereka.",
+    "4": "Pemeriksa bagi peperiksaan amali mereka."
+  },
+
+  "PD_DESC": {
+    "1": "Membantu menyemak pepijat, membuat beberapa perubahan dan menyebarkan sistem ke NGINX untuk kegunaan doktor.",
+    "2": "Terlibat dalam persidangan farmakogenomik pertama di Malaysia dengan mengendalikan stesen mikrofon.",
+    "3": "Menukar laman web Wordpress kepada laman e-dagang menggunakan WooCommerce. Ramai pelanggan membeli dari laman web tersebut dan dalam tempoh pelancaran seminggu, keuntungan sebanyak RM9000 telah dicapai.",
+    "4": "Membantu mencipta skrip untuk menarik, menolak dan menyebarkan kod ke pelayan NGINX untuk proses yang lebih lancar."
+  },
+
+  "MIDIDLE_DESC": {
+    "1": "Mengendalikan projek pelanggan, terutamanya sebagai pemantau, orang tengah, dan pembangun backend.",
+    "2": "Kadang-kadang berunding dengan pelanggan dan menyampaikan mesej kepada pasukan operasi."
+  },
+
+  "DIGNITY_DESC": {
+    "1": "Bekerjasama dengan Kidocode untuk mengajar kursus Kidocode kepada pelajar kurang berkemampuan.",
+    "2": "Memerhati dan membimbing mereka menggunakan AI untuk menjawab soalan dan projek mereka.",
+    "3": "Menggalakkan pelajar membantu satu sama lain untuk meningkatkan kemahiran insaniah mereka."
+  }
+
+
 
 
   
